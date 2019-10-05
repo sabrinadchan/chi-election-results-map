@@ -288,7 +288,7 @@ pres_primary_races = [
 ]
 
 mid_primary_races = [
-  {district: 7, race: "U.S. Representative, 7th District"},
+  {district: "city-cook", race: "U.S. Representative, 7th District"},
 ]
 
 var races = {
@@ -387,7 +387,7 @@ var pctColor = d3.scaleQuantile()
 // load geospatial boundaries
 loadTurnoutData();
 Promise.all([
-  d3.json("data/geospatial/precincts.topojson"),
+  d3.json("data/geospatial/allprecincts.topojson"),
   //d3.json("data/geospatial/wards.topojson")
 ])
 .then(([precincts]) => {
@@ -426,19 +426,24 @@ function draw(precincts) {
       filePath = "data/election_results/" + electionYear + "/" + election + " " + raceDD.options[raceDD.selectedIndex].getAttribute("file");
 
   // load election data
-  d3.tsv(filePath, parseResults).then(() => {
+  var files = [filePath],
+      promises = [];
+
+  if (raceDistrict == "city-cook") {
+    suburbanFilePath = "data/election_results/" + electionYear + "/Cook - " + election + " " + raceDD.options[raceDD.selectedIndex].getAttribute("file");
+    files.push(suburbanFilePath);
+  }
+
+  files.forEach(f => promises.push(d3.tsv(f, parseResults)));
+  
+  Promise.all(promises).then(() => {
     var transform = d3.geoTransform({point: projectPoint}),
         path = d3.geoPath().projection(transform);
 
-    // if city-wide election chosen, render all precincts
-    // otherwise, only renders precincts for relevant ward
-    if (raceDistrict == "city") {
-      var filteredPrecincts = topojson.feature(precincts, precincts.objects.precincts).features;
-    } else {
-      var usePrecincts = results.keys();
-      var precinctFeatures = topojson.feature(precincts, precincts.objects.precincts),
-          filteredPrecincts = precinctFeatures.features.filter(d => usePrecincts.includes(d.properties.full_text));
-    }
+    // filter only precincts relevant to election
+    var usePrecincts = results.keys();
+    var precinctFeatures = topojson.feature(precincts, precincts.objects.precincts),
+        filteredPrecincts = precinctFeatures.features.filter(d => usePrecincts.includes(d.properties.full_text));
 
     // calculate overall results for chosen election
     var flat = [].concat.apply([], results.values());
@@ -462,7 +467,7 @@ function draw(precincts) {
       .attr("value", d => d)
       .text(d => d);
 
-    (candidates2.length < 2) ? candidateSelect.node().disabled =true : candidateSelect.node().disabled = false;
+    candidateSelect.node().disabled = (candidates2.length < 2);
 
     var totalVotes = d3.sum(d3.values(summary));
 
@@ -618,8 +623,9 @@ function loadTurnoutData() {
   var electionDD = electionSelect.node(),
       election = electionDD.value.split(" ").slice(1).join(" "),
       electionYear = electionDD.options[electionDD.selectedIndex].getAttribute("year"),
-      fn = "data/election_results/" + electionYear + "/" + election + " Registered VotersBallotsTurnout.tsv";
+      fn = "data/election_results/" + electionYear + "/" + election + " Registered VotersBallotsTurnout.tsv?1";
   d3.tsv(fn, parseTurnout);
+  //d3.tsv("data/election_results/2018/Cook - Primary - DEM Registered VotersBallotsTurnout.tsv", parseTurnout);
 }
 
 function parseTurnout(d) {
@@ -631,7 +637,7 @@ function parseResults(d, i) {
   if (!i) for (var k in d) {
     if (/^votes\|/.test(k)) {
       var p = k.split("|");
-      candidates.push(p[1]);
+      if (!candidates.includes(p[1])) candidates.push(p[1]);
     }
   }
 
