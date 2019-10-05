@@ -345,7 +345,7 @@ caption.onAdd = function (map) {
 };
 
 caption.update = function (d) {
-  this._div.innerHTML = (d ? "<h4>Ward " + d.properties.ward + ", Precinct " + d.properties.precinct + "</h4><table><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties.full_text).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.race) + "'>" + r.race + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table><span>(" + turnout.get(d.properties.full_text).turnoutPct + "% turnout)</span>"
+  this._div.innerHTML = (d ? "<h4>" + parsePrecinct(d.properties.full_text) + "</h4><table><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties.full_text).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.race) + "'>" + r.race + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table><span>(" + turnout.get(d.properties.full_text).turnoutPct + "% turnout)</span>"
       : "Hover over a precinct");
 };
 
@@ -642,6 +642,10 @@ function parseResults(d, i) {
   }
 
   results.set(d.Precinct, candidates.map(c => { return {race: c, votes: +d["votes|"+c], percent: +d["pct|"+c]}; }).sort((a,b) => b.votes - a.votes));
+}
+
+function parsePrecinct(p) {
+  return isNaN(p) ? p : "Ward " + +p.slice(0,2) + " Precinct " + +p.slice(2); 
 }
 </script>
 <footer>
