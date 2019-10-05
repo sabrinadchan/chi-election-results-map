@@ -264,6 +264,10 @@ var municipal_runoff15_races = [
   {district: 46, race: "Alderman 46th Ward"}
 ]
 
+var municipal_referenda19 = [
+  {district: "var", race: "Rent Control"},
+]
+
 var municipal_runoff19_races = [
   {district: "city", race: "Mayor"},
   {district: "city", race: "City Treasurer"},
@@ -303,7 +307,7 @@ var races = {
   "2016 Primary - DEM": pres_primary_races,
   "2018 Primary - DEM": mid_primary_races,
   "2018 General Election": mid_gen_races,
-  "2019 Municipal General": municipal_races,
+  "2019 Municipal General": municipal_races.concat(municipal_referenda19),
   "2019 Municipal Runoffs":municipal_runoff19_races,
 }
 
