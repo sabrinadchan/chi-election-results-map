@@ -44,6 +44,7 @@ td.winner {
 td.name-cell, th.name-cell {
   text-align: left;
   padding: 5px 45px 5px 5px;
+  min-width: 125px;
 }
 
 td.num-cell, th.num-cell {
@@ -147,7 +148,7 @@ footer span {
 </head>
 <body>
   <div id="header">
-    <h1>Chicago Municipal Election Results</h1>
+    <h1>Chicago Election Results</h1>
     <div class="selection">
       <p>
         <span title="Choose an election"><b>Election</b> <select class="dropdown" id="election-select"></select></span>&nbsp;&nbsp;
@@ -669,7 +670,9 @@ function parsePrecinct(p) {
     </span><br>
     <span>Source: <a href="https://github.com/spencerchan/maps">https://github.com/spencerchan/maps</a> |
     </span>
-    <span>Election results: <a href="https://chicagoelections.gov/en/election-results.html">Chicago Board of Election Commissioners</a>
+    <span>City results: <a href="https://chicagoelections.gov/en/election-results.html">Chicago Board of Election Commissioners</a>
+    </span> | 
+    <span>Suburban results: <a href="https://www.cookcountyclerk.com/election-results">Cook County Clerk</a>
     </span>
   </p> 
 </footer>
