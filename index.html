@@ -12,7 +12,6 @@
  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
    crossorigin=""></script>
-<script src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="static/leaflet.zoomhome.css"/>
 <script src="static/leaflet.zoomhome.min.js"></script>
@@ -27,7 +26,7 @@ html, body {
 .selection span {
   display: inline-block;
 }
-    
+
 #results {
   font-size: 16px;
   margin: 20px 0px;
@@ -175,7 +174,7 @@ footer span {
 var turnout,
     candidates,
     results;
-    
+
 // define dropdown lists and their options
 var elections = [
   "2015 Municipal General",
@@ -344,7 +343,9 @@ var map = new L.Map("map", {
     attributionControl: false, // attribution in footer
 });
 
-map.addLayer(new L.StamenTileLayer("toner"));
+var stamenLayer = new L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png');
+
+map.addLayer(stamenLayer);
 
 var caption = L.control({
   maxHeight: 100,
@@ -434,7 +435,7 @@ function draw(precincts) {
       electionYear = electionDD.options[electionDD.selectedIndex].getAttribute("year"),
       raceDD = raceSelect.node(),
       race = raceDD.value,
-      raceDistrict = raceDD.options[raceDD.selectedIndex].getAttribute("district"), 
+      raceDistrict = raceDD.options[raceDD.selectedIndex].getAttribute("district"),
       filePath = "data/election_results/" + electionYear + "/" + election + " " + raceDD.options[raceDD.selectedIndex].getAttribute("file");
 
   // load election data
@@ -447,7 +448,7 @@ function draw(precincts) {
   }
 
   files.forEach(f => promises.push(d3.tsv(f, parseResults)));
-  
+
   Promise.all(promises).then(() => {
     var transform = d3.geoTransform({point: projectPoint}),
         path = d3.geoPath().projection(transform);
@@ -504,7 +505,7 @@ function draw(precincts) {
         .on("mouseover", function(d) {
           d3.select(this).classed("active", true);
           d3.select(this).raise();
-          caption.update(d);      
+          caption.update(d);
         })
         .on("touchstart", function(d) {
           if (d3.select(this).classed("active")) {
@@ -530,7 +531,7 @@ function draw(precincts) {
 
     map.on("moveend", reset);
     reset();
-    
+
     // reposition SVG on map on zoom/translate
     function reset() {
       precinctsPath.attr("d", path);
@@ -657,13 +658,13 @@ function parseResults(d, i) {
 }
 
 function parsePrecinct(p) {
-  return isNaN(p) ? p : "Ward " + +p.slice(0,2) + " Precinct " + +p.slice(2); 
+  return isNaN(p) ? p : "Ward " + +p.slice(0,2) + " Precinct " + +p.slice(2);
 }
 </script>
 <footer>
   <p>
     <span>
-      <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> | 
+      <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> |
     </span>
     <span>
       Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.
@@ -671,10 +672,10 @@ function parsePrecinct(p) {
     <span>Source: <a href="https://github.com/spencerchan/maps">https://github.com/spencerchan/maps</a> |
     </span>
     <span>City results: <a href="https://chicagoelections.gov/en/election-results.html">Chicago Board of Election Commissioners</a>
-    </span> | 
+    </span> |
     <span>Suburban results: <a href="https://www.cookcountyclerk.com/election-results">Cook County Clerk</a>
     </span>
-  </p> 
+  </p>
 </footer>
 </body>
 </html>
