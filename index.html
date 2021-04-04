@@ -199,64 +199,64 @@ const elections = {
   "2019 Municipal Runoffs": "mr19",
 };
 
-const races = [
-  {district: "city", race: "Mayor", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: "city", race: "City Clerk", elections: ["mg15", "mg19",]},
-  {district: "city", race: "City Treasurer", elections: ["mg15", "mg19", "mr19",]},
-  {district: 1, race: "Alderman 1st Ward", elections: ["mg15", "mg19",]},
-  {district: 2, race: "Alderman 2nd Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 3, race: "Alderman 3rd Ward", elections: ["mg15", "mg19",]},
-  {district: 4, race: "Alderman 4th Ward", elections: ["mg15", "mg19",]},
-  {district: 5, race: "Alderman 5th Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 6, race: "Alderman 6th Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 7, race: "Alderman 7th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 8, race: "Alderman 8th Ward", elections: ["mg15", "mg19",]},
-  {district: 9, race: "Alderman 9th Ward", elections: ["mg15", "mg19",]},
-  {district: 10, race: "Alderman 10th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 11, race: "Alderman 11th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 12, race: "Alderman 12th Ward", elections: ["mg15", "mg19",]},
-  {district: 13, race: "Alderman 13th Ward", elections: ["mg15", "mg19",]},
-  {district: 14, race: "Alderman 14th Ward", elections: ["mg15", "mg19",]},
-  {district: 15, race: "Alderman 15th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: 16, race: "Alderman 16th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: 17, race: "Alderman 17th Ward", elections: ["mg15", "mg19",]},
-  {district: 18, race: "Alderman 18th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 19, race: "Alderman 19th Ward", elections: ["mg15", "mg19",]},
-  {district: 20, race: "Alderman 20th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: 21, race: "Alderman 21st Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: 22, race: "Alderman 22nd Ward", elections: ["mg15", "mg19",]},
-  {district: 23, race: "Alderman 23rd Ward", elections: ["mg15", "mg19",]},
-  {district: 24, race: "Alderman 24th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 25, race: "Alderman 25th Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 26, race: "Alderman 26th Ward", elections: ["mg15", "mg19",]},
-  {district: 27, race: "Alderman 27th Ward", elections: ["mg15", "mg19",]},
-  {district: 28, race: "Alderman 28th Ward", elections: ["mg15", "mg19",]},
-  {district: 29, race: "Alderman 29th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 30, race: "Alderman 30th Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 31, race: "Alderman 31st Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: 32, race: "Alderman 32nd Ward", elections: ["mg15", "mg19",]},
-  {district: 33, race: "Alderman 33rd Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 34, race: "Alderman 34th Ward", elections: ["mg15", "mg19",]},
-  {district: 35, race: "Alderman 35th Ward", elections: ["mg15", "mg19",]},
-  {district: 36, race: "Alderman 36th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 37, race: "Alderman 37th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 38, race: "Alderman 38th Ward", elections: ["mg15", "mg19",]},
-  {district: 39, race: "Alderman 39th Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 40, race: "Alderman 40th Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 41, race: "Alderman 41st Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 42, race: "Alderman 42nd Ward", elections: ["mg15", "mg19",]},
-  {district: 43, race: "Alderman 43rd Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: 44, race: "Alderman 44th Ward", elections: ["mg15", "mg19",]},
-  {district: 45, race: "Alderman 45th Ward", elections: ["mg15", "mr15", "mg19",]},
-  {district: 46, race: "Alderman 46th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  {district: 47, race: "Alderman 47th Ward", elections: ["mg15", "mg19", "mr19",]},
-  {district: 48, race: "Alderman 48th Ward", elections: ["mg15", "mg19",]},
-  {district: 49, race: "Alderman 49th Ward", elections: ["mg15", "mg19",]},
-  {district: 50, race: "Alderman 50th Ward", elections: ["mg15", "mg19",]},
-  {district: "var", race: "Rent Control", elections: ["midp18", "midg18", "mg19",]},
-  {district: "city", race: "President, U.S.", elections: ["pp16"]},
-  {district: "city-cook", race: "U.S. Representative, 7th District", elections: ["midp18"]},
-]
+const races = {
+  "Mayor": {district: "city", race: "Mayor", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "City Clerk": {district: "city", race: "City Clerk", elections: ["mg15", "mg19",]},
+  "City Treasurer": {district: "city", race: "City Treasurer", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 1st Ward": {district: 1, race: "Alderman 1st Ward", elections: ["mg15", "mg19",]},
+  "Alderman 2nd Ward": {district: 2, race: "Alderman 2nd Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 3rd Ward": {district: 3, race: "Alderman 3rd Ward", elections: ["mg15", "mg19",]},
+  "Alderman 4th Ward": {district: 4, race: "Alderman 4th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 5th Ward": {district: 5, race: "Alderman 5th Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 6th Ward": {district: 6, race: "Alderman 6th Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 7th Ward": {district: 7, race: "Alderman 7th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 8th Ward": {district: 8, race: "Alderman 8th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 9th Ward": {district: 9, race: "Alderman 9th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 10th Ward": {district: 10, race: "Alderman 10th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 11th Ward": {district: 11, race: "Alderman 11th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 12th Ward": {district: 12, race: "Alderman 12th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 13th Ward": {district: 13, race: "Alderman 13th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 14th Ward": {district: 14, race: "Alderman 14th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 15th Ward": {district: 15, race: "Alderman 15th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "Alderman 16th Ward": {district: 16, race: "Alderman 16th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "Alderman 17th Ward": {district: 17, race: "Alderman 17th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 18th Ward": {district: 18, race: "Alderman 18th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 19th Ward": {district: 19, race: "Alderman 19th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 20th Ward": {district: 20, race: "Alderman 20th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "Alderman 21st Ward": {district: 21, race: "Alderman 21st Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "Alderman 22nd Ward": {district: 22, race: "Alderman 22nd Ward", elections: ["mg15", "mg19",]},
+  "Alderman 23rd Ward": {district: 23, race: "Alderman 23rd Ward", elections: ["mg15", "mg19",]},
+  "Alderman 24th Ward": {district: 24, race: "Alderman 24th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 25th Ward": {district: 25, race: "Alderman 25th Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 26th Ward": {district: 26, race: "Alderman 26th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 27th Ward": {district: 27, race: "Alderman 27th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 28th Ward": {district: 28, race: "Alderman 28th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 29th Ward": {district: 29, race: "Alderman 29th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 30th Ward": {district: 30, race: "Alderman 30th Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 31st Ward": {district: 31, race: "Alderman 31st Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "Alderman 32nd Ward": {district: 32, race: "Alderman 32nd Ward", elections: ["mg15", "mg19",]},
+  "Alderman 33rd Ward": {district: 33, race: "Alderman 33rd Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 34th Ward": {district: 34, race: "Alderman 34th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 35th Ward": {district: 35, race: "Alderman 35th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 36th Ward": {district: 36, race: "Alderman 36th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 37th Ward": {district: 37, race: "Alderman 37th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 38th Ward": {district: 38, race: "Alderman 38th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 39th Ward": {district: 39, race: "Alderman 39th Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 40th Ward": {district: 40, race: "Alderman 40th Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 41st Ward": {district: 41, race: "Alderman 41st Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 42nd Ward": {district: 42, race: "Alderman 42nd Ward", elections: ["mg15", "mg19",]},
+  "Alderman 43rd Ward": {district: 43, race: "Alderman 43rd Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "Alderman 44th Ward": {district: 44, race: "Alderman 44th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 45th Ward": {district: 45, race: "Alderman 45th Ward", elections: ["mg15", "mr15", "mg19",]},
+  "Alderman 46th Ward": {district: 46, race: "Alderman 46th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
+  "Alderman 47th Ward": {district: 47, race: "Alderman 47th Ward", elections: ["mg15", "mg19", "mr19",]},
+  "Alderman 48th Ward": {district: 48, race: "Alderman 48th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 49th Ward": {district: 49, race: "Alderman 49th Ward", elections: ["mg15", "mg19",]},
+  "Alderman 50th Ward": {district: 50, race: "Alderman 50th Ward", elections: ["mg15", "mg19",]},
+  "Rent Control": {district: "var", race: "Rent Control", elections: ["midp18", "midg18", "mg19",]},
+  "President, U.S.": {district: "city", race: "President, U.S.", elections: ["pp16"]},
+  "U.S. Representative, 7th District": {district: "il-7", race: "U.S. Representative, 7th District", elections: ["midp18"], loadDistrict: "ushouse.topojson"},
+}
 
 var electionSelect = d3.select("#election-select"),
     raceSelect = d3.select("#race-select"),
@@ -381,14 +381,15 @@ function draw(precincts) {
       electionYear = electionDD.options[electionDD.selectedIndex].getAttribute("year"),
       raceDD = raceSelect.node(),
       race = raceDD.value,
-      raceDistrict = raceDD.options[raceDD.selectedIndex].getAttribute("district"),
-      electionResultFilePath = "data/election_results/" + electionYear + "/" + election + " " + raceDD.options[raceDD.selectedIndex].getAttribute("file");
+      district = races[race].district,
+      loadDistrict = races[race].loadDistrict,
+      electionResultFilePath = `data/election_results/${electionYear}/${election} ${races[race].race}.tsv`;
 
   // load election data
   promises = [];
   promises.push(d3.tsv(electionResultFilePath, parseResults));
-  if (raceDistrict == "city-cook") {
-    promises.push(d3.json("data/geospatial/ushouse.topojson"));
+  if (loadDistrict) {
+    promises.push(d3.json(`data/geospatial/${loadDistrict}`));
   }
 
   Promise.all(promises).then(([_, districtTopo]) => {
@@ -401,15 +402,13 @@ function draw(precincts) {
         filteredPrecincts = precinctFeatures.filter(d => usePrecincts.includes(d.properties.full_text));
 
     if (typeof districtTopo !== 'undefined') {
-      var cd = topojson.feature(districtTopo, districtTopo.objects.districts).features.filter(d => d.properties.CD115FP == "7")[0]
-
       rTree = new jsts.index.strtree.STRtree()
       filteredPrecincts.map(d => {
         d.polygon = reader.read(d.geometry)
         rTree.insert(d.polygon.getEnvelopeInternal(), d)
       });
 
-      filteredPrecincts = findIntersection(cd, rTree);
+      filteredPrecincts = findIntersection(topojson.feature(districtTopo, districtTopo.objects.districts).features.filter(d => d.properties.district == district)[0], rTree);
     }
 
     // calculate overall results for chosen election
@@ -575,14 +574,11 @@ function updateRaceSelect() {
   var election = elections[electionSelect.node().value];
 
   raceSelect.selectAll("option.race-option")
-    .data(races.filter(d => d.elections.includes(election)))
-    //.data((election == "2015 Municipal Runoffs" || election == "2019 Municipal Runoffs") ? races.filter(d => d[election]) : races)
-  .enter().append("option")
-    .attr("class", "race-option")
-    .attr("district", d => d.district)
-    .attr("file", d => d.race + ".tsv")
-    .attr("value", d => d.race)
-    .text(d => d.race);
+      .data(Object.values(races).filter(d => d.elections.includes(election)))
+    .enter().append("option")
+      .attr("class", "race-option")
+      .attr("value", d => d.race)
+      .text(d => d.race);
 }
 
 function loadTurnoutData() {
