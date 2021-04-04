@@ -350,8 +350,6 @@ Promise.all([
   d3.json("data/geospatial/allprecincts.topojson"),
 ])
 .then(([precincts]) => {
-  precincts = topojson.feature(precincts, precincts.objects.precincts).features;
-
   raceSelect.on("change", () => {
     draw(precincts);
   });
@@ -384,31 +382,26 @@ function draw(precincts) {
       raceDD = raceSelect.node(),
       race = raceDD.value,
       raceDistrict = raceDD.options[raceDD.selectedIndex].getAttribute("district"),
-      filePath = "data/election_results/" + electionYear + "/" + election + " " + raceDD.options[raceDD.selectedIndex].getAttribute("file");
+      electionResultFilePath = "data/election_results/" + electionYear + "/" + election + " " + raceDD.options[raceDD.selectedIndex].getAttribute("file");
 
   // load election data
-  var files = [filePath],
-      promises = [];
-
+  promises = [];
+  promises.push(d3.tsv(electionResultFilePath, parseResults));
   if (raceDistrict == "city-cook") {
-    suburbanFilePath = "data/election_results/" + electionYear + "/Cook - " + election + " " + raceDD.options[raceDD.selectedIndex].getAttribute("file");
-    files.push(suburbanFilePath);
     promises.push(d3.json("data/geospatial/ushouse.topojson"));
   }
 
-  files.forEach(f => promises.push(d3.tsv(f, parseResults)));
-
-  Promise.all(promises).then((intersect) => {
+  Promise.all(promises).then(([_, districtTopo]) => {
     var transform = d3.geoTransform({point: projectPoint}),
         path = d3.geoPath().projection(transform);
 
     // filter only precincts relevant to election
-    var usePrecincts = results.keys();
-    //var precinctFeatures = topojson.feature(precincts, precincts.objects.precincts),
-        filteredPrecincts = precincts.filter(d => usePrecincts.includes(d.properties.full_text));
+    var usePrecincts = results.keys(),
+        precinctFeatures = topojson.feature(precincts, precincts.objects.precincts).features,
+        filteredPrecincts = precinctFeatures.filter(d => usePrecincts.includes(d.properties.full_text));
 
-    if (raceDistrict == "city-cook") {
-      var cd = topojson.feature(intersect[0], intersect[0].objects.districts).features.filter(d => d.properties.CD115FP == "7")[0]
+    if (typeof districtTopo !== 'undefined') {
+      var cd = topojson.feature(districtTopo, districtTopo.objects.districts).features.filter(d => d.properties.CD115FP == "7")[0]
 
       rTree = new jsts.index.strtree.STRtree()
       filteredPrecincts.map(d => {
@@ -416,8 +409,7 @@ function draw(precincts) {
         rTree.insert(d.polygon.getEnvelopeInternal(), d)
       });
 
-      var filteredPrecincts = findIntersection(cd, rTree);
-      console.log(filteredPrecincts);
+      filteredPrecincts = findIntersection(cd, rTree);
     }
 
     // calculate overall results for chosen election
