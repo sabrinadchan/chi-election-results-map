@@ -266,7 +266,6 @@ electionSelect.selectAll("option.election-option")
     .data(Object.keys(elections))
   .enter().append("option")
     .attr("class", "election-option")
-    .attr("year", d => d.split(" ")[0])
     .attr("value", d => d)
     .text(d => d);
 
@@ -376,14 +375,13 @@ function draw(precincts) {
   caption.update(null);
 
   // build election results file name
-  var electionDD = electionSelect.node(),
-      election = electionDD.value.split(" ").slice(1).join(" "),
-      electionYear = electionDD.options[electionDD.selectedIndex].getAttribute("year"),
-      raceDD = raceSelect.node(),
-      race = raceDD.value,
+  var election = electionSelect.node().value,
+      electionName = election.split(" ").slice(1).join(" "),
+      electionYear = election.split(" ")[0],
+      race = raceSelect.node().value,
       district = races[race].district,
       loadDistrict = races[race].loadDistrict,
-      electionResultFilePath = `data/election_results/${electionYear}/${election} ${races[race].race}.tsv`;
+      electionResultFilePath = `data/election_results/${electionYear}/${electionName} ${races[race].race}.tsv`;
 
   // load election data
   promises = [];
@@ -583,12 +581,11 @@ function updateRaceSelect() {
 
 function loadTurnoutData() {
   turnout = d3.map()
-  var electionDD = electionSelect.node(),
-      election = electionDD.value.split(" ").slice(1).join(" "),
-      electionYear = electionDD.options[electionDD.selectedIndex].getAttribute("year"),
-      fn = "data/election_results/" + electionYear + "/" + election + " Registered VotersBallotsTurnout.tsv?1";
+  var election = electionSelect.node().value;
+      electionName = election.split(" ").slice(1).join(" "),
+      electionYear = election.split(" ")[0],
+      fn = `data/election_results/${electionYear}/${ electionName} Registered VotersBallotsTurnout.tsv?1`;
   d3.tsv(fn, parseTurnout);
-  //d3.tsv("data/election_results/2018/Cook - Primary - DEM Registered VotersBallotsTurnout.tsv", parseTurnout);
 }
 
 function parseTurnout(d) {
