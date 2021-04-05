@@ -1,0 +1,127 @@
+html, body {
+  margin: 0 10%;
+  padding: 0px 0px;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.selection span {
+  display: inline-block;
+}
+
+#results {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+td {
+  border-radius: 3px;
+}
+
+td.winner {
+  border: 2px solid black;
+}
+
+td.name-cell, th.name-cell {
+  text-align: left;
+  padding: 5px 45px 5px 5px;
+  min-width: 125px;
+}
+
+td.num-cell, th.num-cell {
+  text-align: right;
+  padding-left: 10px;
+}
+
+#total-results {
+  font-size: 10px;
+  margin: 3px;
+}
+
+#map {
+  height: 720px;
+  width: 100%;
+}
+
+.precinct-path {
+  fill-opacity: 0.85;
+  stroke: #000;
+  stroke-width: 0.25px;
+}
+
+.precinct-path.active {
+  stroke-width: 1.5px;
+}
+
+.leaflet-overlay-pane svg path{
+  pointer-events: auto;
+}
+
+.caption {
+  padding: 6px 8px;
+  font-size: 12px;
+  background: #ddd;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.caption h4 {
+  margin: 0 3px;
+}
+
+.caption span {
+  margin: 0 3px;
+  font-size: 10px;
+}
+
+.caption td.name-cell, th.name-cell {
+  padding: 2px 15px 2px 2px;
+}
+
+.svg-legend {
+  width: 160px;
+  height: 40px;
+}
+
+.axis path, .axis line {
+  display: none;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 10px;
+  text-align: center;
+}
+
+footer span {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+  html, body {
+    margin: 0 5%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  html, body {
+    margin: 0 0;
+    width: 100%;
+  }
+
+  #map {
+    height: 558px;
+  }
+
+  .caption {
+    overflow-y: auto;
+    max-height: 150px;
+  }
+
+  footer {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
