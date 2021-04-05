@@ -1,4 +1,4 @@
-Precinct	Votes	votes|Yes	pct|Yes	votes|No	pct|No
+Precinct	total_votes	votes|Yes	pct|Yes	votes|No	pct|No
 35001	472	336	71.19	136	28.81
 35002	518	362	69.88	156	30.12
 35003	413	316	76.51	97	23.49

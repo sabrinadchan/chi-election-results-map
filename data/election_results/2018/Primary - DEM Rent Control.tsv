@@ -1,4 +1,4 @@
-Precinct	Votes	votes|Yes	pct|Yes	votes|No	pct|No
+Precinct	total_votes	votes|Yes	pct|Yes	votes|No	pct|No
 03004	313	216	69.01	97	30.99
 03005	137	99	72.26	38	27.74
 03007	224	159	70.98	65	29.02
