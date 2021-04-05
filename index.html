@@ -106,7 +106,7 @@ caption.onAdd = function (map) {
 };
 
 caption.update = function (d) {
-  this._div.innerHTML = (d ? "<h4>" + parsePrecinct(d.properties.full_text) + "</h4><table><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties.full_text).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.candidate) + "'>" + r.candidate + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table><span>(" + turnout.get(d.properties.full_text).turnoutPct + "% turnout)</span>"
+  this._div.innerHTML = (d ? "<h4>" + parsePrecinct(d.properties.full_text) + "</h4><table><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties.full_text).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.candidate) + "'>" + r.candidate + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table><span>(" + turnout.get(d.properties.full_text).turnoutPct.toFixed(2) + "% turnout)</span>"
       : "Hover over a precinct");
 };
 
@@ -391,7 +391,7 @@ function loadTurnoutData() {
 }
 
 function parseTurnout(d) {
-  turnout.set(d.Precinct, {"registeredVoters": +d["Register Voters"], "ballotsCast": +d["Ballots Cast"], "turnoutPct": +d["Turnout %"]})
+  turnout.set(d.Precinct, {"registeredVoters": +d["Register Voters"], "ballotsCast": +d["Ballots Cast"], "turnoutPct": +d["Ballots Cast"] / +d["Register Voters"] * 100})
 }
 
 // parse election result data file
@@ -403,7 +403,7 @@ function parseResults(d, i) {
     }
   }
 
-  results.set(d.Precinct, candidates.map(c => { return {candidate: c, votes: +d["votes|"+c], percent: (+d["votes|"+c] / d.Votes * 100)}; }).sort((a,b) => b.votes - a.votes));
+  results.set(d.Precinct, candidates.map(c => { return {candidate: c, votes: +d["votes|"+c], percent: (+d["votes|"+c] / d.total_votes * 100)}; }).sort((a,b) => b.votes - a.votes));
 }
 
 function parsePrecinct(p) {
