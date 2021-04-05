@@ -241,7 +241,7 @@ function draw(precincts) {
     d3.select("#results-table tbody").selectAll("tr")
         .data(sortedSummary)
       .enter().append("tr")
-        .html((d, i) => "<td class='name-cell" + (!i || (i == 1 && sortedSummary[0].value / totalVotes < 0.5) ? " winner'" : "'") + " style='background-color:" + winnerColor(d.key) + "'><span>" + d.key + "</span>" + (!i || (i == 1 && sortedSummary[0].value / totalVotes < 0.5) ? "<span class='win-symbol'> &#10003;</span>" : "") + "<td class='num-cell'>" + d.value.toLocaleString() + "</td><td class='num-cell'>" + (d.value / totalVotes * 100).toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td>")
+        .html((d, i) => "<td class='name-cell" + (!i || (elections[election].substring(0,2 )== "mg" && i == 1 && sortedSummary[0].value / totalVotes < 0.5) ? " winner'" : "'") + " style='background-color:" + winnerColor(d.key) + "'><span>" + d.key + "</span>" + (!i || (elections[election].substring(0,2 )== "mg" && i == 1 && sortedSummary[0].value / totalVotes < 0.5) ? "<span class='win-symbol'> &#10003;</span>" : "") + "<td class='num-cell'>" + d.value.toLocaleString() + "</td><td class='num-cell'>" + (d.value / totalVotes * 100).toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td>")
 
     var districtTurnout = (d3.sum(filteredPrecincts, d => turnout.get(d.properties.full_text).ballotsCast) * 100.0 / d3.sum(filteredPrecincts, d => turnout.get(d.properties.full_text).registeredVoters)).toFixed(2);
 
