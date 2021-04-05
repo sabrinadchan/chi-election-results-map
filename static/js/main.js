@@ -64,7 +64,14 @@ const races = {
   "Alderman 48th Ward": {district: 48, race: "Alderman 48th Ward", elections: ["mg15", "mg19",]},
   "Alderman 49th Ward": {district: 49, race: "Alderman 49th Ward", elections: ["mg15", "mg19",]},
   "Alderman 50th Ward": {district: 50, race: "Alderman 50th Ward", elections: ["mg15", "mg19",]},
+  "W10 - Petroleum Coke Ban": {district: 10, race: "W10 - Petroleum Coke Ban", elections: ["mg15"]},
+  "Elected School Board": {district: "var", race: "Elected School Board", elections: ["mg15"]},
+  "W16-P30-Form TIF Council": {district: "16030", race: "W16-P30-Form TIF Council", elections: ["mg15"]},
+  "Paid leave for workers": {district: "city", race: "Paid leave for workers", elections: ["mg15"]},
+  "Campaign finance reform": {district: "city", race: "Campaign finance reform", elections: ["mg15"]},
+  "Domestic-abuse treatment": {district: "city", race: "Domestic-abuse treatment", elections: ["mg15"]},
   "Rent Control": {district: "var", race: "Rent Control", elections: ["midp18", "midg18", "mg19",]},
   "President, U.S.": {district: "city", race: "President, U.S.", elections: ["pp16"]},
   "U.S. Representative, 7th District": {district: "il-7", race: "U.S. Representative, 7th District", elections: ["midp18"], loadDistrict: "ushouse.topojson"},
 }
+
