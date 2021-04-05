@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<script src="js/main.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://d3js.org/topojson.v1.min.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -14,137 +15,9 @@
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
    crossorigin=""></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="static/leaflet.zoomhome.css"/>
-<script src="static/leaflet.zoomhome.min.js"></script>
-<style type="text/css">
-html, body {
-  margin: 0 10%;
-  padding: 0px 0px;
-  width: 80%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.selection span {
-  display: inline-block;
-}
-
-#results {
-  font-size: 16px;
-  margin: 20px 0px;
-}
-
-td {
-  border-radius: 3px;
-}
-
-td.winner {
-  border: 2px solid black;
-}
-
-td.name-cell, th.name-cell {
-  text-align: left;
-  padding: 5px 45px 5px 5px;
-  min-width: 125px;
-}
-
-td.num-cell, th.num-cell {
-  text-align: right;
-  padding-left: 10px;
-}
-
-#total-results {
-  font-size: 10px;
-  margin: 3px;
-}
-
-#map {
-  height: 720px;
-  width: 100%;
-}
-
-.precinct-path {
-  fill-opacity: 0.85;
-  stroke: #000;
-  stroke-width: 0.25px;
-}
-
-.precinct-path.active {
-  stroke-width: 1.5px;
-}
-
-.leaflet-overlay-pane svg path{
-  pointer-events: auto;
-}
-
-.caption {
-  padding: 6px 8px;
-  font-size: 12px;
-  background: #ddd;
-  opacity: 1;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
-.caption h4 {
-  margin: 0 3px;
-}
-
-.caption span {
-  margin: 0 3px;
-  font-size: 10px;
-}
-
-.caption td.name-cell, th.name-cell {
-  padding: 2px 15px 2px 2px;
-}
-
-.svg-legend {
-  width: 160px;
-  height: 40px;
-}
-
-.axis path, .axis line {
-  display: none;
-}
-
-footer {
-  margin-top: 30px;
-  font-size: 10px;
-  text-align: center;
-}
-
-footer span {
-  display: inline-block;
-}
-
-@media screen and (max-width: 1200px) {
-  html, body {
-    margin: 0 5%;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  html, body {
-    margin: 0 0;
-    width: 100%;
-  }
-
-  #map {
-    height: 558px;
-  }
-
-  .caption {
-    overflow-y: auto;
-    max-height: 150px;
-  }
-
-  footer {
-    margin-top: 10px;
-    text-align: left;
-  }
-}
-</style>
+<link rel="stylesheet" href="static/css/leaflet.zoomhome.css"/>
+<script src="static/js/leaflet.zoomhome.min.js"></script>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div id="header">
@@ -186,77 +59,6 @@ var rTree,
     rTree2,
     reader = new jsts.io.GeoJSONReader(),
     writer = new jsts.io.GeoJSONWriter();
-
-// define dropdown lists and their options
-// define dropdown lists and their options
-const elections = {
-  "2015 Municipal General": "mg15",
-  "2015 Municipal Runoffs": "mr15",
-  "2016 Primary - DEM": "pp16",
-  "2018 Primary - DEM": "midp18",
-  "2018 General Election": "midg18",
-  "2019 Municipal General": "mg19",
-  "2019 Municipal Runoffs": "mr19",
-};
-
-const races = {
-  "Mayor": {district: "city", race: "Mayor", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "City Clerk": {district: "city", race: "City Clerk", elections: ["mg15", "mg19",]},
-  "City Treasurer": {district: "city", race: "City Treasurer", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 1st Ward": {district: 1, race: "Alderman 1st Ward", elections: ["mg15", "mg19",]},
-  "Alderman 2nd Ward": {district: 2, race: "Alderman 2nd Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 3rd Ward": {district: 3, race: "Alderman 3rd Ward", elections: ["mg15", "mg19",]},
-  "Alderman 4th Ward": {district: 4, race: "Alderman 4th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 5th Ward": {district: 5, race: "Alderman 5th Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 6th Ward": {district: 6, race: "Alderman 6th Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 7th Ward": {district: 7, race: "Alderman 7th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 8th Ward": {district: 8, race: "Alderman 8th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 9th Ward": {district: 9, race: "Alderman 9th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 10th Ward": {district: 10, race: "Alderman 10th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 11th Ward": {district: 11, race: "Alderman 11th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 12th Ward": {district: 12, race: "Alderman 12th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 13th Ward": {district: 13, race: "Alderman 13th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 14th Ward": {district: 14, race: "Alderman 14th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 15th Ward": {district: 15, race: "Alderman 15th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "Alderman 16th Ward": {district: 16, race: "Alderman 16th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "Alderman 17th Ward": {district: 17, race: "Alderman 17th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 18th Ward": {district: 18, race: "Alderman 18th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 19th Ward": {district: 19, race: "Alderman 19th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 20th Ward": {district: 20, race: "Alderman 20th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "Alderman 21st Ward": {district: 21, race: "Alderman 21st Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "Alderman 22nd Ward": {district: 22, race: "Alderman 22nd Ward", elections: ["mg15", "mg19",]},
-  "Alderman 23rd Ward": {district: 23, race: "Alderman 23rd Ward", elections: ["mg15", "mg19",]},
-  "Alderman 24th Ward": {district: 24, race: "Alderman 24th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 25th Ward": {district: 25, race: "Alderman 25th Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 26th Ward": {district: 26, race: "Alderman 26th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 27th Ward": {district: 27, race: "Alderman 27th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 28th Ward": {district: 28, race: "Alderman 28th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 29th Ward": {district: 29, race: "Alderman 29th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 30th Ward": {district: 30, race: "Alderman 30th Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 31st Ward": {district: 31, race: "Alderman 31st Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "Alderman 32nd Ward": {district: 32, race: "Alderman 32nd Ward", elections: ["mg15", "mg19",]},
-  "Alderman 33rd Ward": {district: 33, race: "Alderman 33rd Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 34th Ward": {district: 34, race: "Alderman 34th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 35th Ward": {district: 35, race: "Alderman 35th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 36th Ward": {district: 36, race: "Alderman 36th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 37th Ward": {district: 37, race: "Alderman 37th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 38th Ward": {district: 38, race: "Alderman 38th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 39th Ward": {district: 39, race: "Alderman 39th Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 40th Ward": {district: 40, race: "Alderman 40th Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 41st Ward": {district: 41, race: "Alderman 41st Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 42nd Ward": {district: 42, race: "Alderman 42nd Ward", elections: ["mg15", "mg19",]},
-  "Alderman 43rd Ward": {district: 43, race: "Alderman 43rd Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "Alderman 44th Ward": {district: 44, race: "Alderman 44th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 45th Ward": {district: 45, race: "Alderman 45th Ward", elections: ["mg15", "mr15", "mg19",]},
-  "Alderman 46th Ward": {district: 46, race: "Alderman 46th Ward", elections: ["mg15", "mr15", "mg19", "mr19",]},
-  "Alderman 47th Ward": {district: 47, race: "Alderman 47th Ward", elections: ["mg15", "mg19", "mr19",]},
-  "Alderman 48th Ward": {district: 48, race: "Alderman 48th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 49th Ward": {district: 49, race: "Alderman 49th Ward", elections: ["mg15", "mg19",]},
-  "Alderman 50th Ward": {district: 50, race: "Alderman 50th Ward", elections: ["mg15", "mg19",]},
-  "Rent Control": {district: "var", race: "Rent Control", elections: ["midp18", "midg18", "mg19",]},
-  "President, U.S.": {district: "city", race: "President, U.S.", elections: ["pp16"]},
-  "U.S. Representative, 7th District": {district: "il-7", race: "U.S. Representative, 7th District", elections: ["midp18"], loadDistrict: "ushouse.topojson"},
-}
 
 var electionSelect = d3.select("#election-select"),
     raceSelect = d3.select("#race-select"),
@@ -304,7 +106,7 @@ caption.onAdd = function (map) {
 };
 
 caption.update = function (d) {
-  this._div.innerHTML = (d ? "<h4>" + parsePrecinct(d.properties.full_text) + "</h4><table><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties.full_text).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.race) + "'>" + r.race + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table><span>(" + turnout.get(d.properties.full_text).turnoutPct + "% turnout)</span>"
+  this._div.innerHTML = (d ? "<h4>" + parsePrecinct(d.properties.full_text) + "</h4><table><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties.full_text).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.candidate) + "'>" + r.candidate + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table><span>(" + turnout.get(d.properties.full_text).turnoutPct + "% turnout)</span>"
       : "Hover over a precinct");
 };
 
@@ -412,7 +214,7 @@ function draw(precincts) {
     // calculate overall results for chosen election
     var flat = [].concat.apply([], results.values());
     var summary = d3.nest()
-      .key(d => d.race)
+      .key(d => d.candidate)
       .rollup(v => d3.sum(v, d => d.votes))
       .object(flat);
 
@@ -452,7 +254,7 @@ function draw(precincts) {
       .enter().append("path")
         .attr("class", "precinct-path")
         .attr("id", d => "precinct" + d.properties.full_text)
-        .attr("fill", d => winnerColor(results.get(d.properties.full_text)[0].race))
+        .attr("fill", d => winnerColor(results.get(d.properties.full_text)[0].candidate))
         .on("mouseover", function(d) {
           d3.select(this).classed("active", true);
           d3.select(this).raise();
@@ -502,7 +304,7 @@ function projectPoint(x, y) {
 function updateColors(candidate) {
   if (candidate == "All") {
     d3.selectAll(".precinct-path")
-        .attr("fill", d => winnerColor(results.get(d.properties.full_text)[0].race))
+        .attr("fill", d => winnerColor(results.get(d.properties.full_text)[0].candidate))
   } else {
     // create discrete sequential color scale from categorical color corresponding to candidate
     var c = d3.scaleLinear().domain([0,4])
@@ -514,7 +316,7 @@ function updateColors(candidate) {
     pctColor.range([...Array(5).keys()].map(x => c(x)));
 
     d3.selectAll(".precinct-path")
-        .attr("fill", d => pctColor(results.get(d.properties.full_text).find(x => x.race == candidate).percent))
+        .attr("fill", d => pctColor(results.get(d.properties.full_text).find(x => x.candidate == candidate).percent))
   }
 }
 
@@ -601,7 +403,7 @@ function parseResults(d, i) {
     }
   }
 
-  results.set(d.Precinct, candidates.map(c => { return {race: c, votes: +d["votes|"+c], percent: +d["pct|"+c]}; }).sort((a,b) => b.votes - a.votes));
+  results.set(d.Precinct, candidates.map(c => { return {candidate: c, votes: +d["votes|"+c], percent: (+d["votes|"+c] / d.Votes * 100)}; }).sort((a,b) => b.votes - a.votes));
 }
 
 function parsePrecinct(p) {
