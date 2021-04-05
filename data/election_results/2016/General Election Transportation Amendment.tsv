@@ -1,4 +1,4 @@
-Precinct	total_votes	votes|Yes	votes|No
+Precinct	total_votes	votes|YES	votes|NO
 01001	449	314	135
 01002	491	384	107
 01003	631	423	208
@@ -2068,3 +2068,1602 @@ Precinct	total_votes	votes|Yes	votes|No
 50038	172	138	34
 50039	254	204	50
 50040	386	272	114
+Barrington 1	627	477	150
+Barrington 2	590	460	130
+Barrington 3	759	604	155
+Barrington 4	943	755	188
+Barrington 5	726	572	154
+Barrington 6	804	615	189
+Barrington 7	235	178	57
+Barrington 8	1,027	849	178
+Barrington 9	507	391	116
+Barrington 10	923	707	216
+Barrington 11	560	464	96
+Berwyn Ward 1 Precinct 1	384	296	88
+Berwyn Ward 1 Precinct 2	432	363	69
+Berwyn Ward 1 Precinct 3	642	530	112
+Berwyn Ward 1 Precinct 4	396	316	80
+Berwyn Ward 1 Precinct 5	400	309	91
+Berwyn Ward 2 Precinct 1	282	213	69
+Berwyn Ward 2 Precinct 2	479	400	79
+Berwyn Ward 2 Precinct 3	603	503	100
+Berwyn Ward 2 Precinct 4	798	630	168
+Berwyn Ward 3 Precinct 1	499	421	78
+Berwyn Ward 3 Precinct 2	380	314	66
+Berwyn Ward 3 Precinct 3	381	300	81
+Berwyn Ward 3 Precinct 4	532	431	101
+Berwyn Ward 3 Precinct 5	637	496	141
+Berwyn Ward 4 Precinct 1	346	290	56
+Berwyn Ward 4 Precinct 2	522	435	87
+Berwyn Ward 4 Precinct 3	649	542	107
+Berwyn Ward 4 Precinct 4	344	294	50
+Berwyn Ward 5 Precinct 1	693	575	118
+Berwyn Ward 5 Precinct 2	444	372	72
+Berwyn Ward 5 Precinct 3	415	357	58
+Berwyn Ward 6 Precinct 1	265	226	39
+Berwyn Ward 6 Precinct 2	348	297	51
+Berwyn Ward 6 Precinct 3	464	390	74
+Berwyn Ward 6 Precinct 4	548	462	86
+Berwyn Ward 7 Precinct 1	444	372	72
+Berwyn Ward 7 Precinct 2	435	361	74
+Berwyn Ward 7 Precinct 3	568	457	111
+Berwyn Ward 7 Precinct 4	536	449	87
+Berwyn Ward 8 Precinct 1	742	596	146
+Berwyn Ward 8 Precinct 2	487	408	79
+Berwyn Ward 8 Precinct 3	307	252	55
+Bloom 1	629	452	177
+Bloom 2	620	480	140
+Bloom 3	438	384	54
+Bloom 4	490	425	65
+Bloom 5	395	352	43
+Bloom 6	271	235	36
+Bloom 7	578	485	93
+Bloom 8	531	449	82
+Bloom 9	480	407	73
+Bloom 10	250	215	35
+Bloom 11	369	320	49
+Bloom 12	537	451	86
+Bloom 13	941	818	123
+Bloom 14	723	632	91
+Bloom 15	436	381	55
+Bloom 16	543	490	53
+Bloom 17	417	362	55
+Bloom 18	502	430	72
+Bloom 19	557	434	123
+Bloom 20	552	427	125
+Bloom 21	155	140	15
+Bloom 22	496	435	61
+Bloom 23	524	456	68
+Bloom 24	915	787	128
+Bloom 25	413	332	81
+Bloom 26	420	355	65
+Bloom 27	474	411	63
+Bloom 28	497	409	88
+Bloom 29	230	211	19
+Bloom 30	691	534	157
+Bloom 31	500	422	78
+Bloom 32	387	338	49
+Bloom 33	464	385	79
+Bloom 34	334	284	50
+Bloom 35	270	241	29
+Bloom 36	667	595	72
+Bloom 37	312	272	40
+Bloom 38	1,195	1,015	180
+Bloom 39	410	358	52
+Bloom 40	359	278	81
+Bloom 41	614	519	95
+Bloom 42	499	417	82
+Bloom 43	488	421	67
+Bloom 44	648	547	101
+Bloom 45	719	608	111
+Bloom 46	407	361	46
+Bloom 47	683	548	135
+Bloom 48	413	342	71
+Bloom 49	484	430	54
+Bloom 50	495	394	101
+Bloom 51	262	225	37
+Bloom 52	389	338	51
+Bloom 53	319	277	42
+Bloom 54	505	428	77
+Bloom 55	447	381	66
+Bloom 56	448	372	76
+Bloom 57	521	431	90
+Bloom 58	388	328	60
+Bloom 59	415	352	63
+Bloom 60	445	405	40
+Bloom 61	493	414	79
+Bremen 1	448	388	60
+Bremen 2	623	538	85
+Bremen 3	509	429	80
+Bremen 4	525	448	77
+Bremen 5	386	313	73
+Bremen 6	403	346	57
+Bremen 7	336	289	47
+Bremen 8	388	333	55
+Bremen 9	463	378	85
+Bremen 10	682	547	135
+Bremen 11	619	536	83
+Bremen 12	379	324	55
+Bremen 13	599	534	65
+Bremen 14	397	336	61
+Bremen 15	384	334	50
+Bremen 16	568	489	79
+Bremen 17	443	387	56
+Bremen 18	786	651	135
+Bremen 19	168	148	20
+Bremen 20	444	362	82
+Bremen 21	606	520	86
+Bremen 22	468	380	88
+Bremen 23	217	191	26
+Bremen 24	456	361	95
+Bremen 25	706	578	128
+Bremen 26	493	392	101
+Bremen 27	604	525	79
+Bremen 28	414	329	85
+Bremen 29	673	592	81
+Bremen 30	599	503	96
+Bremen 31	502	441	61
+Bremen 32	446	390	56
+Bremen 33	543	465	78
+Bremen 34	774	639	135
+Bremen 35	314	277	37
+Bremen 36	407	334	73
+Bremen 37	269	239	30
+Bremen 38	412	355	57
+Bremen 39	360	325	35
+Bremen 40	744	656	88
+Bremen 41	349	296	53
+Bremen 42	761	634	127
+Bremen 43	413	362	51
+Bremen 44	377	331	46
+Bremen 45	278	248	30
+Bremen 46	534	442	92
+Bremen 47	410	348	62
+Bremen 48	402	363	39
+Bremen 49	394	344	50
+Bremen 50	621	511	110
+Bremen 51	618	520	98
+Bremen 52	449	367	82
+Bremen 53	373	312	61
+Bremen 54	469	387	82
+Bremen 55	398	330	68
+Bremen 56	523	451	72
+Bremen 57	602	507	95
+Bremen 58	702	592	110
+Bremen 59	509	420	89
+Bremen 60	469	418	51
+Bremen 61	514	430	84
+Bremen 62	581	485	96
+Bremen 63	586	520	66
+Bremen 64	633	524	109
+Bremen 65	226	196	30
+Bremen 66	404	355	49
+Bremen 67	760	644	116
+Bremen 68	373	309	64
+Bremen 69	530	447	83
+Bremen 70	361	307	54
+Bremen 71	319	278	41
+Bremen 72	361	287	74
+Bremen 73	580	492	88
+Bremen 74	641	569	72
+Bremen 75	608	505	103
+Bremen 76	457	368	89
+Bremen 77	864	747	117
+Bremen 78	449	390	59
+Bremen 79	579	481	98
+Bremen 80	447	392	55
+Calumet 1	463	396	67
+Calumet 2	522	447	75
+Calumet 3	524	449	75
+Calumet 4	460	404	56
+Calumet 5	400	348	52
+Calumet 6	670	588	82
+Calumet 7	551	483	68
+Calumet 8	368	327	41
+Calumet 9	372	329	43
+Calumet 10	542	480	62
+Calumet 11	735	648	87
+Calumet 12	378	331	47
+Cicero 1	567	479	88
+Cicero 2	282	242	40
+Cicero 3	385	323	62
+Cicero 4	504	432	72
+Cicero 5	563	493	70
+Cicero 6	531	480	51
+Cicero 7	357	314	43
+Cicero 8	296	249	47
+Cicero 9	542	471	71
+Cicero 10	549	461	88
+Cicero 11	497	428	69
+Cicero 12	415	364	51
+Cicero 13	468	417	51
+Cicero 14	435	372	63
+Cicero 15	483	416	67
+Cicero 16	360	309	51
+Cicero 17	558	474	84
+Cicero 18	350	316	34
+Cicero 19	681	575	106
+Cicero 20	366	317	49
+Cicero 21	478	396	82
+Cicero 22	303	263	40
+Cicero 23	584	495	89
+Cicero 24	540	448	92
+Cicero 25	437	386	51
+Cicero 26	358	315	43
+Cicero 27	536	469	67
+Cicero 28	519	449	70
+Cicero 29	485	428	57
+Cicero 30	403	349	54
+Cicero 31	356	308	48
+Cicero 32	392	338	54
+Elk Grove 1	498	327	171
+Elk Grove 2	492	431	61
+Elk Grove 3	698	579	119
+Elk Grove 4	601	503	98
+Elk Grove 5	812	589	223
+Elk Grove 6	424	342	82
+Elk Grove 7	655	473	182
+Elk Grove 8	522	387	135
+Elk Grove 9	570	477	93
+Elk Grove 10	842	591	251
+Elk Grove 11	681	487	194
+Elk Grove 12	403	305	98
+Elk Grove 13	540	444	96
+Elk Grove 14	663	510	153
+Elk Grove 15	456	371	85
+Elk Grove 16	663	473	190
+Elk Grove 17	543	468	75
+Elk Grove 18	740	586	154
+Elk Grove 19	747	543	204
+Elk Grove 20	619	483	136
+Elk Grove 21	504	426	78
+Elk Grove 22	565	472	93
+Elk Grove 23	881	667	214
+Elk Grove 24	528	431	97
+Elk Grove 25	546	367	179
+Elk Grove 26	476	408	68
+Elk Grove 27	713	552	161
+Elk Grove 28	564	443	121
+Elk Grove 29	552	424	128
+Elk Grove 30	518	409	109
+Elk Grove 31	352	286	66
+Elk Grove 32	394	332	62
+Elk Grove 33	370	283	87
+Elk Grove 34	987	714	273
+Elk Grove 35	500	431	69
+Elk Grove 36	372	317	55
+Elk Grove 37	671	549	122
+Elk Grove 38	389	334	55
+Elk Grove 39	699	553	146
+Elk Grove 40	502	421	81
+Elk Grove 41	463	339	124
+Elk Grove 42	494	413	81
+Elk Grove 43	538	417	121
+Elk Grove 44	501	399	102
+Elk Grove 45	523	409	114
+Elk Grove 46	457	350	107
+Elk Grove 47	702	563	139
+Elk Grove 48	375	263	112
+Elk Grove 49	660	547	113
+Elk Grove 50	357	300	57
+Elk Grove 51	803	620	183
+Elk Grove 52	287	221	66
+Evanston Ward 1 Precinct 1	629	464	165
+Evanston Ward 1 Precinct 2	697	488	209
+Evanston Ward 1 Precinct 3	669	405	264
+Evanston Ward 1 Precinct 4	982	639	343
+Evanston Ward 2 Precinct 1	1,276	849	427
+Evanston Ward 2 Precinct 2	508	361	147
+Evanston Ward 2 Precinct 3	590	490	100
+Evanston Ward 2 Precinct 4	765	599	166
+Evanston Ward 2 Precinct 5	549	420	129
+Evanston Ward 3 Precinct 1	738	455	283
+Evanston Ward 3 Precinct 2	845	568	277
+Evanston Ward 3 Precinct 3	764	474	290
+Evanston Ward 3 Precinct 4	399	251	148
+Evanston Ward 3 Precinct 5	752	532	220
+Evanston Ward 3 Precinct 6	685	447	238
+Evanston Ward 3 Precinct 7	601	426	175
+Evanston Ward 4 Precinct 1	401	253	148
+Evanston Ward 4 Precinct 2	596	369	227
+Evanston Ward 4 Precinct 3	512	341	171
+Evanston Ward 4 Precinct 4	979	571	408
+Evanston Ward 4 Precinct 5	363	230	133
+Evanston Ward 4 Precinct 6	917	593	324
+Evanston Ward 5 Precinct 1	559	463	96
+Evanston Ward 5 Precinct 2	915	600	315
+Evanston Ward 5 Precinct 3	592	505	87
+Evanston Ward 5 Precinct 4	365	322	43
+Evanston Ward 6 Precinct 1	1,046	647	399
+Evanston Ward 6 Precinct 2	531	312	219
+Evanston Ward 6 Precinct 3	597	374	223
+Evanston Ward 6 Precinct 4	721	469	252
+Evanston Ward 6 Precinct 5	916	578	338
+Evanston Ward 6 Precinct 6	542	367	175
+Evanston Ward 6 Precinct 7	844	546	298
+Evanston Ward 7 Precinct 1	1,029	634	395
+Evanston Ward 7 Precinct 2	1,123	722	401
+Evanston Ward 7 Precinct 3	415	306	109
+Evanston Ward 7 Precinct 4	510	300	210
+Evanston Ward 7 Precinct 5	951	569	382
+Evanston Ward 7 Precinct 6	155	112	43
+Evanston Ward 8 Precinct 1	722	534	188
+Evanston Ward 8 Precinct 2	603	486	117
+Evanston Ward 8 Precinct 3	495	394	101
+Evanston Ward 8 Precinct 4	677	465	212
+Evanston Ward 8 Precinct 5	822	620	202
+Evanston Ward 9 Precinct 1	553	370	183
+Evanston Ward 9 Precinct 2	578	400	178
+Evanston Ward 9 Precinct 3	927	617	310
+Evanston Ward 9 Precinct 4	746	517	229
+Evanston Ward 9 Precinct 5	486	314	172
+Evanston Ward 9 Precinct 6	663	462	201
+Hanover 1	903	774	129
+Hanover 2	699	577	122
+Hanover 3	292	227	65
+Hanover 4	630	526	104
+Hanover 5	633	534	99
+Hanover 6	561	489	72
+Hanover 7	653	550	103
+Hanover 8	579	490	89
+Hanover 9	621	479	142
+Hanover 10	361	285	76
+Hanover 11	592	507	85
+Hanover 12	453	397	56
+Hanover 13	412	355	57
+Hanover 14	722	588	134
+Hanover 15	468	417	51
+Hanover 16	837	675	162
+Hanover 17	483	415	68
+Hanover 18	605	521	84
+Hanover 19	550	441	109
+Hanover 20	983	819	164
+Hanover 21	422	342	80
+Hanover 22	581	488	93
+Hanover 23	627	528	99
+Hanover 24	599	504	95
+Hanover 25	544	468	76
+Hanover 26	860	731	129
+Hanover 27	1,698	1,416	282
+Hanover 28	815	709	106
+Hanover 29	403	348	55
+Hanover 30	634	516	118
+Hanover 31	523	441	82
+Hanover 32	450	388	62
+Hanover 33	622	516	106
+Hanover 34	763	642	121
+Hanover 35	600	495	105
+Hanover 36	448	378	70
+Hanover 37	849	692	157
+Hanover 38	737	622	115
+Hanover 39	714	626	88
+Hanover 40	707	585	122
+Hanover 41	901	719	182
+Hanover 42	635	536	99
+Hanover 43	605	498	107
+Hanover 44	810	647	163
+Lemont 1	673	521	152
+Lemont 2	468	380	88
+Lemont 3	759	607	152
+Lemont 4	669	543	126
+Lemont 5	667	536	131
+Lemont 6	726	573	153
+Lemont 7	552	452	100
+Lemont 8	759	602	157
+Lemont 9	483	399	84
+Lemont 10	493	393	100
+Lemont 11	932	746	186
+Lemont 12	1,122	917	205
+Lemont 13	899	727	172
+Lemont 14	657	499	158
+Leyden 1	366	307	59
+Leyden 2	303	269	34
+Leyden 3	679	586	93
+Leyden 4	493	417	76
+Leyden 5	524	433	91
+Leyden 6	651	541	110
+Leyden 7	287	250	37
+Leyden 8	628	514	114
+Leyden 9	762	631	131
+Leyden 10	697	581	116
+Leyden 11	556	453	103
+Leyden 12	587	525	62
+Leyden 13	575	495	80
+Leyden 14	465	395	70
+Leyden 15	580	487	93
+Leyden 16	611	511	100
+Leyden 17	477	397	80
+Leyden 18	376	321	55
+Leyden 19	536	453	83
+Leyden 20	315	267	48
+Leyden 21	368	316	52
+Leyden 22	453	348	105
+Leyden 23	968	686	282
+Leyden 24	585	507	78
+Leyden 25	372	314	58
+Leyden 26	897	725	172
+Leyden 27	157	136	21
+Leyden 28	282	259	23
+Leyden 29	360	304	56
+Leyden 30	641	532	109
+Leyden 31	565	493	72
+Leyden 32	591	487	104
+Leyden 33	579	477	102
+Leyden 34	470	413	57
+Leyden 35	268	229	39
+Leyden 36	506	432	74
+Leyden 37	382	333	49
+Leyden 38	234	217	17
+Leyden 39	408	346	62
+Leyden 40	502	426	76
+Leyden 41	305	269	36
+Leyden 42	550	441	109
+Leyden 43	391	324	67
+Leyden 44	469	398	71
+Leyden 45	455	388	67
+Leyden 46	462	386	76
+Leyden 47	508	441	67
+Leyden 48	574	494	80
+Leyden 49	803	679	124
+Leyden 50	689	568	121
+Lyons 1	75	41	34
+Lyons 2	483	374	109
+Lyons 3	506	434	72
+Lyons 4	839	653	186
+Lyons 5	596	484	112
+Lyons 6	395	312	83
+Lyons 7	470	345	125
+Lyons 8	310	276	34
+Lyons 9	695	478	217
+Lyons 10	516	403	113
+Lyons 11	450	310	140
+Lyons 12	413	326	87
+Lyons 13	197	178	19
+Lyons 14	740	477	263
+Lyons 15	654	424	230
+Lyons 16	999	682	317
+Lyons 17	390	295	95
+Lyons 18	543	356	187
+Lyons 19	562	481	81
+Lyons 20	947	662	285
+Lyons 21	932	632	300
+Lyons 22	385	330	55
+Lyons 23	678	542	136
+Lyons 24	513	349	164
+Lyons 25	584	468	116
+Lyons 26	390	306	84
+Lyons 27	542	395	147
+Lyons 28	709	525	184
+Lyons 29	461	379	82
+Lyons 30	122	104	18
+Lyons 31	615	455	160
+Lyons 32	253	207	46
+Lyons 33	228	185	43
+Lyons 34	271	209	62
+Lyons 35	530	451	79
+Lyons 36	617	485	132
+Lyons 37	424	365	59
+Lyons 38	256	226	30
+Lyons 39	610	406	204
+Lyons 40	504	373	131
+Lyons 41	414	315	99
+Lyons 42	573	408	165
+Lyons 43	525	355	170
+Lyons 44	950	675	275
+Lyons 45	807	629	178
+Lyons 46	501	415	86
+Lyons 47	596	438	158
+Lyons 48	534	456	78
+Lyons 49	392	299	93
+Lyons 50	651	481	170
+Lyons 51	458	379	79
+Lyons 52	610	491	119
+Lyons 53	604	436	168
+Lyons 54	333	271	62
+Lyons 55	658	470	188
+Lyons 56	754	645	109
+Lyons 57	546	463	83
+Lyons 58	512	440	72
+Lyons 59	509	449	60
+Lyons 60	709	590	119
+Lyons 61	611	483	128
+Lyons 62	294	213	81
+Lyons 63	863	678	185
+Lyons 64	538	468	70
+Lyons 65	683	569	114
+Lyons 66	371	321	50
+Lyons 67	620	509	111
+Lyons 68	448	382	66
+Lyons 69	769	536	233
+Lyons 70	434	371	63
+Lyons 71	285	249	36
+Lyons 72	768	548	220
+Lyons 73	545	418	127
+Lyons 74	320	277	43
+Lyons 75	417	370	47
+Lyons 76	495	442	53
+Lyons 77	436	375	61
+Lyons 78	409	333	76
+Maine 1	442	385	57
+Maine 2	453	387	66
+Maine 3	314	265	49
+Maine 4	585	442	143
+Maine 5	691	579	112
+Maine 6	821	607	214
+Maine 7	444	359	85
+Maine 8	630	504	126
+Maine 9	922	754	168
+Maine 10	453	334	119
+Maine 11	399	312	87
+Maine 12	414	306	108
+Maine 13	590	486	104
+Maine 14	727	552	175
+Maine 15	340	286	54
+Maine 16	430	328	102
+Maine 17	570	446	124
+Maine 18	482	389	93
+Maine 19	389	334	55
+Maine 20	332	240	92
+Maine 21	789	578	211
+Maine 22	754	579	175
+Maine 23	535	458	77
+Maine 24	807	580	227
+Maine 25	689	484	205
+Maine 26	489	381	108
+Maine 27	407	301	106
+Maine 28	307	274	33
+Maine 29	886	671	215
+Maine 30	1,352	919	433
+Maine 31	566	444	122
+Maine 32	368	299	69
+Maine 33	448	386	62
+Maine 34	727	581	146
+Maine 35	517	395	122
+Maine 36	558	420	138
+Maine 37	624	476	148
+Maine 38	461	379	82
+Maine 39	625	528	97
+Maine 40	550	464	86
+Maine 41	492	414	78
+Maine 42	855	620	235
+Maine 43	497	347	150
+Maine 44	426	316	110
+Maine 45	264	225	39
+Maine 46	606	501	105
+Maine 47	615	503	112
+Maine 48	656	506	150
+Maine 49	590	481	109
+Maine 50	537	391	146
+Maine 51	541	471	70
+Maine 52	507	388	119
+Maine 53	501	403	98
+Maine 54	621	437	184
+Maine 55	502	405	97
+Maine 56	710	596	114
+Maine 57	348	303	45
+Maine 58	654	533	121
+Maine 59	566	477	89
+Maine 60	1,023	770	253
+Maine 61	359	276	83
+Maine 62	300	246	54
+Maine 63	418	352	66
+Maine 64	427	363	64
+Maine 65	430	337	93
+Maine 66	258	223	35
+Maine 67	850	639	211
+Maine 68	404	330	74
+Maine 69	546	463	83
+Maine 70	594	514	80
+Maine 71	287	235	52
+Maine 72	471	387	84
+Maine 73	219	189	30
+Maine 74	465	381	84
+Maine 75	522	430	92
+Maine 76	317	250	67
+Maine 77	855	649	206
+Maine 78	438	355	83
+Maine 79	535	463	72
+Maine 80	500	396	104
+Maine 81	366	303	63
+Maine 82	507	401	106
+Maine 83	432	333	99
+Maine 84	308	257	51
+Maine 85	324	253	71
+Maine 86	480	418	62
+Maine 87	390	281	109
+Maine 88	397	308	89
+Maine 89	375	321	54
+Maine 90	310	264	46
+Maine 91	834	655	179
+Maine 92	395	339	56
+New Trier 1	963	640	323
+New Trier 2	1,005	691	314
+New Trier 3	709	484	225
+New Trier 4	860	573	287
+New Trier 5	551	323	228
+New Trier 6	503	311	192
+New Trier 7	670	454	216
+New Trier 8	561	387	174
+New Trier 9	729	508	221
+New Trier 10	670	424	246
+New Trier 11	835	593	242
+New Trier 12	807	535	272
+New Trier 13	878	663	215
+New Trier 14	785	543	242
+New Trier 15	936	654	282
+New Trier 16	933	628	305
+New Trier 17	675	464	211
+New Trier 18	540	351	189
+New Trier 19	543	380	163
+New Trier 20	942	686	256
+New Trier 21	730	513	217
+New Trier 22	687	508	179
+New Trier 23	721	504	217
+New Trier 24	817	619	198
+New Trier 25	630	416	214
+New Trier 26	541	345	196
+New Trier 27	706	431	275
+New Trier 28	617	445	172
+New Trier 29	655	429	226
+New Trier 30	890	586	304
+New Trier 31	712	454	258
+New Trier 32	659	421	238
+New Trier 33	833	559	274
+New Trier 34	551	431	120
+New Trier 35	426	288	138
+New Trier 36	890	550	340
+New Trier 37	683	412	271
+New Trier 38	697	434	263
+New Trier 39	463	362	101
+New Trier 40	465	308	157
+New Trier 41	574	395	179
+Niles 1	627	517	110
+Niles 2	727	607	120
+Niles 3	976	733	243
+Niles 4	498	416	82
+Niles 5	373	284	89
+Niles 6	580	433	147
+Niles 7	901	745	156
+Niles 8	299	216	83
+Niles 9	399	343	56
+Niles 10	606	476	130
+Niles 11	359	287	72
+Niles 12	427	379	48
+Niles 13	698	576	122
+Niles 14	695	522	173
+Niles 15	693	589	104
+Niles 16	845	681	164
+Niles 17	703	542	161
+Niles 18	371	270	101
+Niles 19	665	474	191
+Niles 20	576	466	110
+Niles 21	891	679	212
+Niles 22	552	454	98
+Niles 23	626	483	143
+Niles 24	699	579	120
+Niles 25	384	318	66
+Niles 26	678	557	121
+Niles 27	583	506	77
+Niles 28	675	460	215
+Niles 29	372	305	67
+Niles 30	468	369	99
+Niles 31	670	501	169
+Niles 32	266	234	32
+Niles 33	722	575	147
+Niles 34	630	527	103
+Niles 35	668	545	123
+Niles 36	409	324	85
+Niles 37	603	481	122
+Niles 38	1,055	860	195
+Niles 39	723	566	157
+Niles 40	332	257	75
+Niles 41	711	571	140
+Niles 42	553	453	100
+Niles 43	801	686	115
+Niles 44	709	586	123
+Niles 45	498	396	102
+Niles 46	651	525	126
+Niles 47	357	265	92
+Niles 48	588	498	90
+Niles 49	783	546	237
+Niles 50	677	561	116
+Niles 51	357	282	75
+Niles 52	479	385	94
+Niles 53	846	683	163
+Niles 54	410	319	91
+Niles 55	400	300	100
+Niles 56	749	584	165
+Niles 57	751	614	137
+Niles 58	678	543	135
+Niles 59	841	670	171
+Niles 60	831	676	155
+Niles 61	793	649	144
+Niles 62	387	329	58
+Niles 63	725	547	178
+Niles 64	817	628	189
+Northfield 1	655	559	96
+Northfield 2	664	444	220
+Northfield 3	447	349	98
+Northfield 4	653	500	153
+Northfield 5	496	386	110
+Northfield 6	688	501	187
+Northfield 7	846	619	227
+Northfield 8	728	541	187
+Northfield 9	495	342	153
+Northfield 10	567	427	140
+Northfield 11	400	301	99
+Northfield 12	1,057	776	281
+Northfield 13	604	470	134
+Northfield 14	549	430	119
+Northfield 15	542	391	151
+Northfield 16	808	604	204
+Northfield 17	597	461	136
+Northfield 18	913	644	269
+Northfield 19	703	529	174
+Northfield 20	668	528	140
+Northfield 21	951	687	264
+Northfield 22	725	546	179
+Northfield 23	503	346	157
+Northfield 24	605	452	153
+Northfield 25	590	471	119
+Northfield 26	602	467	135
+Northfield 27	586	460	126
+Northfield 28	981	727	254
+Northfield 29	595	451	144
+Northfield 30	720	484	236
+Northfield 31	819	591	228
+Northfield 32	934	717	217
+Northfield 33	402	345	57
+Northfield 34	471	341	130
+Northfield 35	683	500	183
+Northfield 36	486	352	134
+Northfield 37	765	534	231
+Northfield 38	537	401	136
+Northfield 39	368	277	91
+Northfield 40	429	354	75
+Northfield 41	591	439	152
+Northfield 42	582	445	137
+Northfield 43	708	548	160
+Northfield 44	423	308	115
+Northfield 45	826	589	237
+Northfield 46	896	655	241
+Northfield 47	867	647	220
+Northfield 48	655	508	147
+Northfield 49	521	369	152
+Northfield 50	793	615	178
+Northfield 51	1,489	1,124	365
+Northfield 52	628	440	188
+Northfield 53	691	533	158
+Northfield 54	543	422	121
+Northfield 55	525	425	100
+Northfield 56	849	652	197
+Northfield 57	458	358	100
+Northfield 58	369	294	75
+Northfield 59	631	517	114
+Northfield 60	731	560	171
+Northfield 61	492	365	127
+Northfield 62	756	584	172
+Norwood Park 1	625	517	108
+Norwood Park 2	608	502	106
+Norwood Park 3	651	484	167
+Norwood Park 4	690	568	122
+Norwood Park 5	497	415	82
+Norwood Park 6	759	596	163
+Norwood Park 7	513	402	111
+Norwood Park 8	418	345	73
+Norwood Park 9	426	336	90
+Norwood Park 10	419	346	73
+Norwood Park 11	824	605	219
+Norwood Park 12	447	379	68
+Norwood Park 13	500	397	103
+Norwood Park 14	526	394	132
+Norwood Park 15	429	370	59
+Norwood Park 16	414	344	70
+Norwood Park 17	532	442	90
+Oak Park 1	547	388	159
+Oak Park 2	893	601	292
+Oak Park 3	972	625	347
+Oak Park 4	831	578	253
+Oak Park 5	819	537	282
+Oak Park 6	897	688	209
+Oak Park 7	569	389	180
+Oak Park 8	693	476	217
+Oak Park 9	507	348	159
+Oak Park 10	728	519	209
+Oak Park 11	653	458	195
+Oak Park 12	416	287	129
+Oak Park 13	737	517	220
+Oak Park 14	797	510	287
+Oak Park 15	965	679	286
+Oak Park 16	1,039	703	336
+Oak Park 17	1,015	675	340
+Oak Park 18	648	445	203
+Oak Park 19	734	522	212
+Oak Park 20	990	696	294
+Oak Park 21	564	418	146
+Oak Park 22	508	379	129
+Oak Park 23	708	475	233
+Oak Park 24	552	339	213
+Oak Park 25	682	449	233
+Oak Park 26	630	404	226
+Oak Park 27	256	176	80
+Oak Park 28	936	706	230
+Oak Park 29	661	435	226
+Oak Park 30	781	588	193
+Oak Park 31	1,090	739	351
+Oak Park 32	508	341	167
+Oak Park 33	681	506	175
+Oak Park 34	659	464	195
+Oak Park 35	920	616	304
+Oak Park 36	858	561	297
+Oak Park 37	499	357	142
+Orland 1	835	691	144
+Orland 2	748	623	125
+Orland 3	368	318	50
+Orland 4	461	367	94
+Orland 5	459	385	74
+Orland 6	404	344	60
+Orland 7	385	315	70
+Orland 8	500	437	63
+Orland 9	745	640	105
+Orland 10	620	491	129
+Orland 11	418	350	68
+Orland 12	302	259	43
+Orland 13	798	684	114
+Orland 14	679	587	92
+Orland 15	803	629	174
+Orland 16	636	499	137
+Orland 17	418	360	58
+Orland 18	742	603	139
+Orland 19	446	375	71
+Orland 20	347	285	62
+Orland 21	773	615	158
+Orland 22	587	501	86
+Orland 23	509	397	112
+Orland 24	546	460	86
+Orland 25	992	807	185
+Orland 26	540	440	100
+Orland 27	423	343	80
+Orland 28	465	366	99
+Orland 29	915	718	197
+Orland 30	410	322	88
+Orland 31	477	383	94
+Orland 32	402	332	70
+Orland 33	477	385	92
+Orland 34	677	560	117
+Orland 35	665	547	118
+Orland 36	709	596	113
+Orland 37	691	572	119
+Orland 38	343	283	60
+Orland 39	517	421	96
+Orland 40	700	578	122
+Orland 41	568	487	81
+Orland 42	690	555	135
+Orland 43	554	455	99
+Orland 44	508	416	92
+Orland 45	572	466	106
+Orland 46	489	401	88
+Orland 47	856	680	176
+Orland 48	629	515	114
+Orland 49	447	377	70
+Orland 50	518	442	76
+Orland 51	731	586	145
+Orland 52	623	492	131
+Orland 53	513	385	128
+Orland 54	825	665	160
+Orland 55	521	401	120
+Orland 56	549	443	106
+Orland 57	638	522	116
+Orland 58	649	528	121
+Orland 59	649	516	133
+Orland 60	456	370	86
+Orland 61	513	424	89
+Orland 62	645	530	115
+Orland 63	695	581	114
+Orland 64	821	679	142
+Orland 65	559	463	96
+Orland 66	584	483	101
+Orland 67	412	340	72
+Orland 68	473	384	89
+Orland 69	372	323	49
+Orland 70	737	618	119
+Orland 71	570	470	100
+Orland 72	494	389	105
+Orland 73	807	658	149
+Orland 74	406	335	71
+Orland 75	722	570	152
+Palatine 1	460	351	109
+Palatine 2	787	588	199
+Palatine 3	545	399	146
+Palatine 4	441	357	84
+Palatine 5	814	628	186
+Palatine 6	714	541	173
+Palatine 7	648	480	168
+Palatine 8	699	505	194
+Palatine 9	624	446	178
+Palatine 10	770	553	217
+Palatine 11	557	427	130
+Palatine 12	570	438	132
+Palatine 13	580	465	115
+Palatine 14	579	428	151
+Palatine 15	718	567	151
+Palatine 16	504	413	91
+Palatine 17	607	431	176
+Palatine 18	449	336	113
+Palatine 19	648	473	175
+Palatine 20	538	443	95
+Palatine 21	804	634	170
+Palatine 22	638	499	139
+Palatine 23	480	339	141
+Palatine 24	712	556	156
+Palatine 25	507	384	123
+Palatine 26	813	591	222
+Palatine 27	480	380	100
+Palatine 28	436	338	98
+Palatine 29	779	609	170
+Palatine 30	493	394	99
+Palatine 31	454	312	142
+Palatine 32	649	475	174
+Palatine 33	404	331	73
+Palatine 34	806	641	165
+Palatine 35	581	410	171
+Palatine 36	572	437	135
+Palatine 37	714	543	171
+Palatine 38	613	428	185
+Palatine 39	888	674	214
+Palatine 40	943	710	233
+Palatine 41	842	609	233
+Palatine 42	777	598	179
+Palatine 43	544	428	116
+Palatine 44	805	588	217
+Palatine 45	526	360	166
+Palatine 46	720	518	202
+Palatine 47	643	497	146
+Palatine 48	544	390	154
+Palatine 49	492	361	131
+Palatine 50	897	663	234
+Palatine 51	376	292	84
+Palatine 52	646	459	187
+Palatine 53	500	376	124
+Palatine 54	831	584	247
+Palatine 55	462	328	134
+Palatine 56	710	553	157
+Palatine 57	851	631	220
+Palatine 58	570	460	110
+Palatine 59	864	656	208
+Palatine 60	596	467	129
+Palatine 61	421	354	67
+Palatine 62	484	386	98
+Palatine 63	652	493	159
+Palatine 64	618	514	104
+Palatine 65	534	413	121
+Palatine 66	640	532	108
+Palatine 67	570	420	150
+Palatine 68	577	422	155
+Palatine 69	582	452	130
+Palos 1	415	323	92
+Palos 2	470	351	119
+Palos 3	508	406	102
+Palos 4	444	377	67
+Palos 5	397	342	55
+Palos 6	354	303	51
+Palos 7	606	513	93
+Palos 8	265	224	41
+Palos 9	451	315	136
+Palos 10	752	557	195
+Palos 11	613	503	110
+Palos 12	518	437	81
+Palos 13	623	498	125
+Palos 14	358	290	68
+Palos 15	602	465	137
+Palos 16	774	586	188
+Palos 17	674	560	114
+Palos 18	620	518	102
+Palos 19	661	552	109
+Palos 20	643	523	120
+Palos 21	354	283	71
+Palos 22	107	91	16
+Palos 23	426	363	63
+Palos 24	400	307	93
+Palos 25	377	322	55
+Palos 26	364	295	69
+Palos 27	604	488	116
+Palos 28	493	438	55
+Palos 29	625	506	119
+Palos 30	691	527	164
+Palos 31	673	556	117
+Palos 32	303	264	39
+Palos 33	664	526	138
+Palos 34	411	353	58
+Palos 35	785	639	146
+Palos 36	667	543	124
+Palos 37	701	546	155
+Palos 38	566	463	103
+Palos 39	722	584	138
+Proviso 1	443	373	70
+Proviso 2	437	362	75
+Proviso 3	569	467	102
+Proviso 4	512	427	85
+Proviso 5	501	433	68
+Proviso 6	432	344	88
+Proviso 7	118	107	11
+Proviso 8	331	274	57
+Proviso 9	447	389	58
+Proviso 10	416	365	51
+Proviso 11	475	422	53
+Proviso 12	620	534	86
+Proviso 13	535	446	89
+Proviso 14	412	369	43
+Proviso 15	468	409	59
+Proviso 16	510	435	75
+Proviso 17	332	281	51
+Proviso 18	677	589	88
+Proviso 19	563	494	69
+Proviso 20	454	394	60
+Proviso 21	468	365	103
+Proviso 22	407	367	40
+Proviso 23	266	179	87
+Proviso 24	891	604	287
+Proviso 25	678	505	173
+Proviso 26	694	476	218
+Proviso 27	664	510	154
+Proviso 28	596	467	129
+Proviso 29	799	573	226
+Proviso 30	520	461	59
+Proviso 31	324	282	42
+Proviso 32	720	569	151
+Proviso 33	582	476	106
+Proviso 34	765	638	127
+Proviso 35	692	529	163
+Proviso 36	522	451	71
+Proviso 37	347	301	46
+Proviso 38	492	415	77
+Proviso 39	609	525	84
+Proviso 40	486	419	67
+Proviso 41	444	390	54
+Proviso 42	333	296	37
+Proviso 43	348	295	53
+Proviso 44	376	315	61
+Proviso 45	480	424	56
+Proviso 46	176	135	41
+Proviso 47	323	268	55
+Proviso 48	598	518	80
+Proviso 49	345	293	52
+Proviso 50	783	623	160
+Proviso 51	608	479	129
+Proviso 52	385	345	40
+Proviso 53	484	418	66
+Proviso 54	919	696	223
+Proviso 55	574	399	175
+Proviso 56	333	275	58
+Proviso 57	469	361	108
+Proviso 58	306	258	48
+Proviso 59	464	368	96
+Proviso 60	387	342	45
+Proviso 61	588	474	114
+Proviso 62	636	464	172
+Proviso 63	701	543	158
+Proviso 64	495	435	60
+Proviso 65	441	346	95
+Proviso 66	677	537	140
+Proviso 67	748	556	192
+Proviso 68	380	293	87
+Proviso 69	451	392	59
+Proviso 70	501	382	119
+Proviso 71	846	709	137
+Proviso 72	481	366	115
+Proviso 73	488	382	106
+Proviso 74	507	403	104
+Proviso 75	661	527	134
+Proviso 76	613	496	117
+Proviso 77	366	281	85
+Proviso 78	233	208	25
+Proviso 79	402	331	71
+Proviso 80	369	341	28
+Proviso 81	407	334	73
+Proviso 82	699	623	76
+Proviso 83	604	531	73
+Proviso 84	422	309	113
+Proviso 85	655	501	154
+Proviso 86	517	449	68
+Proviso 87	601	526	75
+Proviso 88	286	245	41
+Proviso 89	469	371	98
+Proviso 90	958	748	210
+Proviso 91	453	381	72
+Proviso 92	716	556	160
+Proviso 93	413	355	58
+Proviso 94	422	383	39
+Proviso 95	427	369	58
+Proviso 96	368	277	91
+Proviso 97	817	644	173
+Proviso 98	550	465	85
+Proviso 99	523	448	75
+Proviso 100	713	596	117
+Proviso 101	507	390	117
+Proviso 102	648	521	127
+Rich 1	1,962	1,693	269
+Rich 2	550	456	94
+Rich 3	798	650	148
+Rich 4	502	438	64
+Rich 5	740	601	139
+Rich 6	804	677	127
+Rich 7	562	490	72
+Rich 8	978	842	136
+Rich 9	744	644	100
+Rich 10	487	419	68
+Rich 11	564	457	107
+Rich 12	693	577	116
+Rich 13	399	352	47
+Rich 14	538	460	78
+Rich 15	857	733	124
+Rich 16	502	427	75
+Rich 17	591	518	73
+Rich 18	664	572	92
+Rich 19	418	359	59
+Rich 20	1,002	844	158
+Rich 21	739	633	106
+Rich 22	617	542	75
+Rich 23	818	691	127
+Rich 24	674	582	92
+Rich 25	891	782	109
+Rich 26	707	607	100
+Rich 27	621	533	88
+Rich 28	526	445	81
+Rich 29	608	477	131
+Rich 30	793	695	98
+Rich 31	527	384	143
+Rich 32	785	668	117
+Rich 33	499	374	125
+Rich 34	522	422	100
+Rich 35	462	373	89
+Rich 36	1,272	1,106	166
+Rich 37	462	407	55
+Rich 38	579	501	78
+Rich 39	662	562	100
+Rich 40	554	470	84
+Rich 41	429	362	67
+Rich 42	551	482	69
+Rich 43	647	568	79
+Rich 44	483	420	63
+Rich 45	774	625	149
+Rich 46	821	743	78
+Rich 47	949	829	120
+Rich 48	649	557	92
+Rich 49	623	534	89
+Rich 50	340	296	44
+Rich 51	547	467	80
+River Forest 1	924	682	242
+River Forest 2	637	407	230
+River Forest 3	643	476	167
+River Forest 4	731	475	256
+River Forest 5	483	336	147
+River Forest 6	477	317	160
+River Forest 7	673	454	219
+River Forest 8	841	598	243
+Riverside 1	686	462	224
+Riverside 2	82	72	10
+Riverside 3	410	287	123
+Riverside 4	857	591	266
+Riverside 5	444	329	115
+Riverside 6	499	414	85
+Riverside 7	442	362	80
+Riverside 8	736	515	221
+Riverside 9	552	357	195
+Riverside 10	741	519	222
+Riverside 11	821	601	220
+Riverside 12	413	317	96
+Riverside 13	703	571	132
+Schaumburg 1	1,025	838	187
+Schaumburg 2	910	780	130
+Schaumburg 3	613	475	138
+Schaumburg 4	385	330	55
+Schaumburg 5	314	238	76
+Schaumburg 6	564	472	92
+Schaumburg 7	438	370	68
+Schaumburg 8	491	400	91
+Schaumburg 9	478	398	80
+Schaumburg 10	404	351	53
+Schaumburg 11	566	466	100
+Schaumburg 12	648	551	97
+Schaumburg 13	474	386	88
+Schaumburg 14	705	577	128
+Schaumburg 15	591	484	107
+Schaumburg 16	773	651	122
+Schaumburg 17	648	526	122
+Schaumburg 18	530	454	76
+Schaumburg 19	440	349	91
+Schaumburg 20	480	359	121
+Schaumburg 21	819	642	177
+Schaumburg 22	659	552	107
+Schaumburg 23	668	563	105
+Schaumburg 24	703	572	131
+Schaumburg 25	659	550	109
+Schaumburg 26	701	580	121
+Schaumburg 27	457	387	70
+Schaumburg 28	767	606	161
+Schaumburg 29	693	541	152
+Schaumburg 30	544	434	110
+Schaumburg 31	834	658	176
+Schaumburg 32	719	572	147
+Schaumburg 33	499	395	104
+Schaumburg 34	712	595	117
+Schaumburg 35	458	369	89
+Schaumburg 36	447	363	84
+Schaumburg 37	431	346	85
+Schaumburg 38	539	458	81
+Schaumburg 39	858	685	173
+Schaumburg 40	587	463	124
+Schaumburg 41	580	455	125
+Schaumburg 42	704	603	101
+Schaumburg 43	521	458	63
+Schaumburg 44	731	644	87
+Schaumburg 45	652	555	97
+Schaumburg 46	459	375	84
+Schaumburg 47	576	483	93
+Schaumburg 48	537	451	86
+Schaumburg 49	438	367	71
+Schaumburg 50	484	373	111
+Schaumburg 51	464	379	85
+Schaumburg 52	797	653	144
+Schaumburg 53	614	500	114
+Schaumburg 54	741	610	131
+Schaumburg 55	550	445	105
+Schaumburg 56	665	520	145
+Schaumburg 57	806	653	153
+Schaumburg 58	421	356	65
+Schaumburg 59	779	619	160
+Schaumburg 60	433	367	66
+Schaumburg 61	873	728	145
+Schaumburg 62	675	573	102
+Schaumburg 63	529	424	105
+Schaumburg 64	569	445	124
+Schaumburg 65	501	385	116
+Schaumburg 66	561	444	117
+Schaumburg 67	551	458	93
+Schaumburg 68	540	454	86
+Schaumburg 69	501	405	96
+Schaumburg 70	498	408	90
+Schaumburg 71	599	496	103
+Schaumburg 72	589	481	108
+Schaumburg 73	719	604	115
+Schaumburg 74	481	385	96
+Schaumburg 75	532	418	114
+Schaumburg 76	583	466	117
+Schaumburg 77	796	655	141
+Schaumburg 78	526	443	83
+Stickney 1	297	242	55
+Stickney 2	448	368	80
+Stickney 3	827	704	123
+Stickney 4	629	533	96
+Stickney 5	707	605	102
+Stickney 6	821	695	126
+Stickney 7	339	282	57
+Stickney 8	548	478	70
+Stickney 9	528	451	77
+Stickney 10	678	575	103
+Stickney 11	607	493	114
+Stickney 12	605	516	89
+Stickney 13	460	404	56
+Stickney 14	713	596	117
+Stickney 15	616	525	91
+Stickney 16	632	526	106
+Stickney 17	441	377	64
+Stickney 18	301	258	43
+Stickney 19	515	442	73
+Stickney 20	450	384	66
+Thornton 1	264	239	25
+Thornton 2	258	234	24
+Thornton 3	524	447	77
+Thornton 4	543	467	76
+Thornton 5	417	352	65
+Thornton 6	616	555	61
+Thornton 7	450	384	66
+Thornton 8	515	443	72
+Thornton 9	229	204	25
+Thornton 10	495	437	58
+Thornton 11	298	249	49
+Thornton 12	409	366	43
+Thornton 13	466	389	77
+Thornton 14	517	443	74
+Thornton 15	441	393	48
+Thornton 16	545	468	77
+Thornton 17	598	537	61
+Thornton 18	835	731	104
+Thornton 19	686	619	67
+Thornton 20	395	327	68
+Thornton 21	725	627	98
+Thornton 22	486	433	53
+Thornton 23	472	386	86
+Thornton 24	567	430	137
+Thornton 25	561	440	121
+Thornton 26	495	412	83
+Thornton 27	627	557	70
+Thornton 28	425	358	67
+Thornton 29	318	272	46
+Thornton 30	250	227	23
+Thornton 31	216	195	21
+Thornton 32	389	341	48
+Thornton 33	475	419	56
+Thornton 34	668	585	83
+Thornton 35	654	572	82
+Thornton 36	295	254	41
+Thornton 37	639	562	77
+Thornton 38	667	579	88
+Thornton 39	342	306	36
+Thornton 40	368	319	49
+Thornton 41	355	310	45
+Thornton 42	318	281	37
+Thornton 43	455	387	68
+Thornton 44	353	314	39
+Thornton 45	398	339	59
+Thornton 46	559	495	64
+Thornton 47	424	377	47
+Thornton 48	455	394	61
+Thornton 49	274	244	30
+Thornton 50	439	382	57
+Thornton 51	431	375	56
+Thornton 52	488	408	80
+Thornton 53	340	295	45
+Thornton 54	759	681	78
+Thornton 55	340	293	47
+Thornton 56	552	490	62
+Thornton 57	423	366	57
+Thornton 58	569	484	85
+Thornton 59	390	335	55
+Thornton 60	307	276	31
+Thornton 61	341	303	38
+Thornton 62	187	158	29
+Thornton 63	304	270	34
+Thornton 64	391	341	50
+Thornton 65	709	627	82
+Thornton 66	737	617	120
+Thornton 67	682	529	153
+Thornton 68	598	526	72
+Thornton 69	373	336	37
+Thornton 70	269	233	36
+Thornton 71	310	280	30
+Thornton 72	434	391	43
+Thornton 73	757	665	92
+Thornton 74	546	487	59
+Thornton 75	436	385	51
+Thornton 76	581	515	66
+Thornton 77	793	710	83
+Thornton 78	545	476	69
+Thornton 79	640	556	84
+Thornton 80	440	382	58
+Thornton 81	489	424	65
+Thornton 82	515	422	93
+Thornton 83	642	573	69
+Thornton 84	602	534	68
+Thornton 85	411	369	42
+Thornton 86	392	339	53
+Thornton 87	634	541	93
+Thornton 88	463	412	51
+Thornton 89	689	609	80
+Thornton 90	522	452	70
+Thornton 91	488	428	60
+Thornton 92	600	524	76
+Thornton 93	321	266	55
+Thornton 94	561	502	59
+Thornton 95	364	316	48
+Thornton 96	398	352	46
+Thornton 97	295	258	37
+Thornton 98	230	203	27
+Thornton 99	413	370	43
+Thornton 100	314	273	41
+Thornton 101	435	395	40
+Thornton 102	319	289	30
+Thornton 103	304	268	36
+Thornton 104	244	206	38
+Thornton 105	447	400	47
+Thornton 106	351	303	48
+Thornton 107	656	568	88
+Thornton 108	308	273	35
+Thornton 109	373	331	42
+Thornton 110	295	251	44
+Thornton 111	372	324	48
+Thornton 112	298	267	31
+Thornton 113	272	234	38
+Thornton 114	575	500	75
+Thornton 115	489	427	62
+Thornton 116	559	491	68
+Thornton 117	617	543	74
+Thornton 118	495	415	80
+Thornton 119	557	476	81
+Thornton 120	766	673	93
+Thornton 121	398	350	48
+Thornton 122	720	628	92
+Thornton 123	395	355	40
+Wheeling 1	521	427	94
+Wheeling 2	479	353	126
+Wheeling 3	576	433	143
+Wheeling 4	450	372	78
+Wheeling 5	590	421	169
+Wheeling 6	402	311	91
+Wheeling 7	845	570	275
+Wheeling 8	414	283	131
+Wheeling 9	481	400	81
+Wheeling 10	738	529	209
+Wheeling 11	790	600	190
+Wheeling 12	888	687	201
+Wheeling 13	571	439	132
+Wheeling 14	529	370	159
+Wheeling 15	539	391	148
+Wheeling 16	226	186	40
+Wheeling 17	567	477	90
+Wheeling 18	561	400	161
+Wheeling 19	810	551	259
+Wheeling 20	710	472	238
+Wheeling 21	455	321	134
+Wheeling 22	687	521	166
+Wheeling 23	593	423	170
+Wheeling 24	457	331	126
+Wheeling 25	734	524	210
+Wheeling 26	872	581	291
+Wheeling 27	976	762	214
+Wheeling 28	828	641	187
+Wheeling 29	383	301	82
+Wheeling 30	849	655	194
+Wheeling 31	467	353	114
+Wheeling 32	434	326	108
+Wheeling 33	372	306	66
+Wheeling 34	818	579	239
+Wheeling 35	594	422	172
+Wheeling 36	904	643	261
+Wheeling 37	651	536	115
+Wheeling 38	631	497	134
+Wheeling 39	663	494	169
+Wheeling 40	671	544	127
+Wheeling 41	1,030	726	304
+Wheeling 42	790	640	150
+Wheeling 43	597	479	118
+Wheeling 44	745	552	193
+Wheeling 45	480	331	149
+Wheeling 46	1,002	777	225
+Wheeling 47	538	433	105
+Wheeling 48	548	431	117
+Wheeling 49	684	556	128
+Wheeling 50	465	379	86
+Wheeling 51	686	527	159
+Wheeling 52	489	374	115
+Wheeling 53	711	522	189
+Wheeling 54	703	529	174
+Wheeling 55	562	422	140
+Wheeling 56	514	377	137
+Wheeling 57	683	472	211
+Wheeling 58	517	406	111
+Wheeling 59	670	525	145
+Wheeling 60	469	340	129
+Wheeling 61	752	594	158
+Wheeling 62	757	582	175
+Wheeling 63	474	388	86
+Wheeling 64	876	674	202
+Wheeling 65	786	597	189
+Wheeling 66	768	588	180
+Wheeling 67	374	293	81
+Wheeling 68	405	300	105
+Wheeling 69	596	453	143
+Wheeling 70	787	625	162
+Wheeling 71	971	739	232
+Wheeling 72	585	444	141
+Wheeling 73	657	503	154
+Wheeling 74	441	360	81
+Wheeling 75	644	515	129
+Wheeling 76	760	641	119
+Wheeling 77	269	234	35
+Wheeling 78	946	709	237
+Wheeling 79	538	442	96
+Wheeling 80	539	455	84
+Wheeling 81	492	370	122
+Wheeling 82	811	606	205
+Wheeling 83	908	660	248
+Wheeling 84	747	589	158
+Wheeling 85	478	375	103
+Wheeling 86	678	525	153
+Wheeling 87	576	428	148
+Wheeling 88	616	528	88
+Wheeling 89	383	309	74
+Wheeling 90	608	458	150
+Wheeling 91	753	585	168
+Wheeling 92	1,029	771	258
+Worth 1	313	274	39
+Worth 2	651	542	109
+Worth 3	609	484	125
+Worth 4	799	682	117
+Worth 5	653	519	134
+Worth 6	656	555	101
+Worth 7	617	497	120
+Worth 8	648	561	87
+Worth 9	646	532	114
+Worth 10	653	542	111
+Worth 11	621	518	103
+Worth 12	393	323	70
+Worth 13	616	493	123
+Worth 14	531	447	84
+Worth 15	781	680	101
+Worth 16	768	616	152
+Worth 17	605	500	105
+Worth 18	480	363	117
+Worth 19	589	469	120
+Worth 20	417	357	60
+Worth 21	819	695	124
+Worth 22	457	371	86
+Worth 23	629	523	106
+Worth 24	337	286	51
+Worth 25	721	609	112
+Worth 26	441	371	70
+Worth 27	479	380	99
+Worth 28	398	336	62
+Worth 29	456	373	83
+Worth 30	602	489	113
+Worth 31	700	567	133
+Worth 32	385	293	92
+Worth 33	575	475	100
+Worth 34	565	493	72
+Worth 35	676	550	126
+Worth 36	576	456	120
+Worth 37	417	349	68
+Worth 38	585	462	123
+Worth 39	575	446	129
+Worth 40	643	547	96
+Worth 41	322	259	63
+Worth 42	529	449	80
+Worth 43	316	283	33
+Worth 44	400	341	59
+Worth 45	473	373	100
+Worth 46	738	634	104
+Worth 47	343	297	46
+Worth 48	435	360	75
+Worth 49	367	315	52
+Worth 50	639	538	101
+Worth 51	442	379	63
+Worth 52	399	328	71
+Worth 53	628	509	119
+Worth 54	638	521	117
+Worth 55	368	304	64
+Worth 56	667	517	150
+Worth 57	590	477	113
+Worth 58	671	544	127
+Worth 59	706	614	92
+Worth 60	363	288	75
+Worth 61	518	437	81
+Worth 62	348	279	69
+Worth 63	578	476	102
+Worth 64	840	684	156
+Worth 65	844	679	165
+Worth 66	426	333	93
+Worth 67	394	330	64
+Worth 68	435	376	59
+Worth 69	638	500	138
+Worth 70	689	557	132
+Worth 71	472	392	80
+Worth 72	672	556	116
+Worth 73	367	320	47
+Worth 74	326	267	59
+Worth 75	687	553	134
+Worth 76	289	248	41
+Worth 77	594	476	118
+Worth 78	670	557	113
+Worth 79	428	355	73
+Worth 80	611	511	100
+Worth 81	437	354	83
+Worth 82	584	484	100
+Worth 83	233	198	35
+Worth 84	600	489	111
+Worth 85	586	492	94
+Worth 86	575	481	94
+Worth 87	510	412	98
+Worth 88	353	289	64
+Worth 89	781	617	164
+Worth 90	574	489	85
+Worth 91	350	287	63
+Worth 92	627	522	105
+Worth 93	359	286	73
+Worth 94	667	550	117
+Worth 95	621	465	156
+Worth 96	691	584	107
+Worth 97	409	376	33
+Worth 98	670	544	126
+Worth 99	384	329	55
+Worth 100	629	519	110
