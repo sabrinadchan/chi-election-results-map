@@ -2148,7 +2148,7 @@ Bloom 34	312	279	22	11
 Bloom 35	249	218	24	7
 Bloom 36	658	601	41	16
 Bloom 37	315	292	19	4
-Bloom 38	1,150	1,058	86	6
+Bloom 38	1150	1058	86	6
 Bloom 39	330	289	28	13
 Bloom 40	350	305	39	6
 Bloom 41	646	586	47	13
@@ -2351,8 +2351,8 @@ Elk Grove 52	272	190	74	8
 Evanston Ward 1 Precinct 1	491	458	24	9
 Evanston Ward 1 Precinct 2	733	648	79	6
 Evanston Ward 1 Precinct 3	715	614	88	13
-Evanston Ward 1 Precinct 4	1,036	906	119	11
-Evanston Ward 2 Precinct 1	1,264	1,091	140	33
+Evanston Ward 1 Precinct 4	1036	906	119	11
+Evanston Ward 2 Precinct 1	1264	1091	140	33
 Evanston Ward 2 Precinct 2	493	456	25	12
 Evanston Ward 2 Precinct 3	604	572	18	14
 Evanston Ward 2 Precinct 4	814	778	24	12
@@ -2367,22 +2367,22 @@ Evanston Ward 3 Precinct 7	618	543	61	14
 Evanston Ward 4 Precinct 1	412	372	28	12
 Evanston Ward 4 Precinct 2	651	567	59	25
 Evanston Ward 4 Precinct 3	523	453	58	12
-Evanston Ward 4 Precinct 4	1,014	917	87	10
+Evanston Ward 4 Precinct 4	1014	917	87	10
 Evanston Ward 4 Precinct 5	384	341	35	8
 Evanston Ward 4 Precinct 6	901	779	96	26
 Evanston Ward 5 Precinct 1	575	543	15	17
 Evanston Ward 5 Precinct 2	927	822	83	22
 Evanston Ward 5 Precinct 3	638	609	16	13
 Evanston Ward 5 Precinct 4	344	327	7	10
-Evanston Ward 6 Precinct 1	1,097	908	167	22
+Evanston Ward 6 Precinct 1	1097	908	167	22
 Evanston Ward 6 Precinct 2	556	481	67	8
 Evanston Ward 6 Precinct 3	599	512	70	17
 Evanston Ward 6 Precinct 4	747	650	85	12
 Evanston Ward 6 Precinct 5	933	779	134	20
 Evanston Ward 6 Precinct 6	548	415	126	7
 Evanston Ward 6 Precinct 7	903	778	107	18
-Evanston Ward 7 Precinct 1	1,072	934	108	30
-Evanston Ward 7 Precinct 2	1,161	1,001	138	22
+Evanston Ward 7 Precinct 1	1072	934	108	30
+Evanston Ward 7 Precinct 2	1161	1001	138	22
 Evanston Ward 7 Precinct 3	426	369	42	15
 Evanston Ward 7 Precinct 4	518	463	47	8
 Evanston Ward 7 Precinct 5	949	800	130	19
@@ -2424,7 +2424,7 @@ Hanover 23	572	346	203	23
 Hanover 24	499	369	113	17
 Hanover 25	534	307	203	24
 Hanover 26	783	470	293	20
-Hanover 27	1,620	958	626	36
+Hanover 27	1620	958	626	36
 Hanover 28	716	439	257	20
 Hanover 29	318	235	78	5
 Hanover 30	562	340	189	33
@@ -2521,11 +2521,11 @@ Lyons 12	419	185	226	8
 Lyons 13	213	198	8	7
 Lyons 14	738	434	286	18
 Lyons 15	661	432	210	19
-Lyons 16	1,069	708	327	34
+Lyons 16	1069	708	327	34
 Lyons 17	379	189	188	2
 Lyons 18	506	318	168	20
 Lyons 19	474	331	132	11
-Lyons 20	1,002	564	411	27
+Lyons 20	1002	564	411	27
 Lyons 21	991	587	384	20
 Lyons 22	331	249	69	13
 Lyons 23	642	332	283	27
@@ -2613,7 +2613,7 @@ Maine 26	514	334	164	16
 Maine 27	406	263	133	10
 Maine 28	245	188	49	8
 Maine 29	863	455	382	26
-Maine 30	1,379	766	574	39
+Maine 30	1379	766	574	39
 Maine 31	535	342	184	9
 Maine 32	342	193	139	10
 Maine 33	326	260	58	8
@@ -2676,8 +2676,8 @@ Maine 89	367	230	129	8
 Maine 90	307	164	134	9
 Maine 91	782	497	261	24
 Maine 92	358	235	107	16
-New Trier 1	1,000	702	286	12
-New Trier 2	1,047	769	255	23
+New Trier 1	1000	702	286	12
+New Trier 2	1047	769	255	23
 New Trier 3	692	512	160	20
 New Trier 4	858	623	227	8
 New Trier 5	556	408	140	8
@@ -2792,7 +2792,7 @@ Northfield 8	726	352	355	19
 Northfield 9	500	271	215	14
 Northfield 10	550	339	183	28
 Northfield 11	391	245	139	7
-Northfield 12	1,071	554	490	27
+Northfield 12	1071	554	490	27
 Northfield 13	554	312	224	18
 Northfield 14	545	339	196	10
 Northfield 15	506	348	148	10
@@ -2808,7 +2808,7 @@ Northfield 24	618	350	249	19
 Northfield 25	607	367	232	8
 Northfield 26	575	402	163	10
 Northfield 27	607	407	182	18
-Northfield 28	1,027	675	317	35
+Northfield 28	1027	675	317	35
 Northfield 29	552	342	196	14
 Northfield 30	728	431	275	22
 Northfield 31	812	434	365	13
@@ -2831,7 +2831,7 @@ Northfield 47	827	572	245	10
 Northfield 48	629	352	266	11
 Northfield 49	499	353	140	6
 Northfield 50	801	477	312	12
-Northfield 51	1,610	924	649	37
+Northfield 51	1610	924	649	37
 Northfield 52	626	400	214	12
 Northfield 53	672	463	202	7
 Northfield 54	520	401	109	10
@@ -2875,11 +2875,11 @@ Oak Park 12	421	352	53	16
 Oak Park 13	720	655	44	21
 Oak Park 14	825	691	122	12
 Oak Park 15	926	831	71	24
-Oak Park 16	1,068	897	144	27
-Oak Park 17	1,095	932	126	37
+Oak Park 16	1068	897	144	27
+Oak Park 17	1095	932	126	37
 Oak Park 18	704	555	130	19
 Oak Park 19	792	670	101	21
-Oak Park 20	1,053	898	127	28
+Oak Park 20	1053	898	127	28
 Oak Park 21	541	496	33	12
 Oak Park 22	547	472	56	19
 Oak Park 23	758	642	100	16
@@ -2890,7 +2890,7 @@ Oak Park 27	218	183	27	8
 Oak Park 28	957	834	100	23
 Oak Park 29	713	603	95	15
 Oak Park 30	867	775	63	29
-Oak Park 31	1,161	1,014	113	34
+Oak Park 31	1161	1014	113	34
 Oak Park 32	494	449	33	12
 Oak Park 33	660	585	54	21
 Oak Park 34	623	539	69	15
@@ -3182,7 +3182,7 @@ Proviso 99	515	480	24	11
 Proviso 100	690	475	203	12
 Proviso 101	528	367	143	18
 Proviso 102	690	467	198	25
-Rich 1	1,853	1,766	58	29
+Rich 1	1853	1766	58	29
 Rich 2	586	543	36	7
 Rich 3	838	712	113	13
 Rich 4	468	434	21	13
@@ -3217,7 +3217,7 @@ Rich 32	746	668	69	9
 Rich 33	505	365	126	14
 Rich 34	562	521	33	8
 Rich 35	447	392	46	9
-Rich 36	1,387	1,282	79	26
+Rich 36	1387	1282	79	26
 Rich 37	458	446	4	8
 Rich 38	546	506	31	9
 Rich 39	642	554	70	18
@@ -3515,7 +3515,7 @@ Wheeling 37	623	427	179	17
 Wheeling 38	681	422	235	24
 Wheeling 39	649	404	220	25
 Wheeling 40	627	349	254	24
-Wheeling 41	1,017	538	455	24
+Wheeling 41	1017	538	455	24
 Wheeling 42	797	438	334	25
 Wheeling 43	548	344	186	18
 Wheeling 44	721	382	325	14

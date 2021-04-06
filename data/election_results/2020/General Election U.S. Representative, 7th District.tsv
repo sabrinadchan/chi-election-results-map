@@ -485,14 +485,14 @@ Berwyn Ward 7 Precinct 1	565	431	89	45
 Berwyn Ward 7 Precinct 2	573	452	96	25
 Berwyn Ward 7 Precinct 3	733	531	150	52
 Berwyn Ward 7 Precinct 4	801	607	132	62
-Berwyn Ward 8 Precinct 1	1,056	787	185	84
+Berwyn Ward 8 Precinct 1	1056	787	185	84
 Berwyn Ward 8 Precinct 2	1	1	0	0
 Oak Park 1	631	555	37	39
-Oak Park 2	1,085	863	141	81
-Oak Park 3	1,125	925	113	87
+Oak Park 2	1085	863	141	81
+Oak Park 3	1125	925	113	87
 Oak Park 4	959	716	172	71
 Oak Park 5	997	795	137	65
-Oak Park 6	1,103	905	95	103
+Oak Park 6	1103	905	95	103
 Oak Park 7	645	525	84	36
 Oak Park 8	827	719	54	54
 Oak Park 9	536	467	45	24
@@ -501,12 +501,12 @@ Oak Park 11	763	613	89	61
 Oak Park 12	479	382	65	32
 Oak Park 13	832	702	57	73
 Oak Park 14	940	745	143	52
-Oak Park 15	1,079	902	82	95
-Oak Park 16	1,231	982	164	85
-Oak Park 17	1,239	1,007	144	88
+Oak Park 15	1079	902	82	95
+Oak Park 16	1231	982	164	85
+Oak Park 17	1239	1007	144	88
 Oak Park 18	775	595	128	52
 Oak Park 19	999	794	139	66
-Oak Park 20	1,337	1,034	197	106
+Oak Park 20	1337	1034	197	106
 Oak Park 21	653	548	54	51
 Oak Park 22	720	572	88	60
 Oak Park 23	921	727	126	68
@@ -514,15 +514,15 @@ Oak Park 24	648	495	106	47
 Oak Park 25	855	689	105	61
 Oak Park 26	747	640	62	45
 Oak Park 27	271	224	33	14
-Oak Park 28	1,191	950	138	103
+Oak Park 28	1191	950	138	103
 Oak Park 29	793	629	110	54
 Oak Park 30	971	817	74	80
-Oak Park 31	1,318	1,115	124	79
+Oak Park 31	1318	1115	124	79
 Oak Park 32	577	484	52	41
 Oak Park 33	750	623	62	65
 Oak Park 34	712	561	92	59
-Oak Park 35	1,102	886	138	78
-Oak Park 36	1,023	824	140	59
+Oak Park 35	1102	886	138	78
+Oak Park 36	1023	824	140	59
 Oak Park 37	490	401	54	35
 Proviso 1	560	450	78	32
 Proviso 2	568	456	74	38
@@ -540,7 +540,7 @@ Proviso 22	500	462	14	24
 Proviso 30	707	576	92	39
 Proviso 31	391	349	14	28
 Proviso 33	724	656	17	51
-Proviso 34	1,017	902	50	65
+Proviso 34	1017	902	50	65
 Proviso 36	639	586	16	37
 Proviso 37	425	387	11	27
 Proviso 38	621	546	33	42
@@ -554,7 +554,7 @@ Proviso 45	567	527	12	28
 Proviso 47	377	335	14	28
 Proviso 48	791	687	52	52
 Proviso 49	480	393	55	32
-Proviso 50	1,113	744	211	158
+Proviso 50	1113	744	211	158
 Proviso 51	803	496	215	92
 Proviso 52	469	423	21	25
 Proviso 53	647	600	18	29
@@ -568,7 +568,7 @@ Proviso 63	34	20	14	0
 Proviso 64	629	548	27	54
 Proviso 65	560	464	53	43
 Proviso 66	929	702	153	74
-Proviso 67	1,001	757	160	84
+Proviso 67	1001	757	160	84
 Proviso 68	462	323	106	33
 Proviso 69	487	434	20	33
 Proviso 71	402	300	68	34
@@ -583,7 +583,7 @@ Proviso 83	802	723	33	46
 Proviso 85	395	215	140	40
 Proviso 86	583	530	11	42
 Proviso 91	581	417	113	51
-Proviso 92	1,004	613	270	121
+Proviso 92	1004	613	270	121
 Proviso 94	539	495	10	34
 Proviso 99	645	571	33	41
 Proviso 101	671	387	197	87
@@ -594,5 +594,5 @@ River Forest 4	906	625	231	50
 River Forest 5	623	436	151	36
 River Forest 6	567	356	165	46
 River Forest 7	825	564	206	55
-River Forest 8	1,056	735	242	79
+River Forest 8	1056	735	242	79
 Riverside 13	63	46	16	1

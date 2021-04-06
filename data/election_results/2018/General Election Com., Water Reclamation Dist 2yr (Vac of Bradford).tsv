@@ -2125,7 +2125,7 @@ Bloom 32	334	315	19
 Bloom 33	421	383	38
 Bloom 36	615	592	23
 Bloom 37	304	286	18
-Bloom 38	1,070	1,018	52
+Bloom 38	1070	1018	52
 Bloom 41	616	577	39
 Bloom 42	309	283	26
 Bloom 43	475	454	21
@@ -2314,7 +2314,7 @@ Evanston Ward 1 Precinct 1	455	361	94
 Evanston Ward 1 Precinct 2	673	568	105
 Evanston Ward 1 Precinct 3	652	534	118
 Evanston Ward 1 Precinct 4	946	819	127
-Evanston Ward 2 Precinct 1	1,171	998	173
+Evanston Ward 2 Precinct 1	1171	998	173
 Evanston Ward 2 Precinct 2	472	387	85
 Evanston Ward 2 Precinct 3	587	525	62
 Evanston Ward 2 Precinct 4	767	677	90
@@ -2336,15 +2336,15 @@ Evanston Ward 5 Precinct 1	550	503	47
 Evanston Ward 5 Precinct 2	852	668	184
 Evanston Ward 5 Precinct 3	616	554	62
 Evanston Ward 5 Precinct 4	334	303	31
-Evanston Ward 6 Precinct 1	1,006	818	188
+Evanston Ward 6 Precinct 1	1006	818	188
 Evanston Ward 6 Precinct 2	513	441	72
 Evanston Ward 6 Precinct 3	548	446	102
 Evanston Ward 6 Precinct 4	694	564	130
 Evanston Ward 6 Precinct 5	838	692	146
 Evanston Ward 6 Precinct 6	467	381	86
 Evanston Ward 6 Precinct 7	814	681	133
-Evanston Ward 7 Precinct 1	1,000	837	163
-Evanston Ward 7 Precinct 2	1,066	875	191
+Evanston Ward 7 Precinct 1	1000	837	163
+Evanston Ward 7 Precinct 2	1066	875	191
 Evanston Ward 7 Precinct 3	391	329	62
 Evanston Ward 7 Precinct 4	486	398	88
 Evanston Ward 7 Precinct 5	862	698	164
@@ -2382,7 +2382,7 @@ Hanover 23	484	319	165
 Hanover 24	457	359	98
 Hanover 25	423	287	136
 Hanover 26	664	446	218
-Hanover 27	1,324	932	392
+Hanover 27	1324	932	392
 Hanover 28	608	436	172
 Hanover 31	374	214	160
 Hanover 33	445	332	113
@@ -2565,7 +2565,7 @@ Maine 26	424	302	122
 Maine 27	345	238	107
 Maine 28	219	179	40
 Maine 29	693	440	253
-Maine 30	1,098	706	392
+Maine 30	1098	706	392
 Maine 31	437	296	141
 Maine 32	276	188	88
 Maine 33	304	252	52
@@ -2783,7 +2783,7 @@ Northfield 47	703	554	149
 Northfield 48	502	335	167
 Northfield 49	417	336	81
 Northfield 50	617	467	150
-Northfield 51	1,290	923	367
+Northfield 51	1290	923	367
 Northfield 52	506	382	124
 Northfield 53	569	447	122
 Northfield 54	450	368	82
@@ -2842,7 +2842,7 @@ Oak Park 27	192	143	49
 Oak Park 28	886	724	162
 Oak Park 29	632	474	158
 Oak Park 30	811	646	165
-Oak Park 31	1,067	837	230
+Oak Park 31	1067	837	230
 Oak Park 32	463	366	97
 Oak Park 33	626	493	133
 Oak Park 34	561	436	125
@@ -3130,7 +3130,7 @@ Proviso 99	496	468	28
 Proviso 100	506	380	126
 Proviso 101	444	325	119
 Proviso 102	597	452	145
-Rich 1	1,807	1,720	87
+Rich 1	1807	1720	87
 Rich 2	562	512	50
 Rich 3	775	668	107
 Rich 4	448	423	25
@@ -3155,7 +3155,7 @@ Rich 31	320	254	66
 Rich 33	424	348	76
 Rich 34	535	508	27
 Rich 35	426	382	44
-Rich 36	1,189	1,135	54
+Rich 36	1189	1135	54
 Rich 37	441	431	10
 Rich 38	481	464	17
 Rich 39	603	529	74

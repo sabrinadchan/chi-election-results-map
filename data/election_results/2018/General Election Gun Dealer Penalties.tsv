@@ -2148,7 +2148,7 @@ Bloom 34	310	292	18
 Bloom 35	231	212	19
 Bloom 36	647	615	32
 Bloom 37	313	300	13
-Bloom 38	1,132	1,066	66
+Bloom 38	1132	1066	66
 Bloom 39	318	286	32
 Bloom 40	349	334	15
 Bloom 41	629	583	46
@@ -2351,8 +2351,8 @@ Elk Grove 52	264	240	24
 Evanston Ward 1 Precinct 1	490	463	27
 Evanston Ward 1 Precinct 2	714	673	41
 Evanston Ward 1 Precinct 3	714	682	32
-Evanston Ward 1 Precinct 4	1,009	973	36
-Evanston Ward 2 Precinct 1	1,257	1,193	64
+Evanston Ward 1 Precinct 4	1009	973	36
+Evanston Ward 2 Precinct 1	1257	1193	64
 Evanston Ward 2 Precinct 2	484	469	15
 Evanston Ward 2 Precinct 3	595	558	37
 Evanston Ward 2 Precinct 4	792	753	39
@@ -2367,22 +2367,22 @@ Evanston Ward 3 Precinct 7	617	589	28
 Evanston Ward 4 Precinct 1	406	387	19
 Evanston Ward 4 Precinct 2	641	608	33
 Evanston Ward 4 Precinct 3	530	506	24
-Evanston Ward 4 Precinct 4	1,013	974	39
+Evanston Ward 4 Precinct 4	1013	974	39
 Evanston Ward 4 Precinct 5	375	363	12
 Evanston Ward 4 Precinct 6	889	843	46
 Evanston Ward 5 Precinct 1	552	511	41
 Evanston Ward 5 Precinct 2	919	859	60
 Evanston Ward 5 Precinct 3	628	594	34
 Evanston Ward 5 Precinct 4	344	320	24
-Evanston Ward 6 Precinct 1	1,081	1,040	41
+Evanston Ward 6 Precinct 1	1081	1040	41
 Evanston Ward 6 Precinct 2	549	525	24
 Evanston Ward 6 Precinct 3	592	554	38
 Evanston Ward 6 Precinct 4	745	709	36
 Evanston Ward 6 Precinct 5	929	893	36
 Evanston Ward 6 Precinct 6	519	498	21
 Evanston Ward 6 Precinct 7	889	860	29
-Evanston Ward 7 Precinct 1	1,069	1,021	48
-Evanston Ward 7 Precinct 2	1,166	1,104	62
+Evanston Ward 7 Precinct 1	1069	1021	48
+Evanston Ward 7 Precinct 2	1166	1104	62
 Evanston Ward 7 Precinct 3	423	403	20
 Evanston Ward 7 Precinct 4	521	505	16
 Evanston Ward 7 Precinct 5	944	903	41
@@ -2424,7 +2424,7 @@ Hanover 23	559	493	66
 Hanover 24	483	432	51
 Hanover 25	519	460	59
 Hanover 26	750	643	107
-Hanover 27	1,590	1,429	161
+Hanover 27	1590	1429	161
 Hanover 28	688	626	62
 Hanover 29	310	280	30
 Hanover 30	550	471	79
@@ -2521,7 +2521,7 @@ Lyons 12	410	364	46
 Lyons 13	211	200	11
 Lyons 14	731	666	65
 Lyons 15	665	606	59
-Lyons 16	1,053	942	111
+Lyons 16	1053	942	111
 Lyons 17	380	345	35
 Lyons 18	503	450	53
 Lyons 19	456	402	54
@@ -2613,7 +2613,7 @@ Maine 26	495	443	52
 Maine 27	407	369	38
 Maine 28	229	211	18
 Maine 29	860	739	121
-Maine 30	1,366	1,209	157
+Maine 30	1366	1209	157
 Maine 31	519	471	48
 Maine 32	339	297	42
 Maine 33	306	291	15
@@ -2677,7 +2677,7 @@ Maine 90	277	245	32
 Maine 91	772	693	79
 Maine 92	339	303	36
 New Trier 1	991	940	51
-New Trier 2	1,023	967	56
+New Trier 2	1023	967	56
 New Trier 3	690	642	48
 New Trier 4	839	795	44
 New Trier 5	554	505	49
@@ -2792,7 +2792,7 @@ Northfield 8	701	632	69
 Northfield 9	489	432	57
 Northfield 10	540	491	49
 Northfield 11	390	356	34
-Northfield 12	1,066	962	104
+Northfield 12	1066	962	104
 Northfield 13	535	487	48
 Northfield 14	533	497	36
 Northfield 15	502	464	38
@@ -2831,7 +2831,7 @@ Northfield 47	816	751	65
 Northfield 48	621	581	40
 Northfield 49	497	460	37
 Northfield 50	779	716	63
-Northfield 51	1,586	1,442	144
+Northfield 51	1586	1442	144
 Northfield 52	619	578	41
 Northfield 53	674	640	34
 Northfield 54	508	493	15
@@ -2875,11 +2875,11 @@ Oak Park 12	410	392	18
 Oak Park 13	706	653	53
 Oak Park 14	823	776	47
 Oak Park 15	913	862	51
-Oak Park 16	1,061	1,000	61
-Oak Park 17	1,092	1,034	58
+Oak Park 16	1061	1000	61
+Oak Park 17	1092	1034	58
 Oak Park 18	706	645	61
 Oak Park 19	779	733	46
-Oak Park 20	1,039	982	57
+Oak Park 20	1039	982	57
 Oak Park 21	537	515	22
 Oak Park 22	542	513	29
 Oak Park 23	746	702	44
@@ -2890,7 +2890,7 @@ Oak Park 27	214	203	11
 Oak Park 28	949	901	48
 Oak Park 29	709	666	43
 Oak Park 30	829	785	44
-Oak Park 31	1,150	1,084	66
+Oak Park 31	1150	1084	66
 Oak Park 32	482	454	28
 Oak Park 33	653	613	40
 Oak Park 34	627	604	23
@@ -3182,7 +3182,7 @@ Proviso 99	497	471	26
 Proviso 100	671	612	59
 Proviso 101	505	463	42
 Proviso 102	676	617	59
-Rich 1	1,829	1,749	80
+Rich 1	1829	1749	80
 Rich 2	577	548	29
 Rich 3	827	766	61
 Rich 4	458	424	34
@@ -3217,7 +3217,7 @@ Rich 32	740	695	45
 Rich 33	505	462	43
 Rich 34	549	533	16
 Rich 35	439	415	24
-Rich 36	1,369	1,291	78
+Rich 36	1369	1291	78
 Rich 37	454	438	16
 Rich 38	523	491	32
 Rich 39	643	613	30
@@ -3515,7 +3515,7 @@ Wheeling 37	580	517	63
 Wheeling 38	655	573	82
 Wheeling 39	635	570	65
 Wheeling 40	616	558	58
-Wheeling 41	1,003	902	101
+Wheeling 41	1003	902	101
 Wheeling 42	763	683	80
 Wheeling 43	539	480	59
 Wheeling 44	706	619	87

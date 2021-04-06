@@ -64,11 +64,11 @@ Precinct	total_votes	votes|Dan Patlak	votes|Marty Stack
 Barrington 1	658	470	188
 Barrington 2	629	358	271
 Barrington 3	794	616	178
-Barrington 4	1,000	740	260
+Barrington 4	1000	740	260
 Barrington 5	741	591	150
 Barrington 6	832	529	303
 Barrington 7	248	190	58
-Barrington 8	1,066	754	312
+Barrington 8	1066	754	312
 Barrington 9	519	347	172
 Barrington 10	936	563	373
 Barrington 11	557	412	145
@@ -222,7 +222,7 @@ Elk Grove 30	580	358	222
 Elk Grove 31	399	180	219
 Elk Grove 32	454	198	256
 Elk Grove 33	393	230	163
-Elk Grove 34	1,029	619	410
+Elk Grove 34	1029	619	410
 Elk Grove 35	564	265	299
 Elk Grove 36	402	121	281
 Elk Grove 37	761	420	341
@@ -260,14 +260,14 @@ Hanover 16	844	452	392
 Hanover 17	511	224	287
 Hanover 18	616	217	399
 Hanover 19	559	332	227
-Hanover 20	1,009	507	502
+Hanover 20	1009	507	502
 Hanover 21	433	237	196
 Hanover 22	604	277	327
 Hanover 23	651	323	328
 Hanover 24	653	194	459
 Hanover 25	546	286	260
 Hanover 26	898	451	447
-Hanover 27	1,814	954	860
+Hanover 27	1814	954	860
 Hanover 28	856	412	444
 Hanover 29	439	114	325
 Hanover 30	699	315	384
@@ -296,7 +296,7 @@ Lemont 8	733	463	270
 Lemont 9	475	383	92
 Lemont 10	480	277	203
 Lemont 11	931	674	257
-Lemont 12	1,106	793	313
+Lemont 12	1106	793	313
 Lemont 13	902	661	241
 Lemont 14	662	506	156
 Leyden 1	417	173	244
@@ -361,7 +361,7 @@ Lyons 11	450	251	199
 Lyons 12	436	335	101
 Lyons 14	768	481	287
 Lyons 15	686	406	280
-Lyons 16	1,016	534	482
+Lyons 16	1016	534	482
 Lyons 17	410	266	144
 Lyons 18	537	319	218
 Lyons 19	672	234	438
@@ -443,7 +443,7 @@ Maine 26	509	270	239
 Maine 27	415	228	187
 Maine 28	366	108	258
 Maine 29	920	597	323
-Maine 30	1,341	868	473
+Maine 30	1341	868	473
 Maine 31	614	307	307
 Maine 32	372	234	138
 Maine 33	514	125	389
@@ -472,7 +472,7 @@ Maine 56	795	399	396
 Maine 57	470	152	318
 Maine 58	723	422	301
 Maine 59	596	354	242
-Maine 60	1,065	722	343
+Maine 60	1065	722	343
 Maine 61	348	186	162
 Maine 64	466	257	209
 Maine 65	443	296	147
@@ -501,7 +501,7 @@ Maine 89	470	210	260
 Maine 91	835	454	381
 Maine 92	506	234	272
 New Trier 1	991	493	498
-New Trier 2	1,048	459	589
+New Trier 2	1048	459	589
 New Trier 4	876	433	443
 New Trier 5	562	239	323
 New Trier 6	523	254	269
@@ -537,7 +537,7 @@ Northfield 8	765	511	254
 Northfield 9	505	338	167
 Northfield 10	591	302	289
 Northfield 11	375	216	159
-Northfield 12	1,101	714	387
+Northfield 12	1101	714	387
 Northfield 13	601	343	258
 Northfield 14	544	300	244
 Northfield 15	537	274	263
@@ -553,7 +553,7 @@ Northfield 24	606	361	245
 Northfield 25	624	360	264
 Northfield 26	582	271	311
 Northfield 27	657	279	378
-Northfield 28	1,038	512	526
+Northfield 28	1038	512	526
 Northfield 29	558	329	229
 Northfield 30	716	453	263
 Northfield 31	869	571	298
@@ -576,7 +576,7 @@ Northfield 47	882	424	458
 Northfield 48	681	401	280
 Northfield 49	521	258	263
 Northfield 50	819	487	332
-Northfield 51	1,538	934	604
+Northfield 51	1538	934	604
 Northfield 52	612	354	258
 Northfield 53	682	344	338
 Northfield 54	528	222	306
@@ -616,7 +616,7 @@ Orland 21	814	562	252
 Orland 22	592	337	255
 Orland 23	508	309	199
 Orland 24	583	350	233
-Orland 25	1,043	610	433
+Orland 25	1043	610	433
 Orland 26	554	268	286
 Orland 27	431	249	182
 Orland 28	452	320	132
@@ -803,7 +803,7 @@ Proviso 59	516	131	385
 Proviso 60	449	86	363
 Proviso 63	697	340	357
 Proviso 70	516	290	226
-Proviso 71	1,039	312	727
+Proviso 71	1039	312	727
 Proviso 75	656	277	379
 Proviso 77	397	168	229
 Proviso 81	259	60	199
@@ -828,7 +828,7 @@ Rich 14	575	151	424
 Rich 16	554	120	434
 Rich 17	612	148	464
 Rich 19	434	217	217
-Rich 20	1,027	622	405
+Rich 20	1027	622	405
 Rich 23	435	34	401
 Rich 29	630	240	390
 Rich 31	526	218	308
@@ -857,7 +857,7 @@ Riverside 10	768	432	336
 Riverside 11	846	413	433
 Riverside 12	469	183	286
 Riverside 13	731	288	443
-Schaumburg 1	1,081	452	629
+Schaumburg 1	1081	452	629
 Schaumburg 2	991	347	644
 Schaumburg 3	638	335	303
 Schaumburg 4	400	133	267
@@ -980,7 +980,7 @@ Wheeling 23	597	432	165
 Wheeling 24	545	432	113
 Wheeling 25	767	397	370
 Wheeling 26	910	574	336
-Wheeling 27	1,002	584	418
+Wheeling 27	1002	584	418
 Wheeling 28	879	584	295
 Wheeling 29	391	217	174
 Wheeling 30	921	638	283
@@ -994,12 +994,12 @@ Wheeling 37	785	303	482
 Wheeling 38	749	397	352
 Wheeling 39	693	390	303
 Wheeling 40	667	416	251
-Wheeling 41	1,037	705	332
+Wheeling 41	1037	705	332
 Wheeling 42	858	499	359
 Wheeling 43	640	336	304
 Wheeling 44	805	540	265
 Wheeling 45	492	279	213
-Wheeling 46	1,074	679	395
+Wheeling 46	1074	679	395
 Wheeling 47	587	317	270
 Wheeling 48	574	342	232
 Wheeling 49	799	342	457
@@ -1024,7 +1024,7 @@ Wheeling 67	381	178	203
 Wheeling 68	397	287	110
 Wheeling 69	601	355	246
 Wheeling 70	885	486	399
-Wheeling 71	1,010	644	366
+Wheeling 71	1010	644	366
 Wheeling 72	651	353	298
 Wheeling 73	662	392	270
 Wheeling 74	488	235	253
@@ -1045,7 +1045,7 @@ Wheeling 88	692	315	377
 Wheeling 89	421	216	205
 Wheeling 90	638	414	224
 Wheeling 91	763	426	337
-Wheeling 92	1,047	678	369
+Wheeling 92	1047	678	369
 Worth 1	349	146	203
 Worth 2	708	373	335
 Worth 3	618	311	307

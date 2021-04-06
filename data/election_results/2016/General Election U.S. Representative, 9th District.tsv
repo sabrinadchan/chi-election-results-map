@@ -216,7 +216,7 @@ Elk Grove 25	586	318	268
 Elk Grove 26	533	243	290
 Elk Grove 27	797	442	355
 Elk Grove 30	592	288	304
-Elk Grove 34	1,085	521	564
+Elk Grove 34	1085	521	564
 Elk Grove 37	470	220	250
 Elk Grove 41	497	266	231
 Elk Grove 44	547	292	255
@@ -225,8 +225,8 @@ Elk Grove 48	446	237	209
 Evanston Ward 1 Precinct 1	660	73	587
 Evanston Ward 1 Precinct 2	760	143	617
 Evanston Ward 1 Precinct 3	726	138	588
-Evanston Ward 1 Precinct 4	1,060	215	845
-Evanston Ward 2 Precinct 1	1,349	224	1,125
+Evanston Ward 1 Precinct 4	1060	215	845
+Evanston Ward 2 Precinct 1	1349	224	1125
 Evanston Ward 2 Precinct 2	541	54	487
 Evanston Ward 2 Precinct 3	725	45	680
 Evanston Ward 2 Precinct 4	901	56	845
@@ -241,25 +241,25 @@ Evanston Ward 3 Precinct 7	647	85	562
 Evanston Ward 4 Precinct 1	430	44	386
 Evanston Ward 4 Precinct 2	683	82	601
 Evanston Ward 4 Precinct 3	536	107	429
-Evanston Ward 4 Precinct 4	1,072	152	920
+Evanston Ward 4 Precinct 4	1072	152	920
 Evanston Ward 4 Precinct 5	415	60	355
 Evanston Ward 4 Precinct 6	996	177	819
 Evanston Ward 5 Precinct 1	686	26	660
-Evanston Ward 5 Precinct 2	1,009	147	862
+Evanston Ward 5 Precinct 2	1009	147	862
 Evanston Ward 5 Precinct 3	717	44	673
 Evanston Ward 5 Precinct 4	435	19	416
-Evanston Ward 6 Precinct 1	1,125	255	870
+Evanston Ward 6 Precinct 1	1125	255	870
 Evanston Ward 6 Precinct 2	576	115	461
 Evanston Ward 6 Precinct 3	630	144	486
 Evanston Ward 6 Precinct 4	781	133	648
 Evanston Ward 6 Precinct 5	992	223	769
 Evanston Ward 6 Precinct 6	602	193	409
 Evanston Ward 6 Precinct 7	933	184	749
-Evanston Ward 7 Precinct 1	1,117	230	887
-Evanston Ward 7 Precinct 2	1,160	239	921
+Evanston Ward 7 Precinct 1	1117	230	887
+Evanston Ward 7 Precinct 2	1160	239	921
 Evanston Ward 7 Precinct 3	463	95	368
 Evanston Ward 7 Precinct 4	533	68	465
-Evanston Ward 7 Precinct 5	1,014	222	792
+Evanston Ward 7 Precinct 5	1014	222	792
 Evanston Ward 7 Precinct 6	155	18	137
 Evanston Ward 8 Precinct 1	872	85	787
 Evanston Ward 8 Precinct 2	673	63	610
@@ -268,11 +268,11 @@ Evanston Ward 8 Precinct 4	741	87	654
 Evanston Ward 8 Precinct 5	950	109	841
 Evanston Ward 9 Precinct 1	603	75	528
 Evanston Ward 9 Precinct 2	644	62	582
-Evanston Ward 9 Precinct 3	1,001	145	856
+Evanston Ward 9 Precinct 3	1001	145	856
 Evanston Ward 9 Precinct 4	825	105	720
 Evanston Ward 9 Precinct 5	526	73	453
 Evanston Ward 9 Precinct 6	711	96	615
-Leyden 23	1,067	575	492
+Leyden 23	1067	575	492
 Maine 6	930	336	594
 Maine 7	482	180	302
 Maine 8	713	322	391
@@ -293,7 +293,7 @@ Maine 25	715	347	368
 Maine 26	535	222	313
 Maine 27	449	192	257
 Maine 29	957	518	439
-Maine 30	1,456	801	655
+Maine 30	1456	801	655
 Maine 32	399	207	192
 Maine 34	769	294	475
 Maine 35	25	10	15
@@ -316,7 +316,7 @@ Maine 54	661	329	332
 Maine 55	546	248	298
 Maine 58	759	373	386
 Maine 59	631	314	317
-Maine 60	1,138	662	476
+Maine 60	1138	662	476
 Maine 61	373	154	219
 Maine 62	365	127	238
 Maine 63	472	177	295
@@ -346,12 +346,12 @@ New Trier 11	949	575	374
 New Trier 12	863	502	361
 New Trier 13	993	421	572
 New Trier 14	886	515	371
-New Trier 15	1,020	507	513
-New Trier 16	1,065	630	435
+New Trier 15	1020	507	513
+New Trier 16	1065	630	435
 New Trier 17	720	242	478
 New Trier 18	586	337	249
 New Trier 19	584	415	169
-New Trier 20	1,028	476	552
+New Trier 20	1028	476	552
 New Trier 21	833	267	566
 New Trier 22	746	484	262
 New Trier 23	824	606	218
@@ -375,11 +375,11 @@ New Trier 40	464	263	201
 New Trier 41	625	368	257
 Niles 1	717	352	365
 Niles 2	819	317	502
-Niles 3	1,084	582	502
+Niles 3	1084	582	502
 Niles 4	617	243	374
 Niles 5	421	182	239
 Niles 6	655	360	295
-Niles 7	1,012	307	705
+Niles 7	1012	307	705
 Niles 8	316	107	209
 Niles 9	472	201	271
 Niles 10	759	251	508
@@ -410,7 +410,7 @@ Niles 34	721	217	504
 Niles 35	786	246	540
 Niles 36	466	86	380
 Niles 37	723	176	547
-Niles 38	1,155	400	755
+Niles 38	1155	400	755
 Niles 39	792	250	542
 Niles 40	385	167	218
 Niles 41	808	226	582
@@ -431,7 +431,7 @@ Niles 55	433	94	339
 Niles 56	893	388	505
 Niles 57	865	313	552
 Niles 58	783	259	524
-Niles 59	1,023	375	648
+Niles 59	1023	375	648
 Niles 60	997	276	721
 Niles 61	963	295	668
 Niles 62	449	113	336
@@ -441,11 +441,11 @@ Northfield 6	759	504	255
 Northfield 7	981	475	506
 Northfield 8	794	458	336
 Northfield 9	544	326	218
-Northfield 12	1,145	651	494
+Northfield 12	1145	651	494
 Northfield 14	572	271	301
 Northfield 19	740	372	368
 Northfield 20	698	315	383
-Northfield 21	1,028	502	526
+Northfield 21	1028	502	526
 Northfield 23	550	361	189
 Northfield 24	655	326	329
 Northfield 30	771	395	376
@@ -480,7 +480,7 @@ Wheeling 23	614	367	247
 Wheeling 24	571	370	201
 Wheeling 25	788	324	464
 Wheeling 26	962	496	466
-Wheeling 27	1,052	509	543
+Wheeling 27	1052	509	543
 Wheeling 28	352	193	159
 Wheeling 30	947	546	401
 Wheeling 31	498	232	266
@@ -490,10 +490,10 @@ Wheeling 35	666	337	329
 Wheeling 36	989	502	487
 Wheeling 39	726	318	408
 Wheeling 40	695	368	327
-Wheeling 41	1,087	588	499
+Wheeling 41	1087	588	499
 Wheeling 44	819	473	346
 Wheeling 45	523	231	292
-Wheeling 46	1,127	595	532
+Wheeling 46	1127	595	532
 Wheeling 47	626	272	354
 Wheeling 52	2	0	2
 Wheeling 53	762	426	336
@@ -506,9 +506,9 @@ Wheeling 61	535	341	194
 Wheeling 62	811	396	415
 Wheeling 68	417	241	176
 Wheeling 69	628	296	332
-Wheeling 71	1,065	563	502
+Wheeling 71	1065	563	502
 Wheeling 73	677	312	365
-Wheeling 78	1,015	490	525
+Wheeling 78	1015	490	525
 Wheeling 82	889	416	473
 Wheeling 86	754	397	357
 Wheeling 87	661	335	326

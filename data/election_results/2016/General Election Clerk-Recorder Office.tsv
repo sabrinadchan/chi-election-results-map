@@ -2134,7 +2134,7 @@ Bloom 20	558	361	197
 Bloom 21	179	120	59
 Bloom 22	502	258	244
 Bloom 23	621	313	308
-Bloom 24	1,044	566	478
+Bloom 24	1044	566	478
 Bloom 25	471	229	242
 Bloom 26	464	248	216
 Bloom 27	579	280	299
@@ -2148,7 +2148,7 @@ Bloom 34	347	181	166
 Bloom 35	299	164	135
 Bloom 36	719	346	373
 Bloom 37	343	169	174
-Bloom 38	1,298	602	696
+Bloom 38	1298	602	696
 Bloom 39	472	266	206
 Bloom 40	363	199	164
 Bloom 41	700	335	365
@@ -2329,7 +2329,7 @@ Elk Grove 30	550	387	163
 Elk Grove 31	381	250	131
 Elk Grove 32	398	255	143
 Elk Grove 33	386	273	113
-Elk Grove 34	1,014	754	260
+Elk Grove 34	1014	754	260
 Elk Grove 35	522	339	183
 Elk Grove 36	369	216	153
 Elk Grove 37	732	504	228
@@ -2352,7 +2352,7 @@ Evanston Ward 1 Precinct 1	534	329	205
 Evanston Ward 1 Precinct 2	647	476	171
 Evanston Ward 1 Precinct 3	634	453	181
 Evanston Ward 1 Precinct 4	924	709	215
-Evanston Ward 2 Precinct 1	1,168	810	358
+Evanston Ward 2 Precinct 1	1168	810	358
 Evanston Ward 2 Precinct 2	484	289	195
 Evanston Ward 2 Precinct 3	668	345	323
 Evanston Ward 2 Precinct 4	804	424	380
@@ -2374,7 +2374,7 @@ Evanston Ward 5 Precinct 1	631	320	311
 Evanston Ward 5 Precinct 2	839	594	245
 Evanston Ward 5 Precinct 3	637	320	317
 Evanston Ward 5 Precinct 4	391	197	194
-Evanston Ward 6 Precinct 1	1,005	754	251
+Evanston Ward 6 Precinct 1	1005	754	251
 Evanston Ward 6 Precinct 2	504	375	129
 Evanston Ward 6 Precinct 3	562	432	130
 Evanston Ward 6 Precinct 4	695	509	186
@@ -2382,7 +2382,7 @@ Evanston Ward 6 Precinct 5	875	680	195
 Evanston Ward 6 Precinct 6	515	420	95
 Evanston Ward 6 Precinct 7	772	598	174
 Evanston Ward 7 Precinct 1	975	697	278
-Evanston Ward 7 Precinct 2	1,044	769	275
+Evanston Ward 7 Precinct 2	1044	769	275
 Evanston Ward 7 Precinct 3	372	253	119
 Evanston Ward 7 Precinct 4	471	356	115
 Evanston Ward 7 Precinct 5	895	684	211
@@ -2417,14 +2417,14 @@ Hanover 16	824	602	222
 Hanover 17	501	299	202
 Hanover 18	607	373	234
 Hanover 19	544	395	149
-Hanover 20	1,006	673	333
+Hanover 20	1006	673	333
 Hanover 21	416	309	107
 Hanover 22	598	377	221
 Hanover 23	661	429	232
 Hanover 24	631	353	278
 Hanover 25	540	373	167
 Hanover 26	877	589	288
-Hanover 27	1,754	1,301	453
+Hanover 27	1754	1301	453
 Hanover 28	847	567	280
 Hanover 29	428	262	166
 Hanover 30	679	422	257
@@ -2453,7 +2453,7 @@ Lemont 8	752	539	213
 Lemont 9	468	343	125
 Lemont 10	477	300	177
 Lemont 11	904	674	230
-Lemont 12	1,090	783	307
+Lemont 12	1090	783	307
 Lemont 13	898	631	267
 Lemont 14	638	479	159
 Leyden 1	407	245	162
@@ -2521,7 +2521,7 @@ Lyons 12	421	332	89
 Lyons 13	256	155	101
 Lyons 14	753	606	147
 Lyons 15	670	519	151
-Lyons 16	1,021	783	238
+Lyons 16	1021	783	238
 Lyons 17	390	280	110
 Lyons 18	535	415	120
 Lyons 19	642	380	262
@@ -2613,7 +2613,7 @@ Maine 26	499	331	168
 Maine 27	400	285	115
 Maine 28	317	212	105
 Maine 29	875	600	275
-Maine 30	1,332	1,058	274
+Maine 30	1332	1058	274
 Maine 31	589	407	182
 Maine 32	373	263	110
 Maine 33	470	333	137
@@ -2643,7 +2643,7 @@ Maine 56	762	517	245
 Maine 57	405	275	130
 Maine 58	692	473	219
 Maine 59	572	387	185
-Maine 60	1,056	789	267
+Maine 60	1056	789	267
 Maine 61	349	231	118
 Maine 62	320	207	113
 Maine 63	431	296	135
@@ -2754,7 +2754,7 @@ Niles 34	629	444	185
 Niles 35	666	435	231
 Niles 36	412	249	163
 Niles 37	612	396	216
-Niles 38	1,028	679	349
+Niles 38	1028	679	349
 Niles 39	701	474	227
 Niles 40	328	219	109
 Niles 41	720	470	250
@@ -2792,7 +2792,7 @@ Northfield 8	726	566	160
 Northfield 9	482	372	110
 Northfield 10	552	385	167
 Northfield 11	386	281	105
-Northfield 12	1,060	800	260
+Northfield 12	1060	800	260
 Northfield 13	575	434	141
 Northfield 14	526	392	134
 Northfield 15	506	382	124
@@ -2831,7 +2831,7 @@ Northfield 47	857	628	229
 Northfield 48	654	474	180
 Northfield 49	506	356	150
 Northfield 50	799	574	225
-Northfield 51	1,458	1,108	350
+Northfield 51	1458	1108	350
 Northfield 52	606	466	140
 Northfield 53	670	521	149
 Northfield 54	525	398	127
@@ -2875,11 +2875,11 @@ Oak Park 12	405	259	146
 Oak Park 13	731	415	316
 Oak Park 14	797	598	199
 Oak Park 15	977	591	386
-Oak Park 16	1,063	742	321
-Oak Park 17	1,052	707	345
+Oak Park 16	1063	742	321
+Oak Park 17	1052	707	345
 Oak Park 18	642	458	184
 Oak Park 19	746	479	267
-Oak Park 20	1,002	702	300
+Oak Park 20	1002	702	300
 Oak Park 21	535	306	229
 Oak Park 22	517	307	210
 Oak Park 23	697	469	228
@@ -2890,7 +2890,7 @@ Oak Park 27	242	167	75
 Oak Park 28	954	576	378
 Oak Park 29	666	464	202
 Oak Park 30	841	532	309
-Oak Park 31	1,122	700	422
+Oak Park 31	1122	700	422
 Oak Park 32	503	306	197
 Oak Park 33	686	386	300
 Oak Park 34	629	412	217
@@ -3182,14 +3182,14 @@ Proviso 99	586	279	307
 Proviso 100	750	435	315
 Proviso 101	544	341	203
 Proviso 102	720	449	271
-Rich 1	2,021	911	1,110
+Rich 1	2021	911	1110
 Rich 2	587	284	303
 Rich 3	843	420	423
 Rich 4	543	247	296
 Rich 5	768	401	367
 Rich 6	819	402	417
 Rich 7	573	310	263
-Rich 8	1,047	539	508
+Rich 8	1047	539	508
 Rich 9	822	386	436
 Rich 10	487	254	233
 Rich 11	591	338	253
@@ -3217,7 +3217,7 @@ Rich 32	840	446	394
 Rich 33	511	358	153
 Rich 34	551	287	264
 Rich 35	478	240	238
-Rich 36	1,286	633	653
+Rich 36	1286	633	653
 Rich 37	478	215	263
 Rich 38	645	303	342
 Rich 39	676	394	282
@@ -3228,7 +3228,7 @@ Rich 43	755	366	389
 Rich 44	506	218	288
 Rich 45	775	394	381
 Rich 46	927	441	486
-Rich 47	1,017	502	515
+Rich 47	1017	502	515
 Rich 48	690	304	386
 Rich 49	649	315	334
 Rich 50	379	245	134
@@ -3254,7 +3254,7 @@ Riverside 10	743	546	197
 Riverside 11	841	605	236
 Riverside 12	453	289	164
 Riverside 13	716	466	250
-Schaumburg 1	1,050	705	345
+Schaumburg 1	1050	705	345
 Schaumburg 2	935	591	344
 Schaumburg 3	617	423	194
 Schaumburg 4	390	252	138
@@ -3515,12 +3515,12 @@ Wheeling 37	745	423	322
 Wheeling 38	714	452	262
 Wheeling 39	668	485	183
 Wheeling 40	632	454	178
-Wheeling 41	1,003	761	242
+Wheeling 41	1003	761	242
 Wheeling 42	830	597	233
 Wheeling 43	609	421	188
 Wheeling 44	765	549	216
 Wheeling 45	481	342	139
-Wheeling 46	1,019	732	287
+Wheeling 46	1019	732	287
 Wheeling 47	552	380	172
 Wheeling 48	551	392	159
 Wheeling 49	774	458	316
@@ -3566,7 +3566,7 @@ Wheeling 88	642	428	214
 Wheeling 89	405	281	124
 Wheeling 90	630	476	154
 Wheeling 91	757	531	226
-Wheeling 92	1,027	774	253
+Wheeling 92	1027	774	253
 Worth 1	328	216	112
 Worth 2	699	439	260
 Worth 3	620	403	217

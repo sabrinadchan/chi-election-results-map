@@ -2071,11 +2071,11 @@ Precinct	total_votes	votes|YES	votes|NO
 Barrington 1	666	479	187
 Barrington 2	646	500	146
 Barrington 3	791	459	332
-Barrington 4	1,000	594	406
+Barrington 4	1000	594	406
 Barrington 5	742	378	364
 Barrington 6	874	599	275
 Barrington 7	245	133	112
-Barrington 8	1,057	635	422
+Barrington 8	1057	635	422
 Barrington 9	533	326	207
 Barrington 10	988	764	224
 Barrington 11	571	325	246
@@ -2134,7 +2134,7 @@ Bloom 20	583	497	86
 Bloom 21	186	174	12
 Bloom 22	529	480	49
 Bloom 23	632	586	46
-Bloom 24	1,073	952	121
+Bloom 24	1073	952	121
 Bloom 25	488	426	62
 Bloom 26	480	435	45
 Bloom 27	603	557	46
@@ -2148,7 +2148,7 @@ Bloom 34	364	327	37
 Bloom 35	314	295	19
 Bloom 36	746	690	56
 Bloom 37	353	313	40
-Bloom 38	1,329	1,216	113
+Bloom 38	1329	1216	113
 Bloom 39	488	456	32
 Bloom 40	378	344	34
 Bloom 41	713	656	57
@@ -2329,7 +2329,7 @@ Elk Grove 30	574	429	145
 Elk Grove 31	397	326	71
 Elk Grove 32	435	392	43
 Elk Grove 33	408	323	85
-Elk Grove 34	1,070	790	280
+Elk Grove 34	1070	790	280
 Elk Grove 35	552	462	90
 Elk Grove 36	405	364	41
 Elk Grove 37	767	600	167
@@ -2352,7 +2352,7 @@ Evanston Ward 1 Precinct 1	652	627	25
 Evanston Ward 1 Precinct 2	718	619	99
 Evanston Ward 1 Precinct 3	689	595	94
 Evanston Ward 1 Precinct 4	995	847	148
-Evanston Ward 2 Precinct 1	1,316	1,158	158
+Evanston Ward 2 Precinct 1	1316	1158	158
 Evanston Ward 2 Precinct 2	537	499	38
 Evanston Ward 2 Precinct 3	695	651	44
 Evanston Ward 2 Precinct 4	862	816	46
@@ -2367,22 +2367,22 @@ Evanston Ward 3 Precinct 7	631	571	60
 Evanston Ward 4 Precinct 1	422	382	40
 Evanston Ward 4 Precinct 2	661	596	65
 Evanston Ward 4 Precinct 3	529	448	81
-Evanston Ward 4 Precinct 4	1,042	895	147
+Evanston Ward 4 Precinct 4	1042	895	147
 Evanston Ward 4 Precinct 5	398	369	29
 Evanston Ward 4 Precinct 6	970	887	83
 Evanston Ward 5 Precinct 1	661	634	27
 Evanston Ward 5 Precinct 2	978	883	95
 Evanston Ward 5 Precinct 3	673	630	43
 Evanston Ward 5 Precinct 4	415	386	29
-Evanston Ward 6 Precinct 1	1,091	891	200
+Evanston Ward 6 Precinct 1	1091	891	200
 Evanston Ward 6 Precinct 2	561	469	92
 Evanston Ward 6 Precinct 3	612	527	85
 Evanston Ward 6 Precinct 4	758	659	99
 Evanston Ward 6 Precinct 5	942	786	156
 Evanston Ward 6 Precinct 6	546	440	106
 Evanston Ward 6 Precinct 7	862	730	132
-Evanston Ward 7 Precinct 1	1,063	926	137
-Evanston Ward 7 Precinct 2	1,121	962	159
+Evanston Ward 7 Precinct 1	1063	926	137
+Evanston Ward 7 Precinct 2	1121	962	159
 Evanston Ward 7 Precinct 3	454	415	39
 Evanston Ward 7 Precinct 4	513	455	58
 Evanston Ward 7 Precinct 5	975	799	176
@@ -2417,14 +2417,14 @@ Hanover 16	881	711	170
 Hanover 17	523	446	77
 Hanover 18	638	553	85
 Hanover 19	581	412	169
-Hanover 20	1,054	891	163
+Hanover 20	1054	891	163
 Hanover 21	438	326	112
 Hanover 22	638	523	115
 Hanover 23	691	577	114
 Hanover 24	666	584	82
 Hanover 25	563	457	106
 Hanover 26	924	778	146
-Hanover 27	1,843	1,426	417
+Hanover 27	1843	1426	417
 Hanover 28	893	756	137
 Hanover 29	452	399	53
 Hanover 30	706	599	107
@@ -2453,7 +2453,7 @@ Lemont 8	806	593	213
 Lemont 9	489	274	215
 Lemont 10	504	403	101
 Lemont 11	961	637	324
-Lemont 12	1,136	776	360
+Lemont 12	1136	776	360
 Lemont 13	948	662	286
 Lemont 14	682	463	219
 Leyden 1	433	377	56
@@ -2478,7 +2478,7 @@ Leyden 19	620	527	93
 Leyden 20	333	278	55
 Leyden 21	432	392	40
 Leyden 22	485	374	111
-Leyden 23	1,049	742	307
+Leyden 23	1049	742	307
 Leyden 24	702	619	83
 Leyden 25	420	341	79
 Leyden 26	952	787	165
@@ -2521,12 +2521,12 @@ Lyons 12	445	270	175
 Lyons 13	266	252	14
 Lyons 14	796	512	284
 Lyons 15	715	489	226
-Lyons 16	1,078	822	256
+Lyons 16	1078	822	256
 Lyons 17	418	269	149
 Lyons 18	571	404	167
 Lyons 19	659	559	100
-Lyons 20	1,011	685	326
-Lyons 21	1,023	668	355
+Lyons 20	1011	685	326
+Lyons 21	1023	668	355
 Lyons 22	424	367	57
 Lyons 23	755	546	209
 Lyons 24	544	351	193
@@ -2549,7 +2549,7 @@ Lyons 40	544	391	153
 Lyons 41	449	295	154
 Lyons 42	620	414	206
 Lyons 43	543	351	192
-Lyons 44	1,026	675	351
+Lyons 44	1026	675	351
 Lyons 45	907	751	156
 Lyons 46	534	390	144
 Lyons 47	620	431	189
@@ -2613,7 +2613,7 @@ Maine 26	519	396	123
 Maine 27	429	328	101
 Maine 28	344	308	36
 Maine 29	938	662	276
-Maine 30	1,407	909	498
+Maine 30	1407	909	498
 Maine 31	607	489	118
 Maine 32	387	290	97
 Maine 33	496	454	42
@@ -2643,7 +2643,7 @@ Maine 56	798	641	157
 Maine 57	430	392	38
 Maine 58	734	539	195
 Maine 59	610	480	130
-Maine 60	1,102	770	332
+Maine 60	1102	770	332
 Maine 61	377	305	72
 Maine 62	339	285	54
 Maine 63	456	369	87
@@ -2676,8 +2676,8 @@ Maine 89	442	374	68
 Maine 90	353	279	74
 Maine 91	896	699	197
 Maine 92	457	387	70
-New Trier 1	1,058	719	339
-New Trier 2	1,097	792	305
+New Trier 1	1058	719	339
+New Trier 2	1097	792	305
 New Trier 3	739	581	158
 New Trier 4	918	637	281
 New Trier 5	593	438	155
@@ -2691,7 +2691,7 @@ New Trier 12	829	556	273
 New Trier 13	936	705	231
 New Trier 14	845	528	317
 New Trier 15	964	646	318
-New Trier 16	1,021	610	411
+New Trier 16	1021	610	411
 New Trier 17	693	557	136
 New Trier 18	555	347	208
 New Trier 19	557	283	274
@@ -2719,7 +2719,7 @@ New Trier 40	458	300	158
 New Trier 41	604	382	222
 Niles 1	689	507	182
 Niles 2	762	637	125
-Niles 3	1,039	699	340
+Niles 3	1039	699	340
 Niles 4	554	454	100
 Niles 5	381	290	91
 Niles 6	611	409	202
@@ -2754,7 +2754,7 @@ Niles 34	663	566	97
 Niles 35	712	603	109
 Niles 36	441	407	34
 Niles 37	656	586	70
-Niles 38	1,093	911	182
+Niles 38	1093	911	182
 Niles 39	753	636	117
 Niles 40	348	285	63
 Niles 41	762	675	87
@@ -2792,7 +2792,7 @@ Northfield 8	769	487	282
 Northfield 9	526	354	172
 Northfield 10	591	472	119
 Northfield 11	410	292	118
-Northfield 12	1,130	801	329
+Northfield 12	1130	801	329
 Northfield 13	608	443	165
 Northfield 14	557	431	126
 Northfield 15	545	391	154
@@ -2801,14 +2801,14 @@ Northfield 17	619	454	165
 Northfield 18	955	708	247
 Northfield 19	731	530	201
 Northfield 20	677	490	187
-Northfield 21	1,007	746	261
+Northfield 21	1007	746	261
 Northfield 22	753	554	199
 Northfield 23	534	316	218
 Northfield 24	627	468	159
 Northfield 25	630	470	160
 Northfield 26	607	503	104
 Northfield 27	651	552	99
-Northfield 28	1,046	807	239
+Northfield 28	1046	807	239
 Northfield 29	606	426	180
 Northfield 30	761	514	247
 Northfield 31	879	610	269
@@ -2831,7 +2831,7 @@ Northfield 47	909	694	215
 Northfield 48	688	521	167
 Northfield 49	547	408	139
 Northfield 50	861	635	226
-Northfield 51	1,581	1,118	463
+Northfield 51	1581	1118	463
 Northfield 52	634	460	174
 Northfield 53	703	527	176
 Northfield 54	557	447	110
@@ -2862,7 +2862,7 @@ Norwood Park 16	453	371	82
 Norwood Park 17	589	490	99
 Oak Park 1	591	540	51
 Oak Park 2	974	769	205
-Oak Park 3	1,037	930	107
+Oak Park 3	1037	930	107
 Oak Park 4	909	713	196
 Oak Park 5	898	734	164
 Oak Park 6	996	900	96
@@ -2874,12 +2874,12 @@ Oak Park 11	746	665	81
 Oak Park 12	434	381	53
 Oak Park 13	803	741	62
 Oak Park 14	864	695	169
-Oak Park 15	1,032	937	95
-Oak Park 16	1,129	983	146
-Oak Park 17	1,146	1,010	136
+Oak Park 15	1032	937	95
+Oak Park 16	1129	983	146
+Oak Park 17	1146	1010	136
 Oak Park 18	711	570	141
 Oak Park 19	819	717	102
-Oak Park 20	1,097	952	145
+Oak Park 20	1097	952	145
 Oak Park 21	591	554	37
 Oak Park 22	549	477	72
 Oak Park 23	766	642	124
@@ -2887,10 +2887,10 @@ Oak Park 24	595	484	111
 Oak Park 25	745	670	75
 Oak Park 26	691	608	83
 Oak Park 27	262	227	35
-Oak Park 28	1,033	922	111
+Oak Park 28	1033	922	111
 Oak Park 29	710	624	86
 Oak Park 30	924	846	78
-Oak Park 31	1,213	1,080	133
+Oak Park 31	1213	1080	133
 Oak Park 32	542	491	51
 Oak Park 33	735	676	59
 Oak Park 34	693	596	97
@@ -2921,7 +2921,7 @@ Orland 21	824	559	265
 Orland 22	609	462	147
 Orland 23	537	402	135
 Orland 24	604	435	169
-Orland 25	1,056	781	275
+Orland 25	1056	781	275
 Orland 26	579	480	99
 Orland 27	449	344	105
 Orland 28	475	322	153
@@ -3011,7 +3011,7 @@ Palatine 36	615	458	157
 Palatine 37	759	594	165
 Palatine 38	635	396	239
 Palatine 39	976	747	229
-Palatine 40	1,012	736	276
+Palatine 40	1012	736	276
 Palatine 41	926	675	251
 Palatine 42	825	604	221
 Palatine 43	590	452	138
@@ -3021,7 +3021,7 @@ Palatine 46	801	584	217
 Palatine 47	703	521	182
 Palatine 48	584	360	224
 Palatine 49	501	320	181
-Palatine 50	1,012	735	277
+Palatine 50	1012	735	277
 Palatine 51	402	313	89
 Palatine 52	685	433	252
 Palatine 53	543	415	128
@@ -3133,7 +3133,7 @@ Proviso 50	929	813	116
 Proviso 51	708	588	120
 Proviso 52	472	435	37
 Proviso 53	633	588	45
-Proviso 54	1,015	831	184
+Proviso 54	1015	831	184
 Proviso 55	625	458	167
 Proviso 56	428	386	42
 Proviso 57	560	469	91
@@ -3150,7 +3150,7 @@ Proviso 67	845	758	87
 Proviso 68	393	332	61
 Proviso 69	539	509	30
 Proviso 70	529	387	142
-Proviso 71	1,035	898	137
+Proviso 71	1035	898	137
 Proviso 72	538	485	53
 Proviso 73	576	517	59
 Proviso 74	588	520	68
@@ -3169,7 +3169,7 @@ Proviso 86	610	569	41
 Proviso 87	674	596	78
 Proviso 88	348	309	39
 Proviso 89	501	419	82
-Proviso 90	1,046	873	173
+Proviso 90	1046	873	173
 Proviso 91	509	458	51
 Proviso 92	814	667	147
 Proviso 93	453	386	67
@@ -3182,14 +3182,14 @@ Proviso 99	604	564	40
 Proviso 100	789	649	140
 Proviso 101	570	490	80
 Proviso 102	749	642	107
-Rich 1	2,073	1,921	152
+Rich 1	2073	1921	152
 Rich 2	597	527	70
 Rich 3	864	753	111
 Rich 4	559	520	39
 Rich 5	790	703	87
 Rich 6	848	769	79
 Rich 7	589	503	86
-Rich 8	1,084	1,006	78
+Rich 8	1084	1006	78
 Rich 9	835	777	58
 Rich 10	507	469	38
 Rich 11	632	575	57
@@ -3201,7 +3201,7 @@ Rich 16	562	506	56
 Rich 17	620	558	62
 Rich 18	704	665	39
 Rich 19	450	363	87
-Rich 20	1,029	741	288
+Rich 20	1029	741	288
 Rich 21	848	793	55
 Rich 22	670	604	66
 Rich 23	907	840	67
@@ -3217,7 +3217,7 @@ Rich 32	865	785	80
 Rich 33	535	415	120
 Rich 34	568	516	52
 Rich 35	489	414	75
-Rich 36	1,320	1,212	108
+Rich 36	1320	1212	108
 Rich 37	495	458	37
 Rich 38	669	640	29
 Rich 39	693	610	83
@@ -3228,12 +3228,12 @@ Rich 43	771	723	48
 Rich 44	522	489	33
 Rich 45	801	703	98
 Rich 46	949	894	55
-Rich 47	1,037	964	73
+Rich 47	1037	964	73
 Rich 48	709	670	39
 Rich 49	674	616	58
 Rich 50	388	328	60
 Rich 51	662	627	35
-River Forest 1	1,013	725	288
+River Forest 1	1013	725	288
 River Forest 2	667	418	249
 River Forest 3	723	572	151
 River Forest 4	822	602	220
@@ -3254,8 +3254,8 @@ Riverside 10	786	546	240
 Riverside 11	890	687	203
 Riverside 12	476	413	63
 Riverside 13	750	612	138
-Schaumburg 1	1,115	936	179
-Schaumburg 2	1,012	878	134
+Schaumburg 1	1115	936	179
+Schaumburg 2	1012	878	134
 Schaumburg 3	663	533	130
 Schaumburg 4	411	361	50
 Schaumburg 5	384	300	84
@@ -3501,7 +3501,7 @@ Wheeling 23	618	384	234
 Wheeling 24	501	354	147
 Wheeling 25	785	651	134
 Wheeling 26	928	696	232
-Wheeling 27	1,026	776	250
+Wheeling 27	1026	776	250
 Wheeling 28	902	627	275
 Wheeling 29	406	336	70
 Wheeling 30	935	677	258
@@ -3515,12 +3515,12 @@ Wheeling 37	784	654	130
 Wheeling 38	760	637	123
 Wheeling 39	722	586	136
 Wheeling 40	677	517	160
-Wheeling 41	1,063	765	298
+Wheeling 41	1063	765	298
 Wheeling 42	888	691	197
 Wheeling 43	660	541	119
 Wheeling 44	811	578	233
 Wheeling 45	503	381	122
-Wheeling 46	1,094	852	242
+Wheeling 46	1094	852	242
 Wheeling 47	604	519	85
 Wheeling 48	591	463	128
 Wheeling 49	813	695	118
@@ -3545,14 +3545,14 @@ Wheeling 67	385	287	98
 Wheeling 68	407	286	121
 Wheeling 69	615	485	130
 Wheeling 70	895	724	171
-Wheeling 71	1,052	788	264
+Wheeling 71	1052	788	264
 Wheeling 72	668	555	113
 Wheeling 73	686	551	135
 Wheeling 74	495	412	83
 Wheeling 75	715	553	162
 Wheeling 76	836	730	106
 Wheeling 77	296	269	27
-Wheeling 78	1,010	764	246
+Wheeling 78	1010	764	246
 Wheeling 79	598	501	97
 Wheeling 80	607	540	67
 Wheeling 81	532	372	160
@@ -3566,7 +3566,7 @@ Wheeling 88	676	553	123
 Wheeling 89	416	359	57
 Wheeling 90	659	497	162
 Wheeling 91	808	651	157
-Wheeling 92	1,077	782	295
+Wheeling 92	1077	782	295
 Worth 1	340	294	46
 Worth 2	728	594	134
 Worth 3	649	520	129
