@@ -187,29 +187,29 @@ var clamp = d3.scaleLinear()
     .range([0, 100])
     .clamp(true);
 
-var BrushMargin = {BrushTop: 20, BrushBottom: 20, BrushRight: 15, BrushLeft: 10},
-    height = 60 - BrushMargin.BrushTop - BrushMargin.BrushBottom,
-    width = 250 - BrushMargin.BrushLeft - BrushMargin.BrushRight;
+var BrushMargin = {BrushTop: 20, BrushBottom: 20, BrushRight: 15, BrushLeft: 15},
+    brushHeight = 60 - BrushMargin.BrushTop - BrushMargin.BrushBottom,
+    brushWidth = 250 - BrushMargin.BrushLeft - BrushMargin.BrushRight;
 
 var brushX = d3.scaleLinear()
     .domain([0, 100])
-    .range([0, width])
+    .range([0, brushWidth])
     .clamp(true);
+
+var brush = d3.brushX()
+    .extent([[0, 0], [brushWidth, brushHeight]]) .on("brush", brushed);
 
 var brushSvg = d3.select("#brush")
   .append("svg")
-    .attr("width", width + BrushMargin.BrushLeft + BrushMargin.BrushRight)
-    .attr("height", height + BrushMargin.BrushTop + BrushMargin.BrushBottom)
+    .attr("width", brushWidth + BrushMargin.BrushLeft + BrushMargin.BrushRight) .attr("height", brushHeight + BrushMargin.BrushTop + BrushMargin.BrushBottom)
   .append("g")
     .attr("transform", "translate(" + BrushMargin.BrushLeft + "," + BrushMargin.BrushTop + ")");
-
-var gb = brushSvg.append("g");
 
 brushTitle = brushSvg.append("title").attr("id", "brush-title");
 
 var demographicBrush = brushSvg.append("g")
     .attr("id", "brushAxis")
-    .attr("transform", "translate(0," + height + ")");
+    .attr("transform", "translate(0," + brushHeight + ")");
 
 var brushXAxis = d3.axisBottom(brushX)
     .tickSize(2);
@@ -218,24 +218,11 @@ demographicBrush.call(brushXAxis);
 
 //demographicBrush.selectAll(".tick line,path").style("visibility", "hidden")
 
-var brush = d3.brushX()
-    .extent([[0, 0], [width, height]])
-    .on("brush", brushed);
-
-function brushed() {
-  const selection = d3.event.selection;
-  if (selection) {
-    var x0 = brushX.invert(selection[0]),
-        x1 = brushX.invert(selection[1]),
-        demographic = filterByRadios.nodes().filter(x => x.checked)[0].value;
-    brushTitle.html(`[${+x0.toFixed(1)}, ${+x1.toFixed(1)}]`);
-
-    d3.selectAll(".precinct-path")
-        .classed("brushed-hidden", d => ((clamp(d.properties[demographic]) < x0) || (clamp(d.properties[demographic]) > x1)) ? true : null);
-  }
-
-  d3.select(this).call(brushHandle, selection);
-}
+arc = d3.arc()
+    .innerRadius(0)
+    .outerRadius(brushHeight / 2)
+    .startAngle(0)
+    .endAngle((d, i) => i ? Math.PI : -Math.PI)
 
 brushHandle = (g, selection) => g
   .selectAll(".handle--custom")
@@ -246,18 +233,42 @@ brushHandle = (g, selection) => g
         .attr("fill", "#666")
         .attr("fill-opacity", 0.8)
         .attr("stroke", "#000")
-        .attr("stroke-width", 1.5)
-        .attr("cursor", "ew-resize")
+        .attr("stroke-width", 1.5) .attr("cursor", "ew-resize")
         .attr("d", arc)
   )
     .attr("display", selection === null ? "none" : null)
-    .attr("transform", selection === null ? null : (d, i) => `translate(${selection[i]},${(height) / 2})`)
+    .attr("transform", selection === null ? null : (d, i) => `translate(${selection[i]},${(brushHeight) / 2})`)
 
-arc = d3.arc()
-    .innerRadius(0)
-    .outerRadius(height / 2)
-    .startAngle(0)
-    .endAngle((d, i) => i ? Math.PI : -Math.PI)
+brushSvg.append("g")
+    .call(brush)
+    .call(brush.move, [brushX(10), brushWidth])
+  .selectAll(".overlay")
+    .each(d => d.type = "selection")
+    .on("mousedown touchstart", brushcentered);
+
+// https://bl.ocks.org/mbostock/6498000
+function brushcentered() {
+  var dx = brushX(10) - brushX(0), // Use a fixed width when recentering.
+      cx = d3.mouse(this)[0],
+      x0 = cx - dx / 2,
+      x1 = cx + dx / 2;
+  d3.select(this.parentNode).call(brush.move, x1 > brushWidth ? [brushWidth - dx, brushWidth] : x0 < 0 ? [0, dx] : [x0, x1]);
+}
+
+function brushed() {
+  const selection = d3.event.selection;
+  if (selection) {
+    var x0 = brushX.invert(selection[0]),
+        x1 = brushX.invert(selection[1]),
+        demographic = filterByRadios.nodes().filter(x => x.checked)[0].value;
+    brushTitle.html(`[${+x0.toFixed(1)}, ${+x1.toFixed(1)}]`);
+
+    d3.selectAll(".precinct-path")
+        .classed("brushed-hidden", d => ((clamp(d.properties[pctProperties[demographic]]) < x0) || (clamp(d.properties[pctProperties[demographic]]) > x1)) ? true : null);
+  }
+
+  d3.select(this).call(brushHandle, selection);
+}
 
 // load geospatial boundaries
 loadTurnoutData();
@@ -390,9 +401,6 @@ function draw(precincts) {
           d3.select(".precinct-path.active").classed("active", null);
           caption.update(null);
         });
-
-    gb.call(brush)
-      .call(brush.move, [brushX(10), width]);
 
     // center map on feature and reset home position
     var bbox = turf.bbox({type: "FeatureCollection", "features": filteredPrecincts});
