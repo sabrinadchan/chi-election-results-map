@@ -399,7 +399,7 @@ function draw(precincts) {
             caption.update(null);
           }
         })
-        .on("click touchstart", function(d) {
+        .on("click", function(d) {
           if (d3.select(this).classed("locked")) {
             locked = false;
             d3.select(this).classed("locked", null);
