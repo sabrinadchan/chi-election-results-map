@@ -67,6 +67,8 @@ const races = {
   "Alderman 48th Ward": {district: 48, race: "Alderman 48th Ward", elections: ["mg15", "mg19",]},
   "Alderman 49th Ward": {district: 49, race: "Alderman 49th Ward", elections: ["mg15", "mg19",]},
   "Alderman 50th Ward": {district: 50, race: "Alderman 50th Ward", elections: ["mg15", "mg19",]},
+  "Socialist Aldermen (Round One)": {district: "var", race: "Socialist Aldermen (Round One)", elections: ["mg19",]},
+  "Socialist Aldermen (Final Result)": {district: "var", race: "Socialist Aldermen (Final Result)", elections: ["mr19",]},
   "W10 - Petroleum Coke Ban": {district: 10, race: "W10 - Petroleum Coke Ban", elections: ["mg15"]},
   "Elected School Board": {district: "var", race: "Elected School Board", elections: ["mg15"]},
   "W16-P30-Form TIF Council": {district: "16030", race: "W16-P30-Form TIF Council", elections: ["mg15"]},
