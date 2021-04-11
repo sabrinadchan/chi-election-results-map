@@ -239,8 +239,7 @@ brushHandle = (g, selection) => g
     .attr("transform", selection === null ? null : (d, i) => `translate(${selection[i]},${(brushHeight) / 2})`)
 
 var bg = brushSvg.append("g")
-    .call(brush)
-    .call(brush.move, [0, brushWidth]);
+    .call(brush);
 
 bg.selectAll(".overlay")
     .each(d => d.type = "selection")
@@ -406,6 +405,8 @@ function draw(precincts) {
           d3.select(".precinct-path.active").classed("active", null);
           caption.update(null);
         });
+
+    bg.call(brush.move, [0, brushWidth]);
 
     // center map on feature and reset home position
     var bbox = turf.bbox({type: "FeatureCollection", "features": filteredPrecincts});
