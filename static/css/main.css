@@ -16,7 +16,7 @@ html, body {
   overflow: auto
 }
 
-#results-table thead tr th {
+#results-table thead tr th, .caption table thead tr th, .caption h4 {
   position: sticky;
   top: 0;
 }
@@ -77,6 +77,11 @@ td.num-cell, th.num-cell {
   border-radius: 5px;
 }
 
+#caption-table-wrapper {
+  max-height: 200px;
+  overflow: auto;
+}
+
 .caption h4 {
   margin: 0 3px;
 }
@@ -84,6 +89,10 @@ td.num-cell, th.num-cell {
 .caption span {
   margin: 0 3px;
   font-size: 10px;
+}
+
+.caption table th {
+  background: #ddd;
 }
 
 .caption td.name-cell, th.name-cell {
@@ -128,11 +137,6 @@ footer span {
 
   #map {
     height: 558px;
-  }
-
-  .caption {
-    overflow-y: auto;
-    max-height: 150px;
   }
 
   footer {
