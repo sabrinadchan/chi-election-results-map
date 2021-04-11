@@ -104,8 +104,8 @@ caption.addTo(map);
 var captionDiv = d3.select(".caption").node();
 if (!L.Browser.touch) {
   L.DomEvent.disableClickPropagation(captionDiv);
-  L.DomEvent.disableScrollPropagation(captionDiv);
 } else {
+  L.DomEvent.disableScrollPropagation(captionDiv);
   L.DomEvent.disableClickPropagation(captionDiv);
 }
 
@@ -129,6 +129,7 @@ layer.onAdd = function(map) {
   div.innerHTML = `<div class="leaflet-control-layers leaflet-control" aria-haspopup="true">
     <a class="leaflet-control-layers-toggle" href="#" title="Layers"></a>
     <form class="leaflet-control-layers-list">
+    Filter precincts by demographics:
     <div id="brush">
     </div>
       <div class="leaflet-control-layers-base" style='display:inline;'>
@@ -161,12 +162,8 @@ layer.addTo(map);
 filterByRadios = d3.selectAll(".filterByRadio");
 
 var leafletControlDiv = d3.select(".leaflet-control-layers.leaflet-control").node();
-if (!L.Browser.touch) {
-  L.DomEvent.disableClickPropagation(leafletControlDiv);
-  L.DomEvent.disableScrollPropagation(leafletControlDiv);
-} else {
-  L.DomEvent.disableClickPropagation(leafletControlDiv);
-}
+L.DomEvent.disableScrollPropagation(leafletControlDiv);
+L.DomEvent.disableClickPropagation(leafletControlDiv);
 
 // add svg overlay to map
 L.svg().addTo(map); // render all paths with SVG
@@ -187,9 +184,9 @@ var clamp = d3.scaleLinear()
     .range([0, 100])
     .clamp(true);
 
-var BrushMargin = {BrushTop: 20, BrushBottom: 20, BrushRight: 15, BrushLeft: 15},
-    brushHeight = 60 - BrushMargin.BrushTop - BrushMargin.BrushBottom,
-    brushWidth = 250 - BrushMargin.BrushLeft - BrushMargin.BrushRight;
+var BrushMargin = {BrushTop: 5, BrushBottom: 15, BrushRight: 15, BrushLeft: 15},
+    brushHeight = 40 - BrushMargin.BrushTop - BrushMargin.BrushBottom,
+    brushWidth = 230 - BrushMargin.BrushLeft - BrushMargin.BrushRight;
 
 var brushX = d3.scaleLinear()
     .domain([0, 100])
@@ -239,20 +236,25 @@ brushHandle = (g, selection) => g
     .attr("display", selection === null ? "none" : null)
     .attr("transform", selection === null ? null : (d, i) => `translate(${selection[i]},${(brushHeight) / 2})`)
 
-brushSvg.append("g")
+var bg = brushSvg.append("g")
     .call(brush)
-    .call(brush.move, [brushX(10), brushWidth])
-  .selectAll(".overlay")
+    .call(brush.move, [0, brushWidth]);
+
+bg.selectAll(".overlay")
     .each(d => d.type = "selection")
     .on("mousedown touchstart", brushcentered);
 
+filterByRadios.on("change", function() {
+  bg.call(brush.move, [0, brushWidth]);
+})
+
 // https://bl.ocks.org/mbostock/6498000
 function brushcentered() {
-  var dx = brushX(10) - brushX(0), // Use a fixed width when recentering.
+  var dx = brushX(10) - brushX(0),
       cx = d3.mouse(this)[0],
       x0 = cx - dx / 2,
       x1 = cx + dx / 2;
-  d3.select(this.parentNode).call(brush.move, x1 > brushWidth ? [brushWidth - dx, brushWidth] : x0 < 0 ? [0, dx] : [x0, x1]);
+  bg.call(brush.move, x1 > brushWidth ? [brushWidth - dx, brushWidth] : x0 < 0 ? [0, dx] : [x0, x1]);
 }
 
 function brushed() {
@@ -382,6 +384,7 @@ function draw(precincts) {
         .attr("id", d => "precinct" + d.properties.full_text)
         .attr("fill", d => winnerColor(results.get(d.properties.full_text)[0].candidate))
         .on("mouseover", function(d) {
+          d3.select(".precinct-path.active").classed("active", null);
           d3.select(this).classed("active", true);
           d3.select(this).raise();
           caption.update(d);
@@ -397,7 +400,7 @@ function draw(precincts) {
             caption.update(d);
           }
         })
-        .on("mouseout", function(d) {
+        .on("click", function(d) {
           d3.select(".precinct-path.active").classed("active", null);
           caption.update(null);
         });
