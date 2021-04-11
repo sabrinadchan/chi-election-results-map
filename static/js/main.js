@@ -304,9 +304,9 @@ const pctProperties = {
   "renterPct": "r",
   "whitePct": "w",
   "blackPct": "b",
-  "latinoPct": "l",
+  "hispanicPct": "h",
   "asianPct": "a",
   "income": "i",
   "spanish": "s",
-  "nonEnglish": "n",
+  "otherLang": "o",
 }
