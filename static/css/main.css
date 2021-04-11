@@ -88,6 +88,10 @@ td.num-cell, th.num-cell {
   display: none;
 }
 
+.brushed-hidden {
+  display: none;
+}
+
 footer {
   margin-top: 30px;
   font-size: 10px;
