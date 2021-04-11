@@ -299,3 +299,14 @@ const races = {
   "Rent Control": {district: "var", race: "Rent Control", elections: ["midp18", "midg18", "mg19"]},
 }
 
+const pctProperties = {
+  "full_text": "f",
+  "renterPct": "r",
+  "whitePct": "w",
+  "blackPct": "b",
+  "hispanicPct": "h",
+  "asianPct": "a",
+  "income": "i",
+  "spanish": "s",
+  "otherLang": "o",
+}

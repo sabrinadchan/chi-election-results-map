@@ -32,13 +32,15 @@
   </div>
 
   <div id="results">
-    <table id="results-table">
-      <thead>
-        <tr><th class="name-cell">Candidates</th><th class="num-cell">Votes</th><th class="num-cell">Pct</th></tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
+    <div id="results-table-wrapper">
+      <table id="results-table">
+        <thead>
+          <tr><th class="name-cell">Candidates</th><th class="num-cell">Votes</th><th class="num-cell">Pct</th><th></th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
     <p id="total-results">
     </p>
   </div>
@@ -95,7 +97,7 @@ caption.onAdd = function (map) {
 };
 
 caption.update = function (d) {
-  this._div.innerHTML = (d ? "<h4>" + parsePrecinct(d.properties.full_text) + "</h4><table><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties.full_text).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.candidate) + "'>" + r.candidate + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table><span>(" + turnout.get(d.properties.full_text).turnoutPct.toFixed(2) + "% turnout)</span>"
+  this._div.innerHTML = (d ? "<h4>" + parsePrecinct(d.properties[pctProperties["full_text"]]) + "</h4><div id='caption-table-wrapper'><table id='caption-table'><thead><tr><th class='name-cell'>Candidates</th><th class='num-cell'>Votes</th><th class='num-cell'>Pct</th></tr></thead>" + results.get(d.properties[pctProperties["full_text"]]).map((r,i) => "<tr><td class='name-cell' style='background-color:" + winnerColor(r.candidate) + "'>" + r.candidate + "</td><td class='num-cell'>" + r.votes + "</td><td class='num-cell'>" + r.percent.toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td></tr>").join("") + "</table></div><span>" + d3.sum(results.get(d.properties[pctProperties["full_text"]]), r => r.votes)+ " votes (" + turnout.get(d.properties[pctProperties["full_text"]]).turnoutPct.toFixed(2) + "% turnout)</span>"
       : "Hover over a precinct");
 };
 
@@ -104,13 +106,13 @@ caption.addTo(map);
 var captionDiv = d3.select(".caption").node();
 if (!L.Browser.touch) {
   L.DomEvent.disableClickPropagation(captionDiv);
-  L.DomEvent.disableScrollPropagation(captionDiv);
 } else {
+  L.DomEvent.disableScrollPropagation(captionDiv);
   L.DomEvent.disableClickPropagation(captionDiv);
 }
 
-var zoomHome = L.Control.zoomHome();
-zoomHome.addTo(map);
+//var zoomHome = L.Control.zoomHome();
+//zoomHome.addTo(map);
 
 var legend = L.control({position: 'bottomleft'});
 
@@ -120,6 +122,49 @@ legend.onAdd = function(map) {
 
   return div;
 }
+
+layer = L.control({position: 'topleft'});
+//layer = L.control.layers(null);
+
+layer.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "empty");
+  div.innerHTML = `<div class="leaflet-control-layers leaflet-control" aria-haspopup="true">
+    <a class="leaflet-control-layers-toggle" href="#" title="Layers"></a>
+    <form class="leaflet-control-layers-list">
+    Filter precincts by demographics:
+    <div id="brush">
+    </div>
+      <div class="leaflet-control-layers-base" style='display:inline;'>
+        <input type="radio" class="filterByRadio" id="filterByWhitePct" name="filterBy" value="whitePct"> White alone % <br>
+        <input type="radio" class="filterByRadio" id="filterByAsianPct" name="filterBy" value="asianPct"> Asian alone % <br>
+        <input type="radio" class="filterByRadio" id="filterByBlackPct" name="filterBy" value="blackPct"> Black alone % <br>
+        <input type="radio" class="filterByRadio" id="filterByHispanicPct" name="filterBy" value="hispanicPct"> Hispanic or Latino % <br>
+        <input type="radio" class="filterByRadio" id="filterByRenterPct" name="filterBy" value="renterPct" checked> Renter-occupied units % <br>
+        <input type="radio" class="filterByRadio" id="filterBySpanish" name="filterBy" value="spanish"> Spanish Speaker % <br>
+        <input type="radio" class="filterByRadio" id="filterByNonEnglish" name="filterBy" value="otherLang"> Other language speaker %
+      </div>
+      <div class="leaflet-control-layers-separator" style="display: none;"></div>
+      <div class="leaflet-control-layers-overlays"></div>
+    </form>
+  </div>`
+
+  div.firstChild.onmouseover = function() {
+    div.firstChild.classList.add("leaflet-control-layers-expanded");
+  }
+
+  div.firstChild.onmouseout = function() {
+    div.firstChild.classList.remove("leaflet-control-layers-expanded");
+  }
+
+  return div;
+}
+
+layer.addTo(map);
+filterByRadios = d3.selectAll(".filterByRadio");
+
+var leafletControlDiv = d3.select(".leaflet-control-layers.leaflet-control").node();
+L.DomEvent.disableScrollPropagation(leafletControlDiv);
+L.DomEvent.disableClickPropagation(leafletControlDiv);
 
 // add svg overlay to map
 L.svg().addTo(map); // render all paths with SVG
@@ -134,10 +179,108 @@ var winnerColor = d3.scaleOrdinal(
 var pctColor = d3.scaleQuantile()
     .domain([0, 75]);
 
+// DEMOGRAPHIC BRUSH FILTER DEFINITIONS AND FUNCTIONS
+var clamp = d3.scaleLinear()
+    .domain([0, 100])
+    .range([0, 100])
+    .clamp(true);
+
+var BrushMargin = {BrushTop: 5, BrushBottom: 15, BrushRight: 25, BrushLeft: 25},
+    brushHeight = 40 - BrushMargin.BrushTop - BrushMargin.BrushBottom,
+    brushWidth = 250 - BrushMargin.BrushLeft - BrushMargin.BrushRight;
+
+var brushX = d3.scaleLinear()
+    .domain([0, 1])
+    .range([0, brushWidth])
+    .clamp(true);
+
+var brush = d3.brushX()
+    .extent([[0, 0], [brushWidth, brushHeight]])
+    .on("brush", brushed);
+
+var brushSvg = d3.select("#brush")
+  .append("svg")
+    .attr("width", brushWidth + BrushMargin.BrushLeft + BrushMargin.BrushRight) .attr("height", brushHeight + BrushMargin.BrushTop + BrushMargin.BrushBottom)
+  .append("g")
+    .attr("transform", "translate(" + BrushMargin.BrushLeft + "," + BrushMargin.BrushTop + ")");
+
+brushTitle = brushSvg.append("title").attr("id", "brush-title");
+
+var demographicBrush = brushSvg.append("g")
+    .attr("id", "brushAxis")
+    .attr("transform", "translate(0," + brushHeight + ")");
+
+var brushXAxis = d3.axisBottom(brushX)
+    .tickSize(2);
+
+demographicBrush.call(brushXAxis);
+
+//demographicBrush.selectAll(".tick line,path").style("visibility", "hidden")
+
+arc = d3.arc()
+    .innerRadius(0)
+    .outerRadius(brushHeight / 2)
+    .startAngle(0)
+    .endAngle((d, i) => i ? Math.PI : -Math.PI)
+
+brushHandle = (g, selection) => g
+  .selectAll(".handle--custom")
+  .data([{type: "w"}, {type: "e"}])
+  .join(
+    enter => enter.append("path")
+        .attr("class", "handle--custom")
+        .attr("fill", "#666")
+        .attr("fill-opacity", 0.8)
+        .attr("stroke", "#000")
+        .attr("stroke-width", 1.5) .attr("cursor", "ew-resize")
+        .attr("d", arc)
+  )
+    .attr("display", selection === null ? "none" : null)
+    .attr("transform", selection === null ? null : (d, i) => `translate(${selection[i]},${(brushHeight) / 2})`)
+
+var bg = brushSvg.append("g")
+    .call(brush)
+    .call(brush.move, [0, brushWidth]);
+
+bg.selectAll(".overlay")
+    .each(d => d.type = "selection")
+    .on("mousedown touchstart", brushcentered);
+
+filterByRadios.on("change", function() {
+  bg.call(brush.move, [0, brushWidth]);
+})
+
+// https://bl.ocks.org/mbostock/6498000
+function brushcentered() {
+  var dx = brushX(0.1) - brushX(0),
+      cx = d3.mouse(this)[0],
+      x0 = cx - dx / 2,
+      x1 = cx + dx / 2;
+  bg.call(brush.move, x1 > brushWidth ? [brushWidth - dx, brushWidth] : x0 < 0 ? [0, dx] : [x0, x1]);
+}
+
+function brushed() {
+  const selection = d3.event.selection;
+  if (selection) {
+    var x0 = brushX.invert(selection[0]),
+        x1 = brushX.invert(selection[1]),
+        demographic = filterByRadios.nodes().filter(x => x.checked)[0].value;
+    console.log(pctProperties[demographic])
+    console.log(x0)
+    console.log(x1)
+    brushTitle.html(`[${+x0.toFixed(1)}, ${+x1.toFixed(1)}]`);
+
+    d3.selectAll(".precinct-path")
+        .classed("brushed-hidden", d => ((clamp(d.properties[pctProperties[demographic]]) < x0) || (clamp(d.properties[pctProperties[demographic]]) > x1)) ? true : null);
+  }
+
+  d3.select(this).call(brushHandle, selection);
+}
+
 // load geospatial boundaries
 loadTurnoutData();
 Promise.all([
-  d3.json("data/geospatial/allprecincts.topojson"),
+  d3.json("data/geospatial/cook-chi-precincts-demographics-simp9pct.topojson"),
 ])
 .then(([precincts]) => {
   raceSelect.on("change", () => {
@@ -188,7 +331,7 @@ function draw(precincts) {
     // filter only precincts relevant to election
     var usePrecincts = results.keys(),
         precinctFeatures = topojson.feature(precincts, precincts.objects.precincts).features,
-        filteredPrecincts = precinctFeatures.filter(d => usePrecincts.includes(d.properties.full_text));
+        filteredPrecincts = precinctFeatures.filter(d => usePrecincts.includes(d.properties[pctProperties["full_text"]]));
 
     var precinctIntersections = [];
     if (typeof districtTopo !== 'undefined') {
@@ -233,7 +376,7 @@ function draw(precincts) {
       .enter().append("tr")
         .html((d, i) => "<td class='name-cell" + (!i || (elections[election].substring(0,2 )== "mg" && i == 1 && sortedSummary[0].value / totalVotes < 0.5) ? " winner'" : "'") + " style='background-color:" + winnerColor(d.key) + "'><span>" + d.key + "</span>" + (!i || (elections[election].substring(0,2 )== "mg" && i == 1 && sortedSummary[0].value / totalVotes < 0.5) ? "<span class='win-symbol'> &#10003;</span>" : "") + "<td class='num-cell'>" + d.value.toLocaleString() + "</td><td class='num-cell'>" + (d.value / totalVotes * 100).toFixed(2) + "</td><td>" + (!i ? "%" : "") + "</td>")
 
-    var districtTurnout = (d3.sum(filteredPrecincts, d => turnout.get(d.properties.full_text).ballotsCast) * 100.0 / d3.sum(filteredPrecincts, d => turnout.get(d.properties.full_text).registeredVoters)).toFixed(2);
+    var districtTurnout = (d3.sum(filteredPrecincts, d => turnout.get(d.properties[pctProperties["full_text"]]).ballotsCast) * 100.0 / d3.sum(filteredPrecincts, d => turnout.get(d.properties[pctProperties["full_text"]]).registeredVoters)).toFixed(2);
 
     d3.select("#total-results")
         .html(totalVotes.toLocaleString() + " votes (" + districtTurnout + "% turnout)<br />" + filteredPrecincts.length.toLocaleString() + " of " + filteredPrecincts.length.toLocaleString() + " precincts reporting")
@@ -243,9 +386,10 @@ function draw(precincts) {
         .data(filteredPrecincts)
       .enter().append("path")
         .attr("class", "precinct-path")
-        .attr("id", d => "precinct" + d.properties.full_text)
-        .attr("fill", d => winnerColor(results.get(d.properties.full_text)[0].candidate))
+        .attr("id", d => "precinct" + d.properties[pctProperties["full_text"]])
+        .attr("fill", d => winnerColor(results.get(d.properties[pctProperties["full_text"]])[0].candidate))
         .on("mouseover", function(d) {
+          d3.select(".precinct-path.active").classed("active", null);
           d3.select(this).classed("active", true);
           d3.select(this).raise();
           caption.update(d);
@@ -261,7 +405,7 @@ function draw(precincts) {
             caption.update(d);
           }
         })
-        .on("mouseout", function(d) {
+        .on("click", function(d) {
           d3.select(".precinct-path.active").classed("active", null);
           caption.update(null);
         });
@@ -270,7 +414,7 @@ function draw(precincts) {
     var bbox = turf.bbox({type: "FeatureCollection", "features": filteredPrecincts});
     bbox = [[bbox[1], bbox[0]], [bbox[3], bbox[2]]]
     map.flyToBounds(bbox)
-    zoomHome.setHomeBounds(bbox);
+    //zoomHome.setHomeBounds(bbox);
 
     map.on("moveend", reset);
     reset();
@@ -294,7 +438,7 @@ function projectPoint(x, y) {
 function updateColors(candidate) {
   if (candidate == "All") {
     d3.selectAll(".precinct-path")
-        .attr("fill", d => winnerColor(results.get(d.properties.full_text)[0].candidate))
+        .attr("fill", d => winnerColor(results.get(d.properties[pctProperties["full_text"]])[0].candidate))
   } else {
     // create discrete sequential color scale from categorical color corresponding to candidate
     var c = d3.scaleLinear().domain([0,4])
@@ -306,7 +450,7 @@ function updateColors(candidate) {
     pctColor.range([...Array(5).keys()].map(x => c(x)));
 
     d3.selectAll(".precinct-path")
-        .attr("fill", d => pctColor(results.get(d.properties.full_text).find(x => x.candidate == candidate).percent))
+        .attr("fill", d => pctColor(results.get(d.properties[pctProperties["full_text"]]).find(x => x.candidate == candidate).percent))
   }
 }
 

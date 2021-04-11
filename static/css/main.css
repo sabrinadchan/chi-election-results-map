@@ -14,6 +14,20 @@ html, body {
   margin: 20px 0px;
 }
 
+#results-table-wrapper {
+  max-height: 300px;
+  overflow: auto
+}
+
+#results-table thead tr th, #caption-table table thead tr th, .caption h4 {
+  position: sticky;
+  top: 0;
+}
+
+#results-table th {
+  background: white;
+}
+
 td {
   border-radius: 3px;
 }
@@ -66,6 +80,11 @@ td.num-cell, th.num-cell {
   border-radius: 5px;
 }
 
+#caption-table-wrapper {
+  max-height: 200px;
+  overflow: auto;
+}
+
 .caption h4 {
   margin: 0 3px;
 }
@@ -73,6 +92,10 @@ td.num-cell, th.num-cell {
 .caption span {
   margin: 0 3px;
   font-size: 10px;
+}
+
+.caption table th {
+  background: #ddd;
 }
 
 .caption td.name-cell, th.name-cell {
@@ -85,6 +108,10 @@ td.num-cell, th.num-cell {
 }
 
 .axis path, .axis line {
+  display: none;
+}
+
+.brushed-hidden {
   display: none;
 }
 
@@ -113,11 +140,6 @@ footer span {
 
   #map {
     height: 558px;
-  }
-
-  .caption {
-    overflow-y: auto;
-    max-height: 150px;
   }
 
   footer {
