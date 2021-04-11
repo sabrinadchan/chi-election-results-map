@@ -308,5 +308,5 @@ const pctProperties = {
   "asianPct": "a",
   "income": "i",
   "spanish": "s",
-  "non-english": "n",
+  "nonEnglish": "n",
 }

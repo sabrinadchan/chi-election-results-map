@@ -12,6 +12,17 @@ html, body {
 #results {
   font-size: 16px;
   margin: 20px 0px;
+  max-height: 300px;
+  overflow: auto
+}
+
+#results-table thead tr th {
+  position: sticky;
+  top: 0;
+}
+
+#results-table th {
+  background: white;
 }
 
 td {
