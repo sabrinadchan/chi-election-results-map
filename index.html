@@ -15,8 +15,6 @@
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
    crossorigin=""></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="static/css/leaflet.zoomhome.css"/>
-<script src="static/js/leaflet.zoomhome.min.js"></script>
 <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body>
@@ -50,6 +48,8 @@
 var turnout,
     candidates,
     results;
+
+var locked = false;
 
 var electionSelect = d3.select("#election-select"),
     raceSelect = d3.select("#race-select"),
@@ -110,10 +110,6 @@ if (!L.Browser.touch) {
   L.DomEvent.disableScrollPropagation(captionDiv);
   L.DomEvent.disableClickPropagation(captionDiv);
 }
-
-//var zoomHome = L.Control.zoomHome();
-//zoomHome.addTo(map);
-
 var legend = L.control({position: 'bottomleft'});
 
 legend.onAdd = function(map) {
@@ -150,6 +146,10 @@ layer.onAdd = function(map) {
 
   div.firstChild.onmouseover = function() {
     div.firstChild.classList.add("leaflet-control-layers-expanded");
+    locked = false;
+    caption.update(null);
+    d3.select(".precinct-path.hover").classed("hover", null);
+    d3.select(".precinct-path.locked").classed("locked", null);
   }
 
   div.firstChild.onmouseout = function() {
@@ -211,7 +211,9 @@ var demographicBrush = brushSvg.append("g")
     .attr("transform", "translate(0," + brushHeight + ")");
 
 var brushXAxis = d3.axisBottom(brushX)
-    .tickSize(2);
+    .ticks(10)
+    .tickSize(3)
+    .tickFormat((d, i) => i % 2 ? "" : d * 100 + (d == 1 ? "%" : ""))
 
 demographicBrush.call(brushXAxis);
 
@@ -264,7 +266,7 @@ function brushed() {
     var x0 = brushX.invert(selection[0]),
         x1 = brushX.invert(selection[1]),
         demographic = filterByRadios.nodes().filter(x => x.checked)[0].value;
-    brushTitle.html(`[${+x0.toFixed(1)}, ${+x1.toFixed(1)}]`);
+    brushTitle.html(`[${(+x0 * 100).toFixed(1)}, ${(+x1 * 100).toFixed(1)}]`);
 
     d3.selectAll(".precinct-path")
         .classed("brushed-hidden", d => ((clamp(d.properties[pctProperties[demographic]]) < x0) || (clamp(d.properties[pctProperties[demographic]]) > x1)) ? true : null);
@@ -385,25 +387,31 @@ function draw(precincts) {
         .attr("id", d => "precinct" + d.properties[pctProperties["full_text"]])
         .attr("fill", d => winnerColor(results.get(d.properties[pctProperties["full_text"]])[0].candidate))
         .on("mouseover", function(d) {
-          d3.select(".precinct-path.active").classed("active", null);
-          d3.select(this).classed("active", true);
-          d3.select(this).raise();
-          caption.update(d);
-        })
-        .on("touchstart", function(d) {
-          if (d3.select(this).classed("active")) {
-            d3.select(this).classed("active", null);
-            caption.update(null);
-          } else {
-            d3.select(".precinct-path.active").classed("active", null);
-            d3.select(this).classed("active", true);
+          if (!locked) {
+            d3.select(this).classed("hover", true);
             d3.select(this).raise();
             caption.update(d);
           }
         })
-        .on("click", function(d) {
-          d3.select(".precinct-path.active").classed("active", null);
-          caption.update(null);
+        .on("mouseout", function(d) {
+          if (!locked) {
+            d3.select(this).classed("hover", null);
+            caption.update(null);
+          }
+        })
+        .on("click touchstart", function(d) {
+          if (d3.select(this).classed("locked")) {
+            locked = false;
+            d3.select(this).classed("locked", null);
+            caption.update(null);
+          } else {
+            locked = true;
+            d3.select(".precinct-path.hover").classed("hover", null);
+            d3.select(".precinct-path.locked").classed("locked", null);
+            d3.select(this).classed("locked", true);
+            d3.select(this).raise();
+            caption.update(d);
+          }
         });
 
     bg.call(brush.move, [0, brushWidth]);
@@ -412,7 +420,6 @@ function draw(precincts) {
     var bbox = turf.bbox({type: "FeatureCollection", "features": filteredPrecincts});
     bbox = [[bbox[1], bbox[0]], [bbox[3], bbox[2]]]
     map.flyToBounds(bbox)
-    //zoomHome.setHomeBounds(bbox);
 
     map.on("moveend", reset);
     reset();
@@ -548,13 +555,18 @@ function parsePrecinct(p) {
       <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> |
     </span>
     <span>
-      Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.
-    </span><br>
+      Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>
+    </span>
+    <br>
     <span>Source: <a href="https://github.com/sabrinadchan/chi-election-results-map">GitHub</a> |
     </span>
     <span>City results: <a href="https://chicagoelections.gov/en/election-results.html">Chicago Board of Election Commissioners</a>
     </span> |
     <span>Suburban results: <a href="https://www.cookcountyclerk.com/election-results">Cook County Clerk</a>
+    </span>
+    <br>
+    <span>
+      Demographic Data: <a href="https://www.census.gov/programs-surveys/acs">U.S. Census Bureau</a> 2019 ACS 5-year estimates accessed via the <a href="https://pypi.org/project/CensusData/">CensusData</a> Python package.
     </span>
   </p>
 </footer>

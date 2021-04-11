@@ -63,8 +63,12 @@ td.num-cell, th.num-cell {
   stroke-width: 0.25px;
 }
 
-.precinct-path.active {
+.precinct-path.hover {
   stroke-width: 1.5px;
+}
+
+.precinct-path.locked {
+  stroke-width: 2.5px;
 }
 
 .leaflet-overlay-pane svg path{
