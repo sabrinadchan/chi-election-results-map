@@ -140,7 +140,7 @@ layer.onAdd = function(map) {
         <input type="radio" class="filterByRadio" id="filterByBlackPct" name="filterBy" value="blackPct"> Black alone % <br>
         <input type="radio" class="filterByRadio" id="filterByHispanicPct" name="filterBy" value="hispanicPct"> Hispanic or Latino % <br>
         <input type="radio" class="filterByRadio" id="filterByRenterPct" name="filterBy" value="renterPct" checked> Renter-occupied units % <br>
-        <input type="radio" class="filterByRadio" id="filterBySpanish" name="filterBy" value="spanish"> Spanish Speaker % <br>
+        <input type="radio" class="filterByRadio" id="filterBySpanish" name="filterBy" value="spanish"> Spanish speaker % <br>
         <input type="radio" class="filterByRadio" id="filterByNonEnglish" name="filterBy" value="otherLang"> Other language speaker %
       </div>
       <div class="leaflet-control-layers-separator" style="display: none;"></div>
@@ -265,9 +265,6 @@ function brushed() {
     var x0 = brushX.invert(selection[0]),
         x1 = brushX.invert(selection[1]),
         demographic = filterByRadios.nodes().filter(x => x.checked)[0].value;
-    console.log(pctProperties[demographic])
-    console.log(x0)
-    console.log(x1)
     brushTitle.html(`[${+x0.toFixed(1)}, ${+x1.toFixed(1)}]`);
 
     d3.selectAll(".precinct-path")
