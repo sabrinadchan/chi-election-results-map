@@ -86,9 +86,8 @@ var stamenLayer = new L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-l
 
 map.addLayer(stamenLayer);
 
-var caption = L.control({
-  maxHeight: 100,
-});
+// add caption as top right map control
+var caption = L.control({position: 'topright',});
 
 caption.onAdd = function (map) {
   this._div = L.DomUtil.create("div", "caption");
@@ -110,20 +109,12 @@ if (!L.Browser.touch) {
   L.DomEvent.disableScrollPropagation(captionDiv);
   L.DomEvent.disableClickPropagation(captionDiv);
 }
-var legend = L.control({position: 'bottomleft'});
 
-legend.onAdd = function(map) {
-  var div = L.DomUtil.create("div", "legend caption");
-  div.innerHTML = "<svg class='svg-legend'></svg>"
+// add filter as top left map control
+filterControl = L.control({position: 'topleft',});
 
-  return div;
-}
-
-layer = L.control({position: 'topleft'});
-//layer = L.control.layers(null);
-
-layer.onAdd = function(map) {
-  var div = L.DomUtil.create("div", "empty");
+filterControl.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "filter-control");
   div.innerHTML = `<div class="leaflet-control-layers leaflet-control" aria-haspopup="true">
     <a class="leaflet-control-layers-toggle" href="#" title="Layers"></a>
     <form class="leaflet-control-layers-list">
@@ -159,12 +150,24 @@ layer.onAdd = function(map) {
   return div;
 }
 
-layer.addTo(map);
+filterControl.addTo(map);
 filterByRadios = d3.selectAll(".filterByRadio");
 
-var leafletControlDiv = d3.select(".leaflet-control-layers.leaflet-control").node();
-L.DomEvent.disableScrollPropagation(leafletControlDiv);
-L.DomEvent.disableClickPropagation(leafletControlDiv);
+var filterControlDiv = d3.select(".filter-control").node();
+L.DomEvent.disableScrollPropagation(filterControlDiv);
+L.DomEvent.disableClickPropagation(filterControlDiv);
+
+d3.select("div.leaflet-top.leaflet-left").raise();
+
+// add legend as bottom left map control
+var legend = L.control({position: 'bottomleft'});
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend caption");
+  div.innerHTML = "<svg class='svg-legend'></svg>"
+
+  return div;
+}
 
 // add svg overlay to map
 L.svg().addTo(map); // render all paths with SVG
