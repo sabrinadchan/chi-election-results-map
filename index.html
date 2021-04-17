@@ -415,7 +415,8 @@ function draw(precincts) {
             d3.select(this).raise();
             caption.update(d);
           }
-        });
+        })
+        .call(d3.drag().clickDistance(5));
 
     bg.call(brush.move, [0, brushWidth]);
 
